@@ -1,0 +1,27 @@
+# Build artifacts
+/build/
+/cmake-build*/
+*.o
+*.obj
+*.so
+*.a
+bin/
+tests/bin/
+bench/bin/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Nsight / profiling outputs (large; keep curated copies in docs/profiles/)
+*.ncu-rep
+*.nsys-rep
+*.qdrep
+*.sqlite
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store

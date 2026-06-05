@@ -1,0 +1,8 @@
+# Plotting / analysis (CPU-only, used by scripts/*.py)
+numpy>=1.24
+matplotlib>=3.7
+
+# Optional: PyTorch eager baselines in bench/bench_pytorch.py.
+# Install the CUDA build that matches your driver, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+# torch>=2.3
