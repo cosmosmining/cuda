@@ -1,0 +1,48 @@
+name: ci
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  cpu-correctness:
+    # Validates the kernel algorithms (incl. the FlashAttention online-softmax
+    # recurrence) on CPU. No GPU runner required — this is the always-on gate.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build + run CPU correctness suite
+        run: make test
+
+  figures:
+    # Ensures the plotting pipeline stays runnable and the figures regenerate
+    # from data/results.csv (illustrative or real).
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install plotting deps
+        run: pip install -r requirements.txt
+      - name: Regenerate figures
+        run: |
+          python scripts/plot_results.py
+          python scripts/roofline.py
+
+  cuda-build:
+    # Compile-checks the kernels with nvcc (no GPU needed to *build*). Uses a
+    # container with the CUDA toolkit; build only, since GitHub-hosted runners
+    # have no GPU to execute on.
+    runs-on: ubuntu-latest
+    container: nvidia/cuda:12.4.1-devel-ubuntu22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install CMake
+        run: |
+          apt-get update && apt-get install -y --no-install-recommends cmake build-essential
+      - name: Configure + build CUDA kernels
+        run: |
+          cmake -S . -B build -DTINY_INFER_BUILD_CUDA=ON -DCMAKE_CUDA_ARCHITECTURES=90
+          cmake --build build -j

@@ -1,0 +1,31 @@
+# ============================================================================
+# ILLUSTRATIVE / SYNTHETIC PLACEHOLDER DATA — NOT MEASURED.
+# These numbers exist only to exercise the plotting + docs pipeline and to show
+# the intended layout. They are plausible-order-of-magnitude guesses for an
+# H100 SXM, NOT benchmark results. Regenerate real numbers with:
+#     bash bench/run_all.sh
+# which deletes and rewrites this file (without these comment lines) from the
+# correctness-gated CUDA benchmarks. Comment lines (starting with '#') are
+# skipped by scripts/plot_results.py and scripts/roofline.py.
+# ============================================================================
+kernel,shape,ours_gflops,cublas_gflops,pct_of_cublas,tokens_per_s,max_rel_err
+gemm_tiled_fp32,1024^3,18000,26000,69.2,0,3.1e-4
+gemm_tiled_fp32,2048^3,30000,41000,73.2,0,3.2e-4
+gemm_tiled_fp32,4096^3,38000,49000,77.6,0,3.3e-4
+gemm_tiled_fp32,8192^3,41000,52000,78.8,0,3.3e-4
+gemm_pytorch_eager,1024^3,25000,0,0,0,0
+gemm_pytorch_eager,2048^3,40000,0,0,0,0
+gemm_pytorch_eager,4096^3,48000,0,0,0,0
+gemm_pytorch_eager,8192^3,51000,0,0,0,0
+attn_fused_fp32,seq512_d64,8200,0,0,122000,6.0e-4
+attn_fused_fp32,seq1024_d64,12500,0,0,69000,6.1e-4
+attn_fused_fp32,seq2048_d64,16000,0,0,34000,6.2e-4
+attn_fused_fp32,seq4096_d64,18000,0,0,16000,6.2e-4
+attn_pytorch_sdpa,seq512_d64,15000,0,0,180000,0
+attn_pytorch_sdpa,seq1024_d64,22000,0,0,95000,0
+attn_pytorch_sdpa,seq2048_d64,29000,0,0,45000,0
+attn_pytorch_sdpa,seq4096_d64,33000,0,0,21000,0
+matmul_int8,1024^3,35000,280000,12.5,0,5.5e-3
+matmul_int8,2048^3,60000,480000,12.5,0,5.5e-3
+matmul_int8,4096^3,78000,620000,12.6,0,5.5e-3
+matmul_int8,8192^3,85000,690000,12.3,0,5.5e-3
