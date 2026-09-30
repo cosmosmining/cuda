@@ -1,0 +1,6 @@
+# Official GTFS downloads are large and re-downloadable (python -m eurail download)
+data/raw/*
+!data/raw/.gitkeep
+__pycache__/
+*.pyc
+.pytest_cache/

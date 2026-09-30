@@ -1,0 +1,21 @@
+name_a,name_b,country_a,country_b,dist_km,pop_a,pop_b,trains_per_week,journey_min,trains_needed,track_min,prob_direct
+Rotterdam,Amersfoort,NL,NL,67.29,868135,139914,6,99.26,1,48,0.95
+Wolverhampton,London,GB,GB,181.6,263700,8961989,0,164.4,2,92,0.9419
+Bremen,Berlin,DE,DE,315.4,546501,3426354,0,231.1,2,136,0.9015
+Köln,Karlsruhe,DE,DE,237.9,1024621,283799,0,184.4,2,111,0.8921
+Wolverhampton,Coventry,GB,GB,45.89,263700,345324,0,102.4,2,34,0.8903
+Milan,Ferrara,IT,IT,203,1371498,132009,0,148.4,2,67,0.8842
+Wolverhampton,Milton Keynes,GB,GB,110.9,263700,256385,0,130.4,2,60,0.8489
+Wiesbaden,Köln,DE,DE,131.4,288850,1024621,0,158.4,2,68,0.8437
+The Hague,Antwerp,NL,BE,95.46,474292,529247,0,123.7,2,50,0.839
+Reggio nell'Emilia,Ferrara,IT,IT,79.63,171944,132009,0,103.5,2,34,0.8317
+Oldenburg,Hamburg,DE,DE,126.5,159218,1973896,0,187.1,2,80,0.8207
+Turin,Ferrara,IT,IT,310.6,847287,132009,0,225.5,2,117,0.8099
+Stockport,Huddersfield,GB,GB,36.29,139052,149017,0,71.74,2,32,0.8064
+Lahti,Espoo,FI,FI,102.5,121622,323910,0,140.2,2,53,0.8036
+Wolfsburg,Dortmund,DE,DE,248.6,123064,588462,0,204.4,2,121,0.8006
+Vicenza,Ferrara,IT,IT,79.01,111980,132009,0,119.8,2,42,0.7899
+Hamburg,Bielefeld,DE,DE,195.2,1973896,331906,0,180.8,2,126,0.7866
+The Hague,Amersfoort,NL,NL,74.86,474292,139914,0,114.7,2,50,0.7863
+Münster,Berlin,DE,DE,398.7,308258,3426354,0,290.1,2,166,0.779
+Köln,Darmstadt,DE,DE,168.7,1024621,167029,0,173.5,2,77,0.7604

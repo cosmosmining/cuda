@@ -1,0 +1,11 @@
+,full,fundamentals
+abs_log_pop_ratio,0.0577,-0.0441
+adamic_adar,0.5903,
+common_neighbors,-0.1164,
+jaccard,0.0885,
+log_degree_prod,-0.8329,
+log_dist,0.9422,0.7574
+log_pop_prod,0.6596,1.0785
+log_track_min,-2.2945,-2.7937
+resource_alloc,2.1207,
+same_country,-0.1929,0.6162

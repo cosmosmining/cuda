@@ -1,0 +1,215 @@
+# Stations that need explicit coordinates in the demo feed: multi-station
+# cities (to exercise station->city merging), out-of-town high-speed/airport
+# stations, and small places missing from GeoNames' city lists. Any stop name
+# in lines.txt not listed here is resolved to the GeoNames populated place of
+# that name (largest population in Europe), optionally restricted to `country`.
+station,lat,lon,country
+Paris Gare de Lyon,48.8443,2.3735,FR
+Paris Nord,48.8809,2.3553,FR
+Paris Est,48.8768,2.3592,FR
+Paris Montparnasse,48.8412,2.3203,FR
+Paris Austerlitz,48.8420,2.3656,FR
+Paris Saint-Lazare,48.8763,2.3253,FR
+Aeroport CDG 2 TGV,49.0040,2.5710,FR
+Marne-la-Vallee Chessy,48.8697,2.7828,FR
+Massy TGV,48.7255,2.2605,FR
+Lille Europe,50.6394,3.0757,FR
+Lille Flandres,50.6365,3.0708,FR
+Lyon Part-Dieu,45.7606,4.8594,FR
+Marseille Saint-Charles,43.3027,5.3806,FR
+Valence TGV,44.9912,4.9786,FR
+Avignon TGV,43.9217,4.7860,FR
+Aix-en-Provence TGV,43.4553,5.3173,FR
+Champagne-Ardenne TGV,49.2139,3.9947,FR
+Meuse TGV,48.9780,5.2720,FR
+Lorraine TGV,48.9477,6.1697,FR
+Besancon Franche-Comte TGV,47.3073,5.9543,FR
+Belfort-Montbeliard TGV,47.5860,6.8990,FR
+Macon-Loche TGV,46.2820,4.7790,FR
+Montpellier Saint-Roch,43.6045,3.8807,FR
+Montpellier Sud de France,43.5954,3.9230,FR
+Bellegarde,46.1080,5.8260,FR
+Les Arcs,43.4570,6.4790,FR
+Modane,45.1920,6.6710,FR
+Frasne,46.8570,6.1610,FR
+Vallorbe,46.7120,6.3790,CH
+Briancon,44.8920,6.6420,FR
+Berlin Hbf,52.5251,13.3694,DE
+Berlin Sudkreuz,52.4753,13.3656,DE
+Berlin Gesundbrunnen,52.5487,13.3885,DE
+Berlin Spandau,52.5345,13.1976,DE
+Berlin Ostbahnhof,52.5103,13.4344,DE
+Hamburg Hbf,53.5530,10.0069,DE
+Hamburg Dammtor,53.5605,9.9895,DE
+Hamburg-Altona,53.5520,9.9350,DE
+Hamburg-Harburg,53.4560,9.9915,DE
+Frankfurt Hbf,50.1071,8.6636,DE
+Frankfurt Flughafen Fernbf,50.0530,8.5703,DE
+Munchen Hbf,48.1402,11.5600,DE
+Munchen-Pasing,48.1498,11.4613,DE
+Koln Hbf,50.9430,6.9589,DE
+Koln Messe/Deutz,50.9406,6.9745,DE
+Dusseldorf Hbf,51.2200,6.7942,DE
+Stuttgart Hbf,48.7840,9.1817,DE
+Mannheim Hbf,49.4796,8.4697,DE
+Hannover Hbf,52.3767,9.7412,DE
+Leipzig Hbf,51.3455,12.3821,DE
+Dresden Hbf,51.0404,13.7320,DE
+Dresden-Neustadt,51.0655,13.7408,DE
+Nurnberg Hbf,49.4457,11.0826,DE
+Karlsruhe Hbf,48.9936,8.4020,DE
+Bremen Hbf,53.0834,8.8134,DE
+Siegburg/Bonn,50.7934,7.2032,DE
+Montabaur,50.4447,7.8256,DE
+Bad Bentheim,52.3060,7.1580,DE
+Bad Schandau,50.9190,14.1560,DE
+Furth im Wald,49.3090,12.8480,DE
+Halle (Saale),51.4775,11.9870,DE
+Frankfurt (Oder),52.3364,14.5462,DE
+Wien Hbf,48.1850,16.3760,AT
+Wien Meidling,48.1747,16.3336,AT
+Wien Westbahnhof,48.1966,16.3378,AT
+St. Polten Hbf,48.2080,15.6240,AT
+Landeck-Zams,47.1386,10.5700,AT
+Schwarzach-St. Veit,47.3220,13.1520,AT
+Bischofshofen,47.4170,13.2190,AT
+Bruck an der Mur,47.4140,15.2790,AT
+Zurich HB,47.3779,8.5403,CH
+Zurich Flughafen,47.4504,8.5625,CH
+Geneve,46.2102,6.1424,CH
+Geneve-Aeroport,46.2322,6.1103,CH
+Basel SBB,47.5475,7.5897,CH
+Basel Bad Bf,47.5672,7.6075,CH
+Bern,46.9490,7.4392,CH
+Lausanne,46.5167,6.6291,CH
+St. Gallen,47.4233,9.3695,CH
+Biel/Bienne,47.1325,7.2426,CH
+Arth-Goldau,47.0496,8.5487,CH
+Buchs SG,47.1680,9.4790,CH
+Sargans,47.0450,9.4460,CH
+Visp,46.2940,7.8820,CH
+Brig,46.3190,7.9880,CH
+Spiez,46.6860,7.6800,CH
+Interlaken Ost,46.6905,7.8690,CH
+London St Pancras,51.5310,-0.1263,GB
+London Euston,51.5282,-0.1337,GB
+London Kings Cross,51.5320,-0.1233,GB
+London Paddington,51.5154,-0.1755,GB
+London Waterloo,51.5031,-0.1132,GB
+London Liverpool Street,51.5178,-0.0823,GB
+London Victoria,51.4952,-0.1441,GB
+Ebbsfleet International,51.4430,0.3210,GB
+Gatwick Airport,51.1565,-0.1610,GB
+Birmingham New Street,52.4778,-1.8990,GB
+Birmingham International,52.4508,-1.7256,GB
+Manchester Piccadilly,53.4774,-2.2309,GB
+Manchester Victoria,53.4875,-2.2426,GB
+Manchester Airport,53.3650,-2.2729,GB
+Liverpool Lime Street,53.4077,-2.9774,GB
+Bristol Temple Meads,51.4492,-2.5813,GB
+Bristol Parkway,51.5138,-2.5423,GB
+Glasgow Central,55.8589,-4.2577,GB
+Glasgow Queen Street,55.8623,-4.2511,GB
+Edinburgh Waverley,55.9521,-3.1893,GB
+Oxenholme,54.3050,-2.7220,GB
+Penrith,54.6620,-2.7580,GB
+Belfast,54.5925,-5.9427,GB
+Bruxelles-Midi,50.8357,4.3363,BE
+Bruxelles-Central,50.8454,4.3571,BE
+Bruxelles-Nord,50.8603,4.3615,BE
+Brussels Airport,50.8973,4.4836,BE
+Antwerpen-Centraal,51.2172,4.4211,BE
+Liege-Guillemins,50.6245,5.5667,BE
+Amsterdam Centraal,52.3791,4.9003,NL
+Amsterdam Zuid,52.3389,4.8730,NL
+Schiphol Airport,52.3094,4.7621,NL
+Rotterdam Centraal,51.9249,4.4690,NL
+Den Haag Centraal,52.0810,4.3246,NL
+Den Haag HS,52.0695,4.3226,NL
+Utrecht Centraal,52.0894,5.1100,NL
+Arnhem Centraal,51.9848,5.8999,NL
+Madrid Puerta de Atocha,40.4066,-3.6892,ES
+Madrid Chamartin,40.4722,-3.6823,ES
+Barcelona Sants,41.3792,2.1402,ES
+Camp de Tarragona,41.1914,1.2710,ES
+Figueres Vilafant,42.2640,2.9430,ES
+Zaragoza Delicias,41.6583,-0.9116,ES
+Valencia Joaquin Sorolla,39.4598,-0.3829,ES
+Sevilla Santa Justa,37.3918,-5.9753,ES
+Malaga Maria Zambrano,36.7117,-4.4325,ES
+Antequera-Santa Ana,37.0400,-4.5980,ES
+Guadalajara-Yebes,40.5930,-3.1110,ES
+Requena-Utiel,39.5170,-1.1350,ES
+Sanabria AV,42.0460,-6.6620,ES
+Lisboa Santa Apolonia,38.7138,-9.1226,PT
+Lisboa Oriente,38.7678,-9.0993,PT
+Porto Campanha,41.1488,-8.5855,PT
+Coimbra-B,40.2226,-8.4450,PT
+Milano Centrale,45.4861,9.2046,IT
+Milano Rogoredo,45.4336,9.2386,IT
+Roma Termini,41.9010,12.5016,IT
+Roma Tiburtina,41.9104,12.5306,IT
+Torino Porta Nuova,45.0619,7.6786,IT
+Torino Porta Susa,45.0717,7.6653,IT
+Napoli Centrale,40.8527,14.2726,IT
+Firenze SMN,43.7765,11.2481,IT
+Bologna Centrale,44.5058,11.3431,IT
+Venezia Santa Lucia,45.4410,12.3210,IT
+Venezia Mestre,45.4822,12.2319,IT
+Verona Porta Nuova,45.4290,10.9820,IT
+Reggio Emilia AV Mediopadana,44.7270,10.6490,IT
+Genova Piazza Principe,44.4175,8.9210,IT
+Genova Brignole,44.4067,8.9467,IT
+Brennero,47.0024,11.5058,IT
+Villa San Giovanni,38.2190,15.6370,IT
+Warszawa Centralna,52.2289,21.0033,PL
+Warszawa Wschodnia,52.2518,21.0525,PL
+Krakow Glowny,50.0680,19.9477,PL
+Gdansk Glowny,54.3556,18.6437,PL
+Gdynia Glowna,54.5207,18.5292,PL
+Poznan Glowny,52.4020,16.9115,PL
+Wroclaw Glowny,51.0980,17.0364,PL
+Lodz Fabryczna,51.7710,19.4661,PL
+Lodz Kaliska,51.7570,19.4300,PL
+Praha hl.n.,50.0831,14.4353,CZ
+Brno hl.n.,49.1907,16.6128,CZ
+Ostrava hl.n.,49.8575,18.2690,CZ
+Bohumin,49.9040,18.3570,CZ
+Decin,50.7730,14.1970,CZ
+Bratislava hl.st.,48.1590,17.1060,SK
+Sturovo,47.8000,18.7200,SK
+Budapest-Keleti,47.5003,19.0839,HU
+Budapest-Nyugati,47.5107,19.0564,HU
+Budapest-Deli,47.5006,19.0243,HU
+Kobenhavn H,55.6727,12.5647,DK
+Kobenhavns Lufthavn,55.6300,12.6490,DK
+Padborg,54.8260,9.3610,DK
+Malmo C,55.6093,13.0008,SE
+Stockholm C,59.3300,18.0578,SE
+Arlanda C,59.6490,17.9290,SE
+Goteborg C,57.7089,11.9735,SE
+Oslo S,59.9110,10.7531,NO
+Oslo Lufthavn,60.1930,11.0980,NO
+Myrdal,60.7353,7.1223,NO
+Finse,60.6020,7.5040,NO
+Geilo,60.5340,8.2060,NO
+Gol,60.7020,8.9460,NO
+Dombas,62.0740,9.1270,NO
+Otta,61.7730,9.5390,NO
+Oppdal,62.5950,9.6920,NO
+Storen,63.0350,10.2830,NO
+Helsinki,60.1719,24.9414,FI
+Pasila,60.1990,24.9340,FI
+Tikkurila,60.2923,25.0441,FI
+Dublin Heuston,53.3464,-6.2929,IE
+Dublin Connolly,53.3531,-6.2468,IE
+Limerick Junction,52.5010,-8.2000,IE
+Beograd Centar,44.7940,20.4530,RS
+Bucuresti Nord,44.4467,26.0756,RO
+Zagreb Glavni kolodvor,45.8045,15.9785,HR
+Ljubljana,46.0580,14.5100,SI
+Sofia,42.7120,23.3210,BG
+Athens,38.0020,23.7210,GR
+Brest,48.3880,-4.4790,FR
+Bangor,53.2274,-4.1293,GB
+Holyhead,53.3090,-4.6330,GB

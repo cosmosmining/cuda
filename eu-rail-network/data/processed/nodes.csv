@@ -1,0 +1,672 @@
+node_id,name,kind,lat,lon,population,country,n_stations,stations,weekly_calls
+city:2263480,Santarém,city,39.23379,-8.68617,29385,PT,1,Santarem,216
+city:2267057,Lisbon,city,38.72509,-9.1498,517802,PT,2,Lisboa Oriente; Lisboa Santa Apolonia,282
+city:2268339,Faro,city,37.01869,-7.92716,70347,PT,1,Faro,66
+city:2268575,Entroncamento,city,39.46667,-8.46667,19887,PT,1,Entroncamento,216
+city:2509463,Villena,city,38.6373,-0.86568,35222,ES,1,Villena,184
+city:2509954,Valencia,city,39.47391,-0.37966,824340,ES,1,Valencia Joaquin Sorolla,400
+city:2510409,Toledo,city,39.8581,-4.02263,86526,ES,1,Toledo,188
+city:2510911,Sevilla,city,37.38283,-5.97317,686741,ES,1,Sevilla Santa Justa,372
+city:2512177,Puertollano,city,38.68712,-4.10734,51842,ES,1,Puertollano,240
+city:2513076,Orihuela,city,38.08483,-0.94401,101321,ES,1,Orihuela,52
+city:2513416,Murcia,city,37.98704,-1.13004,471982,ES,1,Murcia,52
+city:2514256,Málaga,city,36.72016,-4.42034,592346,ES,1,Malaga Maria Zambrano,160
+city:2516326,Jerez de la Frontera,city,36.68645,-6.13606,212879,ES,1,Jerez de la Frontera,132
+city:2517117,Granada,city,37.18817,-3.60667,233532,ES,1,Granada,66
+city:2518559,Elche,city,38.26218,-0.70107,234765,ES,1,Elche,52
+city:2519240,Córdoba,city,37.89155,-4.77275,325708,ES,1,Cordoba,466
+city:2519402,Ciudad Real,city,38.98626,-3.92907,74743,ES,1,Ciudad Real,240
+city:2519752,Castelló de la Plana,city,39.98567,-0.04935,171857,ES,1,Castello de la Plana,160
+city:2520600,Cadiz,city,36.52672,-6.2891,116979,ES,1,Cadiz,132
+city:2521978,Alicante,city,38.34517,-0.48149,348901,ES,1,Alicante,132
+city:2522258,Albacete,city,38.99424,-1.85643,173050,ES,1,Albacete,184
+city:2523083,Siracusa,city,37.07542,15.28664,121605,IT,1,Siracusa,28
+city:2523630,Reggio Calabria,city,38.11047,15.66129,182455,IT,1,Reggio Calabria,80
+city:2523920,Palermo,city,38.1166,13.3636,648260,IT,1,Palermo,94
+city:2524170,Messina,city,38.19394,15.55256,219948,IT,1,Messina,122
+city:2525068,Catania,city,37.49223,15.07041,311584,IT,1,Catania,28
+city:258576,Lárisa,city,39.62847,22.42112,146926,GR,1,Larissa,80
+city:2610613,Vejle,city,55.70927,9.5357,60231,DK,1,Vejle,644
+city:2614481,Roskilde,city,55.64152,12.08035,51916,DK,1,Roskilde,710
+city:2615006,Randers,city,56.4607,10.03639,62802,DK,1,Randers,216
+city:2615876,Odense,city,55.39594,10.38831,180863,DK,1,Odense,926
+city:2616933,Middelfart,city,55.50591,9.73054,16277,DK,1,Middelfart,644
+city:2618425,Copenhagen,city,55.67594,12.56553,1153615,DK,1,Kobenhavn H,1874
+city:2618528,Kolding,city,55.4904,9.47216,61638,DK,1,Kolding,282
+city:2619771,Horsens,city,55.86066,9.85034,61074,DK,1,Horsens,428
+city:2621951,Fredericia,city,55.56568,9.75257,40886,DK,1,Fredericia,710
+city:2622447,Esbjerg,city,55.47028,8.45187,71698,DK,1,Esbjerg,216
+city:2624652,Århus,city,56.15674,10.21076,285273,DK,1,Aarhus,644
+city:2624886,Aalborg,city,57.048,9.9187,142937,DK,1,Aalborg,216
+city:2633352,York,city,53.95763,-1.08271,156135,GB,1,York,1048
+city:2633691,Wolverhampton,city,52.58547,-2.12296,263700,GB,1,Wolverhampton,188
+city:2633709,Woking,city,51.31903,-0.55893,103900,GB,1,Woking,428
+city:2633858,Winchester,city,51.06513,-1.3187,46074,GB,1,Winchester,428
+city:2633883,Wilmslow,city,53.32803,-2.23148,25725,GB,1,Wilmslow,160
+city:2633948,Wigan,city,53.54296,-2.63706,175405,GB,1,Wigan,188
+city:2633954,Widnes,city,53.3618,-2.73406,61464,GB,1,Runcorn,216
+city:2634739,Warrington,city,53.39254,-2.58024,172330,GB,1,Warrington,188
+city:2634910,Wakefield,city,53.68331,-1.49768,109766,GB,1,Wakefield,428
+city:2636177,Taunton,city,51.01494,-3.10293,64621,GB,1,Taunton,216
+city:2636389,Swindon,city,51.55797,-1.78116,201669,GB,1,Swindon,860
+city:2636432,Swansea,city,51.62079,-3.94323,300352,GB,1,Swansea,216
+city:2636841,Stoke-on-Trent,city,53.00415,-2.18538,258366,GB,1,Stoke-on-Trent,508
+city:2636882,Stockport,city,53.40979,-2.15761,139052,GB,1,Stockport,936
+city:2636910,Stirling,city,56.11903,-3.93682,37910,GB,1,Stirling,324
+city:2636940,Stevenage,city,51.90224,-0.20256,91774,GB,1,Stevenage,428
+city:2637142,Stafford,city,52.80521,-2.11636,70145,GB,1,Stafford,216
+city:2637487,Southampton,city,50.90395,-1.40428,269781,GB,1,Southampton,616
+city:2638077,Sheffield,city,53.38297,-1.4659,556500,GB,1,Sheffield,832
+city:2639577,Reading,city,51.45625,-0.97113,318014,GB,1,Reading,1704
+city:2639912,Preston,city,53.76282,-2.70452,313332,GB,1,Preston,188
+city:2640085,Portadown,city,54.42302,-6.44434,32926,GB,1,Portadown,160
+city:2640194,Plymouth,city,50.37153,-4.14305,260203,GB,1,Plymouth,416
+city:2640354,Peterborough,city,52.57364,-0.24777,163379,GB,1,Peterborough,856
+city:2640358,Perth,city,56.39522,-3.43139,47350,GB,1,Perth,336
+city:2640377,Penzance,city,50.11861,-5.53715,19872,GB,1,Penzance,228
+city:2640416,Penrith,city,54.66579,-2.75757,16700,GB,1,Penrith,188
+city:2640729,Oxford,city,51.75222,-1.25596,162100,GB,1,Oxford,616
+city:2641170,Nottingham,city,52.9536,-1.15047,323632,GB,1,Nottingham,216
+city:2641181,Norwich,city,52.62783,1.29834,143135,GB,1,Norwich,428
+city:2641557,Newton Abbot,city,50.52858,-3.61186,36474,GB,1,Newton Abbot,216
+city:2641581,Newry,city,54.17841,-6.33739,27757,GB,1,Newry,160
+city:2641598,Newport,city,51.58774,-2.99835,161506,GB,1,Newport,432
+city:2641673,Newcastle upon Tyne,city,54.97328,-1.61396,300125,GB,1,Newcastle upon Tyne,832
+city:2641731,Newark on Trent,city,53.06667,-0.81667,43363,GB,1,Newark on Trent,428
+city:2642465,Milton Keynes,city,52.04172,-0.75583,256385,GB,1,Milton Keynes,804
+city:2643123,Manchester,city,53.48095,-2.23743,568996,GB,2,Manchester Piccadilly; Manchester Victoria,1528
+city:2643266,Macclesfield,city,53.26023,-2.12564,54345,GB,1,Macclesfield,320
+city:264371,Athens,city,37.98376,23.72784,664046,GR,1,Athens,80
+city:2643743,London,city,51.50853,-0.12574,8961989,GB,7,London Euston; London Kings Cross; London Liverpool Street; London Paddington; London St Pancras; London Victoria; London Waterloo,5822
+city:2644210,Liverpool,city,53.41058,-2.97794,496770,GB,1,Liverpool Lime Street,432
+city:2644668,Leicester,city,52.6386,-1.13169,368600,GB,1,Leicester,432
+city:2644688,Leeds,city,53.79648,-1.54785,536280,GB,1,Leeds,1048
+city:2644737,Royal Leamington Spa,city,52.2852,-1.52,50923,GB,1,Leamington Spa,188
+city:2644972,Lancaster,city,54.04649,-2.79988,47162,GB,1,Lancaster,188
+city:2645298,Kirkcaldy,city,56.11683,-3.15999,50370,GB,1,Kirkcaldy,216
+city:2645826,Kendal,city,54.32681,-2.74757,29147,GB,1,Oxenholme,188
+city:2646057,Ipswich,city,52.05917,1.15545,178835,GB,1,Ipswich,428
+city:2646088,Inverness,city,57.47908,-4.22398,47790,GB,1,Inverness,120
+city:2646458,Huddersfield,city,53.64904,-1.78416,149017,GB,1,Huddersfield,432
+city:2648182,Grays,city,51.47566,0.32521,89755,GB,1,Ebbsfleet International,42
+city:2648208,Grantham,city,52.91149,-0.64184,44580,GB,1,Grantham,428
+city:2648579,Glasgow,city,55.86515,-4.25763,626410,GB,2,Glasgow Central; Glasgow Queen Street,1380
+city:2649808,Exeter,city,50.7236,-3.52751,130709,GB,1,Exeter,416
+city:2650225,Edinburgh,city,55.95206,-3.19648,514990,GB,1,Edinburgh Waverley,1700
+city:2650628,Durham,city,54.77676,-1.57566,47785,GB,1,Durham,832
+city:2650752,Dundee,city,56.46913,-2.97489,148210,GB,1,Dundee,432
+city:2651123,Doncaster,city,53.52285,-1.13116,113566,GB,1,Doncaster,428
+city:2651269,Didcot,city,51.60928,-1.24214,29341,GB,1,Didcot,428
+city:2651347,Derby,city,52.92277,-1.47663,270468,GB,1,Derby,216
+city:2651513,Darlington,city,54.52429,-1.55039,92363,GB,1,Darlington,832
+city:2652002,Crewe,city,53.09787,-2.44161,76437,GB,1,Crewe,456
+city:2652221,Coventry,city,52.40656,-1.51217,345324,GB,1,Coventry,428
+city:2652618,Colchester,city,51.88921,0.90421,130245,GB,1,Colchester,428
+city:2653144,Chippenham,city,51.46,-2.12472,35800,GB,1,Chippenham,428
+city:2653225,Chesterfield,city,53.25,-1.41667,113057,GB,1,Chesterfield,216
+city:2653228,Chester,city,53.1905,-2.89189,90524,GB,1,Chester,80
+city:2653775,Carlisle,city,54.8951,-2.9382,78470,GB,1,Carlisle,188
+city:2653822,Cardiff,city,51.48,-3.18,372089,GB,1,Cardiff,432
+city:2654675,Bristol,city,51.45523,-2.59665,479024,GB,2,Bristol Parkway; Bristol Temple Meads,1048
+city:2654710,Brighton,city,50.82838,-0.13947,283870,GB,1,Brighton,428
+city:2655095,Bournemouth,city,50.72048,-1.8795,163600,GB,1,Bournemouth,616
+city:2655603,Birmingham,city,52.48142,-1.89983,1157603,GB,1,Birmingham New Street,804
+city:2655984,Belfast,city,54.59682,-5.92541,348005,GB,1,Belfast,160
+city:2656173,Bath,city,51.3751,-2.36172,101557,GB,1,Bath,428
+city:2656192,Basingstoke,city,51.26249,-1.08708,107642,GB,1,Basingstoke,428
+city:2656397,Bangor,city,53.22752,-4.12936,18322,GB,1,Bangor,80
+city:2657215,Arbroath,city,56.56317,-2.58736,23640,GB,1,Arbroath,216
+city:2657832,Aberdeen,city,57.14369,-2.09814,198590,GB,1,Aberdeen,432
+city:2657896,Zürich,city,47.36667,8.55,415367,CH,1,Zurich HB,2646
+city:2657908,Zug,city,47.17242,8.51745,30542,CH,1,Zug,338
+city:2657941,Yverdon-les-Bains,city,46.77852,6.64115,30157,CH,1,Yverdon-les-Bains,216
+city:2657970,Winterthur,city,47.50564,8.72413,111840,CH,1,Winterthur,724
+city:2658145,Vevey,city,46.46299,6.84345,19891,CH,1,Vevey,216
+city:2658377,Thun,city,46.75118,7.62166,43723,CH,1,Thun,216
+city:2658564,Solothurn,city,47.20791,7.53714,16777,CH,1,Solothurn,216
+city:2658576,Sitten,city,46.22739,7.35559,34708,CH,1,Sion,258
+city:2658606,Sierre,city,46.29192,7.53559,16790,CH,1,Sierre,216
+city:2658761,Schaffhausen,city,47.69732,8.63493,36587,CH,1,Schaffhausen,108
+city:2658822,Sankt Gallen,city,47.42391,9.37477,75833,CH,1,St. Gallen,508
+city:2659297,Olten,city,47.34999,7.90329,18362,CH,1,Olten,864
+city:2659496,Neuchâtel,city,46.99179,6.931,33475,CH,1,Neuchatel,216
+city:2659601,Montreux,city,46.43301,6.91143,25984,CH,1,Montreux,258
+city:2659748,Martigny-Ville,city,46.10276,7.07245,18301,CH,1,Martigny,216
+city:2659811,Luzern,city,47.05048,8.30635,81691,CH,1,Luzern,860
+city:2659836,Lugano,city,46.01008,8.96004,63185,CH,1,Lugano,554
+city:2659994,Lausanne,city,46.516,6.63282,139111,CH,1,Lausanne,954
+city:2660646,Geneva,city,46.20222,6.14569,201741,CH,1,Geneve,1170
+city:2660718,Fribourg,city,46.80237,7.15128,38365,CH,1,Fribourg,428
+city:2661169,Chur,city,46.84986,9.53287,35373,CH,1,Chur,216
+city:2661513,Biel/Bienne,city,47.13713,7.24608,55120,CH,1,Biel/Bienne,216
+city:2661552,Bern,city,46.94809,7.44744,121631,CH,1,Bern,1344
+city:2661567,Bellinzona,city,46.19278,9.01703,43220,CH,1,Bellinzona,554
+city:2661604,Basel,city,47.55839,7.57327,177595,CH,2,Basel Bad Bf; Basel SBB,1884
+city:2664454,Västerås,city,59.61617,16.55276,127799,SE,1,Vasteras,202
+city:2664996,Varberg,city,57.10557,12.25078,34248,SE,1,Varberg,216
+city:2666199,Uppsala,city,59.85882,17.63889,177074,SE,1,Uppsala,550
+city:2667303,Trollhättan,city,58.28365,12.28864,48573,SE,1,Trollhattan,52
+city:2670781,Sundsvall,city,62.39129,17.3063,57606,SE,1,Sundsvall,122
+city:2673730,Stockholm,city,59.32938,18.06871,1515017,SE,1,Stockholm C,1216
+city:2676176,Södertälje,city,59.19554,17.62525,70777,SE,1,Sodertalje,456
+city:2677234,Skövde,city,58.39118,13.84506,36842,SE,1,Skovde,216
+city:2686657,Örebro,city,59.27412,15.2066,155989,SE,1,Orebro,202
+city:2688368,Norrköping,city,58.59419,16.1826,93765,SE,1,Norrkoping,248
+city:2690170,Nässjö,city,57.65307,14.69676,17719,SE,1,Nassjo,240
+city:2692969,Malmö,city,55.60587,13.00073,362133,SE,1,Malmo C,1108
+city:2693678,Lund,city,55.70584,13.19321,87244,SE,1,Lund,1100
+city:2694762,Linköping,city,58.41086,15.62157,166673,SE,1,Linkoping,240
+city:2701223,Katrineholm,city,58.99587,16.20721,23283,SE,1,Katrineholm,216
+city:2701680,Karlstad,city,59.3793,13.50357,61492,SE,1,Karlstad,42
+city:2704613,Hudiksvall,city,61.72744,17.10558,16081,SE,1,Hudiksvall,108
+city:2706767,Helsingborg,city,56.04673,12.69437,104250,SE,1,Helsingborg,216
+city:2707399,Hässleholm,city,56.15905,13.76638,19309,SE,1,Hassleholm,240
+city:2708365,Halmstad,city,56.67446,12.85676,70480,SE,1,Halmstad,216
+city:2711537,Gothenburg,city,57.70716,11.96679,608462,SE,1,Goteborg C,484
+city:2712414,Gävle,city,60.67452,17.14174,74884,SE,1,Gavle,108
+city:2726756,Alingsås,city,57.93033,12.53345,26329,SE,1,Alingsas,216
+city:2732773,Viana do Castelo,city,41.69323,-8.83287,36148,PT,1,Viana do Castelo,28
+city:2735943,Porto,city,41.1485,-8.61097,252687,PT,1,Porto Campanha,352
+city:2740637,Coimbra,city,40.20686,-8.41996,140796,PT,1,Coimbra-B,216
+city:2742032,Braga,city,41.5514,-8.42311,193324,PT,1,Braga,108
+city:2742611,Aveiro,city,40.64575,-8.64643,80880,PT,1,Aveiro,216
+city:2743477,Zwolle,city,52.5125,6.09444,129840,NL,1,Zwolle,648
+city:2744911,Weert,city,51.25167,5.70694,48662,NL,1,Weert,428
+city:2745912,Utrecht,city,52.09083,5.12222,376435,NL,1,Utrecht Centraal,2482
+city:2746301,Tilburg,city,51.55551,5.0913,221947,NL,1,Tilburg,216
+city:2747203,Sittard,city,50.99833,5.86944,48400,NL,1,Sittard,428
+city:2747351,'s-Hertogenbosch,city,51.69917,5.30417,160783,NL,1,'s-Hertogenbosch,856
+city:2747373,The Hague,city,52.07667,4.29861,474292,NL,2,Den Haag Centraal; Den Haag HS,1288
+city:2747891,Rotterdam,city,51.9225,4.47917,868135,NL,1,Rotterdam Centraal,1854
+city:2748000,Roermond,city,51.19417,5.9875,44975,NL,1,Roermond,428
+city:2750053,Nijmegen,city,51.8425,5.85278,177359,NL,1,Nijmegen,428
+city:2751283,Maastricht,city,50.84833,5.68889,122378,NL,1,Maastricht,428
+city:2751738,Lelystad,city,52.50833,5.475,79811,NL,1,Lelystad,216
+city:2751773,Leiden,city,52.15833,4.49306,119713,NL,1,Leiden,856
+city:2751792,Leeuwarden,city,53.20271,5.80973,124481,NL,1,Leeuwarden,216
+city:2754394,Hengelo,city,52.26583,6.79306,82311,NL,1,Hengelo,522
+city:2755251,Groningen,city,53.21917,6.56667,244807,NL,1,Groningen,432
+city:2755420,Gouda,city,52.01667,4.70833,71952,NL,1,Gouda,644
+city:2756071,Enschede,city,52.21833,6.89583,153655,NL,1,Enschede,428
+city:2756253,Eindhoven,city,51.44083,5.47778,235691,NL,1,Eindhoven,1072
+city:2756669,Dordrecht,city,51.81,4.67361,119260,NL,1,Dordrecht,428
+city:2756987,Deventer,city,52.255,6.16389,97331,NL,1,Deventer,528
+city:2757345,Delft,city,52.00667,4.35556,95060,NL,1,Delft,428
+city:2758401,Breda,city,51.58656,4.77596,184126,NL,1,Breda,432
+city:2759633,Assen,city,52.99667,6.5625,68836,NL,1,Assen,432
+city:2759661,Arnhem,city,51.98,5.91111,162424,NL,1,Arnhem Centraal,550
+city:2759706,Apeldoorn,city,52.21,5.96944,136670,NL,1,Apeldoorn,522
+city:2759794,Amsterdam,city,52.37403,4.88969,741636,NL,2,Amsterdam Centraal; Amsterdam Zuid,3782
+city:2759821,Amersfoort,city,52.155,5.3875,139914,NL,1,Amersfoort,960
+city:2759879,Almere Stad,city,52.37025,5.21413,176432,NL,1,Almere,216
+city:2759887,Almelo,city,52.35667,6.6625,72725,NL,1,Almelo,522
+city:2761353,Wiener Neustadt,city,47.80485,16.23196,44820,AT,1,Wiener Neustadt,324
+city:2761369,Vienna,city,48.20849,16.37208,1691468,AT,3,Wien Hbf; Wien Meidling; Wien Westbahnhof,1616
+city:2762372,Villach,city,46.61028,13.85583,58882,AT,1,Villach,150
+city:2766429,Sankt Pölten,city,48.20762,15.63725,21911,AT,1,St. Polten Hbf,748
+city:2766824,Salzburg,city,47.79941,13.04399,157245,AT,1,Salzburg,696
+city:2772400,Linz,city,48.30639,14.28611,204846,AT,1,Linz,790
+city:2774326,Klagenfurt am Wörthersee,city,46.62472,14.30528,100316,AT,1,Klagenfurt,108
+city:2775220,Innsbruck,city,47.26266,11.39454,132493,AT,1,Innsbruck,244
+city:2778067,Graz,city,47.06733,15.44197,303270,AT,1,Graz,244
+city:2779674,Feldkirch,city,47.23645,9.59734,33420,AT,1,Feldkirch,80
+city:2781503,Bregenz,city,47.50311,9.7471,29806,AT,1,Bregenz,80
+city:2781680,Bludenz,city,47.15476,9.82255,15102,AT,1,Bludenz,66
+city:2789786,Ostend,city,51.21551,2.927,69011,BE,1,Oostende,216
+city:2790471,Namur,city,50.4669,4.86746,110939,BE,1,Namur,108
+city:2790869,Mons,city,50.45413,3.95229,95299,BE,1,Mons,216
+city:2791537,Mechelen,city,51.02574,4.47762,77530,BE,1,Mechelen,428
+city:2792413,Liège,city,50.63373,5.56749,195278,BE,1,Liege-Guillemins,348
+city:2792482,Leuven,city,50.87959,4.70093,101032,BE,1,Leuven,216
+city:2797656,Gent,city,51.05,3.71667,265086,BE,1,Gent,648
+city:2800481,Charleroi,city,50.41136,4.44448,200132,BE,1,Charleroi,216
+city:2800866,Brussels,city,50.85045,4.34878,1019022,BE,3,Bruxelles-Central; Bruxelles-Midi; Bruxelles-Nord,2356
+city:2800931,Brugge,city,51.20892,3.22424,118509,BE,1,Brugge,432
+city:2803073,Arlon,city,49.68333,5.81667,26179,BE,1,Arlon,108
+city:2803138,Antwerp,city,51.22047,4.40026,529247,BE,1,Antwerpen-Centraal,946
+city:2805615,Würzburg,city,49.79391,9.95121,133731,DE,1,Wurzburg,338
+city:2805753,Wuppertal,city,51.25627,7.14816,360797,DE,1,Wuppertal,108
+city:2806654,Wolfsburg,city,52.42452,10.7815,123064,DE,1,Wolfsburg,310
+city:2809346,Wiesbaden,city,50.08601,8.24435,288850,DE,1,Wiesbaden,108
+city:2820256,Ulm,city,48.39841,9.99155,120451,DE,1,Ulm,352
+city:2820693,Tuttlingen,city,47.98464,8.8177,34847,DE,1,Tuttlingen,108
+city:2825297,Stuttgart,city,48.78232,9.17702,612663,DE,1,Stuttgart Hbf,826
+city:2831924,Singen,city,47.75935,8.8403,47621,DE,1,Singen,108
+city:2831948,Sindelfingen,city,48.7,9.01667,61311,DE,1,Boblingen,108
+city:2835297,Schwandorf in Bayern,city,49.32534,12.1098,28235,DE,1,Schwandorf,80
+city:2841648,Sankt Augustin,city,50.77538,7.197,56094,DE,1,Siegburg/Bonn,216
+city:2842647,Saarbrücken,city,49.23262,7.00982,182971,DE,1,Saarbrucken,66
+city:2843636,Rottweil,city,48.16783,8.62719,25510,DE,1,Rottweil,108
+city:2844588,Rostock,city,54.0887,12.14049,198293,DE,1,Rostock,94
+city:2844988,Rosenheim,city,47.85637,12.12247,60167,DE,1,Rosenheim,146
+city:2846939,Riesa,city,51.30777,13.29168,29373,DE,1,Riesa,108
+city:2847645,Rheine,city,52.28509,7.44055,76491,DE,1,Rheine,94
+city:2848245,Rendsburg,city,54.30182,9.67175,28323,DE,1,Rendsburg,66
+city:2849483,Regensburg,city,49.01513,12.10161,151389,DE,1,Regensburg,174
+city:2855328,Passau,city,48.5665,13.43122,50560,DE,1,Passau,122
+city:2856883,Osnabrück,city,52.27264,8.0498,166462,DE,1,Osnabruck,310
+city:2857458,Oldenburg,city,53.14039,8.21479,159218,DE,1,Oldenburg,108
+city:2861650,Nuremberg,city,49.45421,11.07752,515543,DE,1,Nurnberg Hbf,742
+city:2864475,Neumünster,city,54.07399,9.98456,80196,DE,1,Neumunster,174
+city:2867543,Münster,city,51.96236,7.62571,308258,DE,1,Munster,216
+city:2867714,Munich,city,48.13743,11.57549,1505005,DE,1,Munchen Hbf,1212
+city:2871992,Memmingen,city,47.98372,10.18527,44192,DE,1,Memmingen,80
+city:2873891,Mannheim,city,49.4891,8.46694,307960,DE,1,Mannheim Hbf,728
+city:2874225,Mainz,city,49.98185,8.28008,222889,DE,1,Mainz,108
+city:2874545,Magdeburg,city,52.13129,11.63189,244329,DE,1,Magdeburg,108
+city:2875601,Lübeck,city,53.86893,10.68729,212207,DE,1,Lubeck,108
+city:2877550,Lindau,city,47.54612,9.68431,24518,DE,1,Lindau,80
+city:2879139,Leipzig,city,51.33962,12.37129,504971,DE,1,Leipzig Hbf,432
+city:2879697,Leer,city,53.23157,7.461,33886,DE,1,Leer,108
+city:2881485,Landshut,city,48.52961,12.16179,71863,DE,1,Landshut,80
+city:2886242,Köln,city,50.93333,6.95,1024621,DE,2,Koln Hbf; Koln Messe/Deutz,1334
+city:2886946,Koblenz,city,50.35357,7.57883,107319,DE,1,Koblenz,108
+city:2891122,Kiel,city,54.32133,10.13489,252668,DE,1,Kiel,108
+city:2892518,Kassel,city,51.31667,9.5,197230,DE,1,Kassel,432
+city:2892794,Karlsruhe,city,49.00937,8.40444,283799,DE,1,Karlsruhe Hbf,530
+city:2894003,Kaiserslautern,city,49.443,7.77161,98732,DE,1,Kaiserslautern,66
+city:2895992,Ingolstadt,city,48.76508,11.42372,120658,DE,1,Ingolstadt,108
+city:2899101,Horb am Neckar,city,48.44423,8.6913,25651,DE,1,Horb am Neckar,108
+city:2904789,Hildesheim,city,52.15077,9.95112,103052,DE,1,Hildesheim,108
+city:2907911,Heidelberg,city,49.40768,8.69079,143345,DE,1,Heidelberg,216
+city:2910831,Hannover,city,52.37052,9.73322,515140,DE,1,Hannover Hbf,878
+city:2911007,Hanau am Main,city,50.13423,8.91418,88648,DE,1,Hanau,108
+city:2911240,Hamm,city,51.68033,7.82089,178967,DE,1,Hamm,324
+city:2911298,Hamburg,city,53.55073,9.99302,1973896,DE,2,Hamburg Hbf; Hamburg-Altona,1098
+city:2911522,Halle (Saale),city,51.48158,11.97947,237865,DE,1,Halle (Saale),216
+city:2912621,Hagen,city,51.36081,7.47168,198972,DE,1,Hagen,108
+city:2918632,Göttingen,city,51.53443,9.93228,122149,DE,1,Gottingen,446
+city:2923822,Fulda,city,50.55162,9.67518,63760,DE,1,Fulda,648
+city:2925177,Freiburg,city,47.9959,7.85222,237460,DE,1,Freiburg im Breisgau,230
+city:2925533,Frankfurt am Main,city,50.11552,8.68417,650000,DE,1,Frankfurt Hbf,1428
+city:2925535,Frankfurt (Oder),city,52.34714,14.55062,57107,DE,1,Frankfurt (Oder),52
+city:2926271,Flensburg,city,54.78805,9.43722,85838,DE,1,Flensburg,66
+city:2928810,Essen,city,51.45657,7.01228,593085,DE,1,Essen,756
+city:2929670,Erfurt,city,50.97734,11.03536,218793,DE,1,Erfurt,432
+city:2930596,Emden,city,53.36592,7.20846,51526,DE,1,Emden,108
+city:2931574,Eisenach,city,50.9807,10.31522,40747,DE,1,Eisenach,216
+city:2934246,Düsseldorf,city,51.22319,6.77927,618685,DE,1,Dusseldorf Hbf,878
+city:2934691,Duisburg,city,51.43247,6.76516,504358,DE,2,Duisburg; Oberhausen,864
+city:2935022,Dresden,city,51.05089,13.73832,564904,DE,2,Dresden Hbf; Dresden-Neustadt,288
+city:2935517,Dortmund,city,51.51494,7.466,588462,DE,1,Dortmund,648
+city:2938913,Darmstadt,city,49.87167,8.65027,167029,DE,1,Darmstadt,108
+city:2939797,Crailsheim,city,49.13444,10.07193,35755,DE,1,Crailsheim,108
+city:2944388,Bremen,city,53.07582,8.80717,546501,DE,1,Bremen Hbf,324
+city:2945024,Braunschweig,city,52.26594,10.52673,244715,DE,1,Braunschweig,216
+city:2946447,Bonn,city,50.73438,7.09549,330579,DE,1,Bonn,108
+city:2947416,Bochum,city,51.48165,7.21648,385729,DE,1,Bochum,324
+city:2949186,Bielefeld,city,52.03333,8.53333,331906,DE,1,Bielefeld,324
+city:2950159,Berlin,city,52.52437,13.41053,3426354,DE,5,Berlin Gesundbrunnen; Berlin Hbf; Berlin Ostbahnhof; Berlin Spandau; Berlin Sudkreuz,1026
+city:2953552,Bad Bentheim,city,52.30066,7.15763,15508,DE,1,Bad Bentheim,94
+city:2954172,Augsburg,city,48.37154,10.89851,301105,DE,1,Augsburg,352
+city:2955936,Ansbach,city,49.30481,10.5931,31839,DE,1,Ansbach,108
+city:2959927,Aalen,city,48.83777,10.0933,67085,DE,1,Aalen,108
+city:2960316,Luxembourg,city,49.60982,6.13268,76684,LU,1,Luxembourg,508
+city:2960992,Waterford,city,52.25833,-7.11194,60079,IE,1,Waterford,94
+city:2962026,Portlaoise,city,53.03441,-7.29979,23494,IE,1,Portlaoise,240
+city:2962943,Limerick,city,52.66472,-8.62306,102287,IE,1,Limerick,108
+city:2963398,Kilkenny,city,52.65417,-7.25222,21589,IE,1,Kilkenny,94
+city:2964180,Galway,city,53.27245,-9.05095,85910,IE,1,Galway,132
+city:2964540,Dundalk,city,54.0,-6.41667,43112,IE,1,Dundalk,160
+city:2964574,Dublin,city,53.33306,-6.24889,1024027,IE,2,Dublin Connolly; Dublin Heuston,734
+city:2964661,Drogheda,city,53.71889,-6.34778,44135,IE,1,Drogheda,160
+city:2965140,Cork,city,51.89797,-8.47061,224004,IE,1,Cork,240
+city:2969257,Vierzon,city,47.22186,2.0684,29876,FR,1,Vierzon,52
+city:2969392,Vichy,city,46.12709,3.42577,27019,FR,1,Vichy,108
+city:2970777,Vannes,city,47.65688,-2.76205,54020,FR,1,Vannes,80
+city:2971041,Valenciennes,city,50.35909,3.52506,44821,FR,1,Valenciennes,80
+city:2972191,Tours,city,47.39484,0.70398,141621,FR,1,Tours,254
+city:2972315,Toulouse,city,43.60426,1.44367,511684,FR,1,Toulouse,226
+city:2972328,Toulon,city,43.12442,5.92836,168701,FR,1,Toulon,202
+city:2972811,Thionville,city,49.35994,6.16044,44311,FR,1,Thionville,400
+city:2973783,Strasbourg,city,48.58392,7.74553,274845,FR,1,Strasbourg,700
+city:2974733,Sète,city,43.4028,3.69278,40736,FR,1,Sete,52
+city:2980291,Saint-Étienne,city,45.43389,4.39,176280,FR,1,Saint-Etienne,268
+city:2981280,Saint-Brieuc,city,48.51513,-2.76838,52774,FR,1,Saint-Brieuc,94
+city:2982652,Rouen,city,49.44313,1.09932,116331,FR,1,Rouen,188
+city:2983990,Rennes,city,48.11109,-1.67431,227830,FR,1,Rennes,442
+city:2984114,Reims,city,49.26526,4.02853,196565,FR,1,Reims,132
+city:2984701,Quimper,city,47.99597,-4.09795,63849,FR,1,Quimper,80
+city:2986495,Poitiers,city,46.58261,0.34348,85960,FR,1,Poitiers,226
+city:2987914,Perpignan,city,42.69764,2.89541,110706,FR,1,Perpignan,108
+city:2988507,Paris,city,48.85341,2.3488,2138551,FR,6,Paris Austerlitz; Paris Est; Paris Gare de Lyon; Paris Montparnasse; Paris Nord; Paris Saint-Lazare,4308
+city:2989317,Orléans,city,47.90248,1.90407,116344,FR,1,Orleans,146
+city:2990363,Nîmes,city,43.83665,4.35788,148236,FR,1,Nimes,296
+city:2990440,Nice,city,43.70313,7.26608,342669,FR,1,Nice,418
+city:2990474,Nevers,city,46.98956,3.159,43988,FR,1,Nevers,108
+city:2990919,Narbonne,city,43.18396,3.00141,50776,FR,1,Narbonne,174
+city:2990969,Nantes,city,47.21725,-1.55336,325070,FR,1,Nantes,314
+city:2990999,Nancy,city,48.68439,6.18496,105058,FR,1,Nancy,254
+city:2991214,Mulhouse,city,47.75205,7.32866,111430,FR,1,Mulhouse,432
+city:2991481,Moulins,city,46.56459,3.33243,23095,FR,1,Moulins,108
+city:2991772,Morlaix,city,48.57784,-3.82792,17516,FR,1,Morlaix,94
+city:2992166,Montpellier,city,43.61093,3.87635,248252,FR,2,Montpellier Saint-Roch; Montpellier Sud de France,296
+city:2993002,Montauban,city,44.01759,1.3542,52434,FR,1,Montauban,226
+city:2993458,Monaco,city,43.73718,7.42145,32965,MC,1,Monaco,216
+city:2994160,Metz,city,49.11911,6.17269,123914,FR,1,Metz,400
+city:2994497,Menton,city,43.77649,7.50435,29649,FR,1,Menton,216
+city:2995206,Massy,city,48.72692,2.28301,38768,FR,1,Massy TGV,216
+city:2995469,Marseille,city,43.29695,5.38107,877215,FR,1,Marseille Saint-Charles,648
+city:2996882,Mâcon,city,46.31407,4.82823,35484,FR,1,Macon,132
+city:2996944,Lyon,city,45.74906,4.84789,520774,FR,1,Lyon Part-Dieu,1320
+city:2997577,Lorient,city,47.74817,-3.37177,58112,FR,1,Lorient,80
+city:2998286,Limoges,city,45.83362,1.24759,141176,FR,1,Limoges,52
+city:2998324,Lille,city,50.63391,3.05512,238695,FR,2,Lille Europe; Lille Flandres,616
+city:3003603,Le Mans,city,48.0021,0.20251,144515,FR,1,Le Mans,352
+city:3003796,Le Havre,city,49.49346,0.10785,185972,FR,1,Le Havre,188
+city:3006787,La Rochelle,city,46.16308,-1.15222,76810,FR,1,La Rochelle,108
+city:3014728,Grenoble,city,45.17869,5.71479,158552,FR,1,Grenoble,310
+city:3016702,Gap,city,44.55858,6.07868,42715,FR,1,Gap,14
+city:3017253,Fréjus,city,43.43325,6.73555,53098,FR,1,Saint-Raphael,80
+city:3021000,Douai,city,50.37069,3.07922,46531,FR,1,Douai,80
+city:3021372,Dijon,city,47.31344,5.01391,159941,FR,1,Dijon,264
+city:3021670,Dax,city,43.71032,-1.05366,22305,FR,1,Dax,52
+city:3024297,Colmar,city,48.08078,7.35584,65405,FR,1,Colmar,268
+city:3024635,Clermont-Ferrand,city,45.77969,3.08682,147865,FR,1,Clermont-Ferrand,108
+city:3025466,Cherbourg,city,49.63984,-1.61636,26655,FR,1,Cherbourg,108
+city:3026204,Châteauroux,city,46.81248,1.69362,53301,FR,1,Chateauroux,52
+city:3027422,Chambéry,city,45.56628,5.92079,61640,FR,1,Chambery,108
+city:3027484,Chalon-sur-Saône,city,46.78112,4.85372,47251,FR,1,Chalon-sur-Saone,132
+city:3028641,Carcassonne,city,43.21649,2.34863,49600,FR,1,Carcassonne,66
+city:3028808,Cannes,city,43.55135,7.01275,74545,FR,1,Cannes,202
+city:3029213,Cahors,city,44.4491,1.43663,23331,FR,1,Cahors,66
+city:3029241,Caen,city,49.18585,-0.35912,110624,FR,1,Caen,108
+city:3029974,Brive-la-Gaillarde,city,45.1589,1.53326,53466,FR,1,Brive-la-Gaillarde,66
+city:3030300,Brest,city,48.39029,-4.48628,144899,FR,1,Brest,94
+city:3031133,Boulogne-sur-Mer,city,50.72485,1.61373,47013,FR,1,Boulogne-sur-Mer,66
+city:3031582,Bordeaux,city,44.84124,-0.58046,265328,FR,1,Bordeaux,574
+city:3032213,Blois,city,47.59432,1.32912,53660,FR,1,Blois,94
+city:3032797,Biarritz,city,43.48055,-1.55684,33188,FR,1,Biarritz,52
+city:3032833,Béziers,city,43.34122,3.21402,74081,FR,1,Beziers,146
+city:3034475,Bayonne,city,43.49316,-1.473,44396,FR,1,Bayonne,52
+city:3035681,Avignon,city,43.94834,4.80892,89769,FR,1,Avignon TGV,380
+city:3036784,Arras,city,50.29301,2.78186,47052,FR,1,Arras,80
+city:3036938,Arles,city,43.67681,4.63031,53431,FR,1,Arles,66
+city:3037456,Antibes,city,43.58127,7.12487,76393,FR,1,Antibes,188
+city:3037543,Annecy,city,45.90878,6.12565,49232,FR,1,Annecy,66
+city:3037598,Angoulême,city,45.64997,0.15345,49468,FR,1,Angouleme,108
+city:3037656,Angers,city,47.47156,-0.55202,168279,FR,1,Angers,272
+city:3037854,Amiens,city,49.9,2.3,143086,FR,1,Amiens,66
+city:3038634,Agen,city,44.20199,0.62055,34367,FR,1,Agen,160
+city:3038789,Abbeville,city,50.10521,1.83547,26461,FR,1,Abbeville,66
+city:3044082,Tatabánya,city,47.59247,18.38099,65849,HU,1,Tatabanya,108
+city:3044774,Székesfehérvár,city,47.18995,18.41034,101600,HU,1,Szekesfehervar,14
+city:3045332,Siófok,city,46.90413,18.058,23028,HU,1,Siofok,14
+city:3046526,Pécs,city,46.07617,18.22814,145347,HU,1,Pecs,108
+city:3047679,Nagykanizsa,city,46.45347,16.99104,47349,HU,1,Nagykanizsa,14
+city:3050434,Kecskemét,city,46.90618,19.69128,109847,HU,1,Kecskemet,216
+city:3052009,Győr,city,47.68333,17.63512,129301,HU,1,Gyor,160
+city:3053163,Esztergom,city,47.7928,18.74148,28785,HU,1,Sturovo,80
+city:3053590,Dombóvár,city,46.37657,18.13696,20748,HU,1,Dombovar,108
+city:3054543,Cegléd,city,47.17266,19.79952,39287,HU,1,Cegled,216
+city:3054643,Budapest,city,47.49835,19.04045,1741041,HU,3,Budapest-Deli; Budapest-Keleti; Budapest-Nyugati,1066
+city:3056508,Žilina,city,49.22315,18.73941,81219,SK,1,Zilina,132
+city:3057124,Trnava,city,48.37773,17.58603,62806,SK,1,Trnava,132
+city:3057140,Trenčín,city,48.89452,18.04436,58278,SK,1,Trencin,132
+city:3060972,Bratislava,city,48.14816,17.10674,423737,SK,1,Bratislava hl.st.,428
+city:3063548,Ústí nad Labem,city,50.6607,14.03227,90378,CZ,1,Usti nad Labem,80
+city:3064379,Tábor,city,49.41441,14.6578,36264,CZ,1,Tabor,108
+city:3065281,Starý Bohumín,city,49.9169,18.33619,23034,CZ,1,Bohumin,70
+city:3067696,Prague,city,50.08804,14.42076,1165581,CZ,1,Praha hl.n.,1148
+city:3068160,Pilsen,city,49.74747,13.37759,168733,CZ,1,Plzen,296
+city:3068582,Pardubice,city,50.04075,15.77659,88520,CZ,1,Pardubice,658
+city:3068799,Ostrava,city,49.83465,18.28204,279791,CZ,1,Ostrava hl.n.,390
+city:3069011,Olomouc,city,49.59552,17.25175,99496,CZ,1,Olomouc,362
+city:3073371,Kolín,city,50.02806,15.1998,33444,CZ,1,Kolin,108
+city:3077244,Děčín,city,50.78215,14.21478,46376,CZ,1,Decin,80
+city:3077916,České Budějovice,city,48.97447,14.47434,93426,CZ,1,Ceske Budejovice,108
+city:3077920,Česká Třebová,city,49.90436,16.44413,15010,CZ,1,Ceska Trebova,108
+city:3078610,Brno,city,49.19522,16.60796,379466,CZ,1,Brno hl.n.,296
+city:3078773,Břeclav,city,48.75897,16.88203,25789,CZ,1,Breclav,216
+city:3081368,Wrocław,city,51.10286,17.03006,672545,PL,1,Wroclaw Glowny,372
+city:3083829,Szczecin,city,53.42894,14.55302,395513,PL,1,Szczecin,160
+city:3084840,Stargard,city,53.33672,15.0499,71224,PL,1,Stargard,160
+city:3085151,Sopot,city,54.4418,18.56003,35049,PL,1,Sopot,108
+city:3088171,Poznań,city,52.40692,16.92993,536151,PL,1,Poznan Glowny,452
+city:3090048,Opole,city,50.67119,17.92604,127676,PL,1,Opole,160
+city:3092472,Malbork,city,54.03591,19.0266,36709,PL,1,Malbork,108
+city:3093133,Łódź,city,51.77058,19.47395,639890,PL,2,Lodz Fabryczna; Lodz Kaliska,296
+city:3093524,Leszno,city,51.84034,16.57494,63565,PL,1,Leszno,132
+city:3094170,Kutno,city,52.23064,19.36409,48323,PL,1,Kutno,212
+city:3094802,Kraków,city,50.06143,19.93658,816614,PL,1,Krakow Glowny,508
+city:3095321,Konin,city,52.22338,18.25121,81258,PL,1,Konin,160
+city:3096472,Katowice,city,50.2597,19.02173,286960,PL,1,Katowice,390
+city:3097902,Iława,city,53.59601,19.56849,32557,PL,1,Ilawa,108
+city:3099230,Gliwice,city,50.29761,18.67658,198835,PL,1,Gliwice,160
+city:3099424,Gdynia,city,54.51889,18.53188,257000,PL,1,Gdynia Glowna,188
+city:3099434,Gdańsk,city,54.35227,18.64912,487371,PL,1,Gdansk Glowny,268
+city:3102014,Bydgoszcz,city,53.1235,18.00762,330038,PL,1,Bydgoszcz,80
+city:3103402,Bielsko-Biala,city,49.82245,19.04686,176515,PL,1,Bielsko-Biala,80
+city:3104324,Zaragoza,city,41.65606,-0.87734,686986,ES,1,Zaragoza Delicias,202
+city:3104342,Zamora,city,41.50633,-5.74456,61827,ES,1,Zamora,94
+city:3104499,Gasteiz / Vitoria,city,42.84998,-2.67268,257407,ES,1,Vitoria-Gasteiz,42
+city:3105976,Vigo,city,42.23282,-8.72264,293642,ES,1,Vigo,70
+city:3106672,Valladolid,city,41.65541,-4.72353,300618,ES,1,Valladolid,352
+city:3107418,Tudela,city,42.06166,-1.60452,34717,ES,1,Tudela,42
+city:3108288,Tarragona,city,41.11905,1.24544,141542,ES,1,Tarragona,160
+city:3109256,Segovia,city,40.94808,-4.11839,51683,ES,1,Segovia,282
+city:3109642,Santiago de Compostela,city,42.88052,-8.54569,99536,ES,1,Santiago de Compostela,136
+city:3110044,Donostia / San Sebastián,city,43.31283,-1.97499,185357,ES,1,San Sebastian,42
+city:3113209,Pontevedra,city,42.431,-8.64435,82802,ES,1,Pontevedra,42
+city:3114472,Pamplona,city,42.81687,-1.64323,208243,ES,1,Pamplona,42
+city:3114531,Palencia,city,42.00955,-4.52406,78629,ES,1,Palencia,66
+city:3114711,Oviedo,city,43.36029,-5.84476,220027,ES,1,Oviedo,66
+city:3114965,Ourense,city,42.33669,-7.86407,105233,ES,1,Ourense,136
+city:3116689,Miranda de Ebro,city,42.6865,-2.94695,39264,ES,1,Miranda de Ebro,70
+city:3117735,Madrid,city,40.4165,-3.70256,3255944,ES,2,Madrid Chamartin; Madrid Puerta de Atocha,1956
+city:3118514,Lleida,city,41.61674,0.62218,140797,ES,1,Lleida,160
+city:3118532,León,city,42.60003,-5.57032,124772,ES,1,Leon,66
+city:3119841,A Coruña,city,43.37135,-8.396,250438,ES,1,A Coruna,94
+city:3120304,Irun,city,43.33904,-1.78938,61983,ES,2,Hendaye; Irun,94
+city:3121424,Gijón,city,43.53573,-5.66152,271780,ES,1,Gijon,66
+city:3121456,Girona,city,41.98311,2.82493,100266,ES,1,Girona,216
+city:3122453,Figueres,city,42.26645,2.96163,46381,ES,1,Figueres Vilafant,216
+city:3124132,Cuenca,city,40.06667,-2.13333,54898,ES,1,Cuenca,424
+city:3127047,Calatayud,city,41.35353,-1.64318,20035,ES,1,Calatayud,202
+city:3127461,Burgos,city,42.34106,-3.70184,176418,ES,1,Burgos,70
+city:3128026,Bilbao,city,43.26271,-2.92528,347342,ES,1,Bilbao,28
+city:3128760,Barcelona,city,41.38879,2.15899,1686208,ES,1,Barcelona Sants,724
+city:3133880,Trondheim,city,63.43049,10.39506,216518,NO,1,Trondheim,94
+city:3137115,Stavanger,city,58.97005,5.73332,151669,NO,1,Stavanger,52
+city:3140084,Sarpsborg,city,59.28391,11.10962,59038,NO,1,Sarpsborg,52
+city:3143244,Oslo,city,59.91273,10.74609,1082575,NO,1,Oslo S,278
+city:3145375,Moss,city,59.43403,10.65771,49668,NO,1,Moss,52
+city:3145614,Mo i Rana,city,66.31278,14.14278,18866,NO,1,Mo i Rana,28
+city:3147465,Lillestrøm,city,59.95597,11.04918,89684,NO,1,Lillestrom,42
+city:3147474,Lillehammer,city,61.11514,10.46628,29011,NO,1,Lillehammer,66
+city:3149318,Kristiansand,city,58.14671,7.9956,117237,NO,1,Kristiansand,52
+city:3149563,Kongsberg,city,59.66858,9.65017,17667,NO,1,Kongsberg,52
+city:3154084,Hamar,city,60.7945,11.06798,29479,NO,1,Hamar,66
+city:3154209,Halden,city,59.12478,11.38754,21970,NO,1,Halden,52
+city:3156529,Fredrikstad,city,59.2181,10.9298,83761,NO,1,Fredrikstad,52
+city:3159016,Drammen,city,59.74389,10.20449,106013,NO,1,Drammen,118
+city:3160881,Bodø,city,67.28267,14.37513,34073,NO,1,Bodo,28
+city:3161732,Bergen,city,60.39299,5.32415,294029,NO,1,Bergen,66
+city:3163995,Voghera,city,44.99151,9.01175,38464,IT,1,Voghera,132
+city:3164419,Vicenza,city,45.54672,11.5475,111980,IT,1,Vicenza,268
+city:3164527,Verona,city,45.43854,10.9938,258031,IT,1,Verona Porta Nuova,390
+city:3164582,Ventimiglia,city,43.78956,7.60872,24120,IT,1,Ventimiglia,268
+city:3164603,Venice,city,45.43713,12.33265,51298,IT,1,Venezia Santa Lucia,456
+city:3165072,Udine,city,46.0693,13.23715,100170,IT,1,Udine,122
+city:3165185,Trieste,city,45.64953,13.77678,204338,IT,1,Trieste,132
+city:3165201,Treviso,city,45.66673,12.2416,85760,IT,1,Treviso,108
+city:3165243,Trento,city,46.06787,11.12108,120709,IT,1,Trento,108
+city:3165524,Turin,city,45.07049,7.68682,847287,IT,2,Torino Porta Nuova; Torino Porta Susa,418
+city:3167022,Savona,city,44.30905,8.47715,61345,IT,1,Savona,52
+city:3167777,Sanremo,city,43.81725,7.7772,47043,IT,1,Sanremo,52
+city:3168673,Salerno,city,40.67545,14.79328,125797,IT,1,Salerno,296
+city:3168854,Rovereto,city,45.8904,11.04053,34152,IT,1,Rovereto,42
+city:3169070,Rome,city,41.89193,12.51133,2318895,IT,2,Roma Termini; Roma Tiburtina,1166
+city:3169361,Rimini,city,44.05755,12.56528,148688,IT,1,Rimini,108
+city:3169522,Reggio nell'Emilia,city,44.69825,10.63125,171944,IT,1,Reggio Emilia AV Mediopadana,456
+city:3170647,Pisa,city,43.70853,10.4036,109960,IT,1,Pisa,282
+city:3171168,Pescara,city,42.4584,14.20283,119554,IT,1,Pescara,108
+city:3171173,Pesaro,city,43.90921,12.9164,77241,IT,1,Pesaro,108
+city:3171366,Pavia,city,45.19205,9.15917,65734,IT,1,Pavia,132
+city:3171728,Padua,city,45.40797,11.88586,203725,IT,1,Padova,456
+city:3172394,Naples,city,40.85216,14.26811,909048,IT,1,Napoli Centrale,766
+city:3173435,Milan,city,45.46427,9.18951,1371498,IT,2,Milano Centrale; Milano Rogoredo,1448
+city:3173529,Mestre,city,45.49167,12.24538,147662,IT,1,Venezia Mestre,696
+city:3174659,Livorno,city,43.54427,10.32615,157017,IT,1,Livorno,66
+city:3174953,Lecce,city,40.35481,18.17244,80695,IT,1,Lecce,108
+city:3175081,La Spezia,city,44.103,9.82375,93288,IT,1,La Spezia,66
+city:3175786,Grosseto,city,42.76296,11.10941,60922,IT,1,Grosseto,66
+city:3176219,Genoa,city,44.40478,8.94439,580097,IT,2,Genova Brignole; Genova Piazza Principe,358
+city:3176885,Foggia,city,41.45845,15.55188,137032,IT,1,Foggia,188
+city:3176959,Florence,city,43.77925,11.24626,367150,IT,1,Firenze SMN,968
+city:3177090,Ferrara,city,44.83804,11.62057,132009,IT,1,Ferrara,188
+city:3177400,Empoli,city,43.71795,10.94758,34394,IT,1,Empoli,216
+city:3177532,Domodossola,city,46.1165,8.29313,17778,IT,1,Domodossola,94
+city:3177610,Desenzano del Garda,city,45.47127,10.53559,22665,IT,1,Desenzano del Garda,188
+city:3178229,Como,city,45.80819,9.0832,84808,IT,1,Como,122
+city:3178587,Civitavecchia,city,42.09325,11.79674,47543,IT,1,Civitavecchia,66
+city:3179866,Caserta,city,41.07262,14.33231,72844,IT,1,Caserta,80
+city:3181554,Brescia,city,45.53558,10.21472,200423,IT,1,Brescia,268
+city:3181913,Bolzano,city,46.49067,11.33982,107436,IT,1,Bolzano,108
+city:3181928,Bologna,city,44.49381,11.33875,394843,IT,1,Bologna Centrale,902
+city:3182179,Benevento,city,41.1307,14.77816,58418,IT,1,Benevento,80
+city:3182351,Bari,city,41.12066,16.86982,316491,IT,1,Bari,188
+city:3182714,Asti,city,44.90162,8.20751,74348,IT,1,Asti,108
+city:3183089,Ancona,city,43.60717,13.5103,89994,IT,1,Ancona,108
+city:3183299,Alessandria,city,44.90924,8.61007,92104,IT,1,Alessandria,108
+city:3186886,Zagreb,city,45.81444,15.97798,663592,HR,1,Zagreb Glavni kolodvor,122
+city:3190261,Split,city,43.50891,16.43915,149830,HR,1,Split,28
+city:3194360,Novi Sad,city,45.25167,19.83694,215400,RS,1,Novi Sad,428
+city:3195506,Maribor,city,46.55583,15.64593,96209,SI,1,Maribor,188
+city:3196359,Ljubljana,city,46.05108,14.50513,272220,SI,1,Ljubljana,268
+city:3197728,Koprivnica,city,46.16364,16.8297,22262,HR,1,Koprivnica,14
+city:3202781,Celje,city,46.23092,15.26044,38059,SI,1,Celje,188
+city:3247449,Aachen,city,50.77664,6.08342,265208,DE,1,Aachen,132
+city:3313472,Athlone,city,53.42278,-7.93722,22869,IE,1,Athlone,132
+city:3345300,Karlovac,city,45.49167,15.55,41869,HR,1,Karlovac,28
+city:602150,Umeå,city,63.82842,20.25972,130224,SE,1,Umea,14
+city:604490,Luleå,city,65.58415,22.15465,77832,SE,1,Lulea,14
+city:606531,Boden,city,65.82518,21.68864,16830,SE,1,Boden,14
+city:632453,Vantaa,city,60.29414,25.04099,252724,FI,1,Tikkurila,668
+city:633679,Turku,city,60.45148,22.26869,206655,FI,1,Turku,324
+city:634963,Tampere,city,61.49911,23.78712,260646,FI,1,Tampere,560
+city:637219,Seinäjoki,city,62.79446,22.82822,66848,FI,1,Seinajoki,132
+city:637948,Salo,city,60.38333,23.13333,50794,FI,1,Salo,216
+city:641869,Pieksämäki,city,62.3,27.13333,17243,FI,1,Pieksamaki,108
+city:643492,Oulu,city,65.01236,25.46816,216066,FI,1,Oulu,132
+city:646005,Mikkeli,city,61.68857,27.27227,51661,FI,1,Mikkeli,108
+city:648900,Lappeenranta,city,61.05871,28.18871,72909,FI,1,Lappeenranta,108
+city:649360,Lahti,city,60.98267,25.66151,121622,FI,1,Lahti,216
+city:650224,Kuopio,city,62.89238,27.67703,125462,FI,1,Kuopio,108
+city:650859,Kouvola,city,60.86667,26.7,78094,FI,1,Kouvola,216
+city:651943,Kokkola,city,63.83847,23.13066,48361,FI,1,Kokkola,132
+city:6534232,Lamezia Terme,city,38.96255,16.30938,70501,IT,1,Lamezia Terme,80
+city:658225,Helsinki,city,60.16952,24.93545,658864,FI,2,Helsinki; Pasila,884
+city:659180,Hämeenlinna,city,60.99596,24.46434,68473,FI,1,Hameenlinna,320
+city:660158,Espoo,city,60.2052,24.6522,323910,FI,1,Espoo,216
+city:670474,Ploieşti,city,44.95,26.01667,180540,RO,1,Ploiesti,132
+city:679452,Deva,city,45.88333,22.9,67802,RO,1,Deva,14
+city:680332,Craiova,city,44.31667,23.8,234140,RO,1,Craiova,80
+city:680963,Constanţa,city,44.18073,28.63432,317832,RO,1,Constanta,132
+city:683506,Bucharest,city,44.43225,26.10626,1877155,RO,1,Bucuresti Nord,358
+city:683844,Braşov,city,45.64861,25.60613,253200,RO,1,Brasov,146
+city:686254,Arad,city,46.18333,21.31667,169065,RO,1,Arad,14
+city:715126,Szolnok,city,47.18066,20.19835,71285,HU,1,Szolnok,230
+city:715429,Szeged,city,46.253,20.14824,160766,HU,1,Szeged,216
+city:716935,Nyíregyháza,city,47.95539,21.71671,117689,HU,1,Nyiregyhaza,216
+city:717582,Miskolc,city,48.10327,20.77806,154521,HU,1,Miskolc,258
+city:721472,Debrecen,city,47.53167,21.62444,202402,HU,1,Debrecen,216
+city:722437,Békéscsaba,city,46.68333,21.1,59732,HU,1,Bekescsaba,14
+city:723526,Spišská Nová Ves,city,48.94464,20.56153,34855,SK,1,Spisska Nova Ves,132
+city:723846,Poprad,city,49.06144,20.29798,49091,SK,1,Poprad,132
+city:724443,Košice,city,48.71441,21.25802,225044,SK,1,Kosice,174
+city:726050,Varna,city,43.21912,27.91024,318737,BG,1,Varna,42
+city:726848,Stara Zagora,city,42.43205,25.64262,121582,BG,1,Stara Zagora,42
+city:727011,Sofia,city,42.69751,23.32415,1152556,BG,1,Sofia,164
+city:728193,Plovdiv,city,42.15387,24.75001,329489,BG,1,Plovdiv,122
+city:728203,Pleven,city,43.41791,24.61666,90209,BG,1,Pleven,42
+city:731233,Gorna Oryahovitsa,city,43.12778,25.70167,32792,BG,1,Gorna Oryahovitsa,42
+city:732770,Burgas,city,42.50651,27.46886,210646,BG,1,Burgas,42
+city:734077,Thessaloníki,city,40.64072,22.93493,317778,GR,1,Thessaloniki,80
+city:756135,Warsaw,city,52.22977,21.01178,1702139,PL,2,Warszawa Centralna; Warszawa Wschodnia,1176
+city:757026,Tarnów,city,50.01381,20.98698,117799,PL,1,Tarnow,108
+city:759734,Rzeszów,city,50.04132,21.99901,198317,PL,1,Rzeszow,108
+city:760924,Puławy,city,51.41655,21.96939,49759,PL,1,Pulawy,132
+city:761168,Przemyśl,city,49.78498,22.76728,67013,PL,1,Przemysl,108
+city:765876,Lublin,city,51.25058,22.57009,336339,PL,1,Lublin,132
+city:776069,Białystok,city,53.13333,23.16433,295683,PL,1,Bialystok,108
+city:792680,Belgrade,city,44.80401,20.46513,1273651,RS,1,Beograd Centar,428
+stn:demo:S0008,Aeroport CDG 2 TGV,station,49.004,2.571,2651,FR,1,Aeroport CDG 2 TGV,254
+stn:demo:S0010,Aigle,station,46.3181,6.96457,10134,CH,1,Aigle,216
+stn:demo:S0011,Aix-en-Provence TGV,station,43.4553,5.3173,0,FR,1,Aix-en-Provence TGV,160
+stn:demo:S0018,Alvesta,station,56.89935,14.55559,8627,SE,1,Alvesta,240
+stn:demo:S0028,Antequera-Santa Ana,station,37.04,-4.598,45168,ES,1,Antequera-Santa Ana,226
+stn:demo:S0034,Arlanda C,station,59.649,17.929,0,SE,1,Arlanda C,428
+stn:demo:S0039,Arth-Goldau,station,47.0496,8.5487,5285,CH,1,Arth-Goldau,554
+stn:demo:S0040,Arvika,station,59.65528,12.58518,13926,SE,1,Arvika,42
+stn:demo:S0049,Bad Schandau,station,50.919,14.156,3078,DE,1,Bad Schandau,80
+stn:demo:S0060,Belfort-Montbeliard TGV,station,47.586,6.899,2105,FR,1,Belfort-Montbeliard TGV,136
+stn:demo:S0061,Bellegarde,station,46.108,5.826,11699,FR,1,Bellegarde,108
+stn:demo:S0072,Besancon Franche-Comte TGV,station,47.3073,5.9543,1131,FR,1,Besancon Franche-Comte TGV,136
+stn:demo:S0080,Birmingham International,station,52.4508,-1.7256,13278,GB,1,Birmingham International,428
+stn:demo:S0082,Bischofshofen,station,47.417,13.219,7457,AT,1,Bischofshofen,28
+stn:demo:S0104,Brennero,station,47.0024,11.5058,2085,IT,1,Brennero,42
+stn:demo:S0107,Briancon,station,44.892,6.642,11577,FR,1,Briancon,14
+stn:demo:S0108,Brig,station,46.319,7.988,5000,CH,1,Brig,526
+stn:demo:S0114,Bruck an der Mur,station,47.414,15.279,9093,AT,1,Bruck an der Mur,324
+stn:demo:S0119,Buchs SG,station,47.168,9.479,10418,CH,1,Buchs SG,80
+stn:demo:S0131,Camp de Tarragona,station,41.1914,1.271,1177,ES,1,Camp de Tarragona,160
+stn:demo:S0145,Champagne-Ardenne TGV,station,49.2139,3.9947,1286,FR,1,Champagne-Ardenne TGV,42
+stn:demo:S0182,Dombas,station,62.074,9.127,1163,NO,1,Dombas,66
+stn:demo:S0202,Egersund,station,58.45133,5.9997,11433,NO,1,Egersund,52
+stn:demo:S0219,Finse,station,60.602,7.504,0,NO,1,Finse,66
+stn:demo:S0224,Frankfurt Flughafen Fernbf,station,50.053,8.5703,13836,DE,1,Frankfurt Flughafen Fernbf,700
+stn:demo:S0226,Frasne,station,46.857,6.161,1696,FR,1,Frasne,52
+stn:demo:S0232,Furth im Wald,station,49.309,12.848,9480,DE,1,Furth im Wald,80
+stn:demo:S0235,Gatwick Airport,station,51.1565,-0.161,21232,GB,1,Gatwick Airport,428
+stn:demo:S0239,Geilo,station,60.534,8.206,2500,NO,1,Geilo,66
+stn:demo:S0241,Geneve-Aeroport,station,46.2322,6.1103,9781,CH,1,Geneve-Aeroport,428
+stn:demo:S0250,Gol,station,60.702,8.946,2530,NO,1,Gol,66
+stn:demo:S0261,Guadalajara-Yebes,station,40.593,-3.111,1791,ES,1,Guadalajara-Yebes,202
+stn:demo:S0262,Guingamp,station,48.56259,-3.15289,9023,FR,1,Guingamp,94
+stn:demo:S0267,Hallsberg,station,59.06463,15.10993,8146,SE,1,Hallsberg,216
+stn:demo:S0282,Herrljunga,station,58.07739,13.02662,3982,SE,1,Herrljunga,216
+stn:demo:S0284,Holyhead,station,53.309,-4.633,11431,GB,1,Holyhead,80
+stn:demo:S0285,Honefoss,station,60.16804,10.25647,13678,NO,1,Honefoss,66
+stn:demo:S0293,Interlaken Ost,station,46.6905,7.869,5067,CH,1,Interlaken Ost,216
+stn:demo:S0298,Jesenice,station,46.4324,14.06232,13255,SI,1,Jesenice,28
+stn:demo:S0311,Knin,station,44.04063,16.19662,8262,HR,1,Knin,28
+stn:demo:S0313,Kobenhavns Lufthavn,station,55.63,12.649,10000,DK,1,Kobenhavns Lufthavn,940
+stn:demo:S0321,Kongsvinger,station,60.19049,11.99772,12338,NO,1,Kongsvinger,42
+stn:demo:S0328,Kufstein,station,47.58333,12.16667,9848,AT,1,Kufstein,42
+stn:demo:S0336,Landeck-Zams,station,47.1386,10.57,7725,AT,1,Landeck-Zams,66
+stn:demo:S0337,Landquart,station,46.95,9.56667,8886,CH,1,Landquart,216
+stn:demo:S0354,Les Arcs,station,43.457,6.479,5910,FR,1,Les Arcs,80
+stn:demo:S0363,Limerick Junction,station,52.501,-8.2,4979,IE,1,Limerick Junction,348
+stn:demo:S0384,Lorraine TGV,station,48.9477,6.1697,0,FR,1,Lorraine TGV,42
+stn:demo:S0396,Macon-Loche TGV,station,46.282,4.779,7019,FR,1,Macon-Loche TGV,108
+stn:demo:S0403,Mallow,station,52.13333,-8.63333,13456,IE,1,Mallow,240
+stn:demo:S0405,Manchester Airport,station,53.365,-2.2729,9736,GB,1,Manchester Airport,216
+stn:demo:S0410,Marne-la-Vallee Chessy,station,48.8697,2.7828,2582,FR,1,Marne-la-Vallee Chessy,296
+stn:demo:S0419,Meuse TGV,station,48.978,5.272,0,FR,1,Meuse TGV,42
+stn:demo:S0428,Modane,station,45.192,6.671,4086,FR,1,Modane,42
+stn:demo:S0431,Montabaur,station,50.4447,7.8256,12345,DE,1,Montabaur,216
+stn:demo:S0437,Mosjoen,station,65.83599,13.19076,9636,NO,1,Mosjoen,28
+stn:demo:S0444,Myrdal,station,60.7353,7.1223,0,NO,1,Myrdal,66
+stn:demo:S0476,Oppdal,station,62.595,9.692,4310,NO,1,Oppdal,66
+stn:demo:S0480,Oslo Lufthavn,station,60.193,11.098,0,NO,1,Oslo Lufthavn,66
+stn:demo:S0484,Otta,station,61.773,9.539,2283,NO,1,Otta,66
+stn:demo:S0490,Padborg,station,54.826,9.361,4311,DK,1,Padborg,66
+stn:demo:S0541,Requena-Utiel,station,39.517,-1.135,20227,ES,1,Requena-Utiel,240
+stn:demo:S0565,Sanabria AV,station,42.046,-6.662,1615,ES,1,Sanabria AV,94
+stn:demo:S0569,Sarbogard,station,46.88692,18.62041,13424,HU,1,Sarbogard,108
+stn:demo:S0570,Sargans,station,47.045,9.446,6134,CH,1,Sargans,296
+stn:demo:S0574,Schiphol Airport,station,52.3094,4.7621,15080,NL,1,Schiphol Airport,1580
+stn:demo:S0576,Schwarzach-St. Veit,station,47.322,13.152,3515,AT,1,Schwarzach-St. Veit,28
+stn:demo:S0589,Skanderborg,station,56.03434,9.93177,13543,DK,1,Skanderborg,428
+stn:demo:S0596,Spiez,station,46.686,7.68,12594,CH,1,Spiez,484
+stn:demo:S0605,Steinkjer,station,64.01487,11.49537,13060,NO,1,Steinkjer,28
+stn:demo:S0611,Storen,station,63.035,10.283,0,NO,1,Storen,66
+stn:demo:S0631,Thurles,station,52.68194,-7.80222,7940,IE,1,Thurles,240
+stn:demo:S0656,Valence TGV,station,44.9912,4.9786,4420,FR,1,Valence TGV,230
+stn:demo:S0660,Vallorbe,station,46.712,6.379,3098,CH,1,Vallorbe,52
+stn:demo:S0676,Villa San Giovanni,station,38.219,15.637,13747,IT,1,Villa San Giovanni,122
+stn:demo:S0679,Visp,station,46.294,7.882,7948,CH,1,Visp,474
+stn:demo:S0682,Voss,station,60.62869,6.41474,5571,NO,1,Voss,66
+stn:demo:S0701,Worgl,station,47.48906,12.06174,13811,AT,1,Worgl,66
+stn:demo:S0712,Zurich Flughafen,station,47.4504,8.5625,2239,CH,1,Zurich Flughafen,644

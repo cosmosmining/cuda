@@ -1,0 +1,128 @@
+{
+  "build": {
+    "feeds": [
+      {
+        "name": "demo",
+        "path": "data/demo/eu_intercity_demo_gtfs.zip",
+        "reference_week": "2026-01-05",
+        "trips": 12416,
+        "stations": 715
+      }
+    ],
+    "nodes": 671,
+    "city_nodes": 592,
+    "service_edges": 3187,
+    "segment_edges": 879,
+    "trips": 12416,
+    "stations": 715,
+    "min_city_population": 15000
+  },
+  "service_graph": {
+    "nodes": 671,
+    "edges": 3187,
+    "density": 0.014177992303756923,
+    "components": 6,
+    "component_sizes": [
+      627,
+      16,
+      16,
+      7,
+      3,
+      2
+    ],
+    "largest_component_share": 0.9344262295081968,
+    "mean_degree": 9.49925484351714,
+    "max_degree": 114,
+    "mean_strength": 1636.3397913561848,
+    "avg_clustering": 0.8262598250687025,
+    "transitivity": 0.40034618357812657,
+    "degree_assortativity": -0.005217256926624482,
+    "lcc_diameter_hops": 12,
+    "lcc_mean_hops": 3.9727848520517095
+  },
+  "segment_graph": {
+    "nodes": 671,
+    "edges": 879,
+    "density": 0.003910403274239829,
+    "components": 6,
+    "component_sizes": [
+      627,
+      16,
+      16,
+      7,
+      3,
+      2
+    ],
+    "largest_component_share": 0.9344262295081968,
+    "mean_degree": 2.6199701937406856,
+    "max_degree": 32,
+    "mean_strength": 517.25782414307,
+    "avg_clustering": 0.11391982572383971,
+    "transitivity": 0.1138270704122583,
+    "degree_assortativity": 0.04747601772938312,
+    "lcc_diameter_hops": 48,
+    "lcc_mean_hops": 11.415707435885677
+  },
+  "accessibility": {
+    "od_zones": 315,
+    "mean_generalized_journey_min": 357.4427140129106,
+    "rail_competitive_demand_share": 0.5462971035557366,
+    "demand_share_within_3h": 0.2873479239197343,
+    "demand_share_within_5h": 0.5124993909881637
+  },
+  "gravity": {
+    "pairs_used": 36613,
+    "pairs_with_direct_link": 1165,
+    "ppml_pseudo_r2": 0.6611760794796027,
+    "logit_pseudo_r2": 0.48878969434380937,
+    "ols_r2": 0.7547299120923314,
+    "border_effect_trains": 17.48852683831519,
+    "border_effect_link_odds": 11.208383583883254,
+    "distance_elasticity_trains": -1.31179306200607,
+    "size_elasticity_trains": 0.6905919866498739,
+    "distance_elasticity_time": 0.7099135931170535
+  },
+  "recommendations": {
+    "hsr_candidates": 4265,
+    "direct_candidates": 5234,
+    "hsr_plan_cost_bn_eur": 81.71735425571508,
+    "hsr_plan_gain_min": 18.202971580866233,
+    "direct_plan_gain_min": 4.66691334788112
+  },
+  "link_prediction": {
+    "pairs": 29329,
+    "positives": 1233,
+    "scores": [
+      {
+        "model": "gradient_boosting (full)",
+        "roc_auc": 0.9972170493656785,
+        "avg_precision": 0.9530612299050202
+      },
+      {
+        "model": "logistic_regression (full)",
+        "roc_auc": 0.9963674249981987,
+        "avg_precision": 0.9462035978379603
+      },
+      {
+        "model": "adamic_adar_baseline",
+        "roc_auc": 0.9808951137520391,
+        "avg_precision": 0.8740986431385249
+      },
+      {
+        "model": "gradient_boosting (fundamentals)",
+        "roc_auc": 0.9675689750769925,
+        "avg_precision": 0.7031927347091591
+      },
+      {
+        "model": "logistic_regression (fundamentals)",
+        "roc_auc": 0.9632691391073498,
+        "avg_precision": 0.6891878767035124
+      },
+      {
+        "model": "gravity_baseline",
+        "roc_auc": 0.9321247900836339,
+        "avg_precision": 0.46795623220753185
+      }
+    ]
+  }
+}

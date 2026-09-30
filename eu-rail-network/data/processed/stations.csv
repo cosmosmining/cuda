@@ -1,0 +1,716 @@
+station_id,feed,name,lat,lon,node_id,node_kind
+demo:S0000,demo,'s-Hertogenbosch,51.69917,5.30417,city:2747351,city
+demo:S0001,demo,A Coruna,43.37135,-8.396,city:3119841,city
+demo:S0002,demo,Aachen,50.77664,6.08342,city:3247449,city
+demo:S0003,demo,Aalborg,57.048,9.9187,city:2624886,city
+demo:S0004,demo,Aalen,48.83777,10.0933,city:2959927,city
+demo:S0005,demo,Aarhus,56.15674,10.21076,city:2624652,city
+demo:S0006,demo,Abbeville,50.10521,1.83547,city:3038789,city
+demo:S0007,demo,Aberdeen,57.14369,-2.09814,city:2657832,city
+demo:S0008,demo,Aeroport CDG 2 TGV,49.004,2.571,stn:demo:S0008,station
+demo:S0009,demo,Agen,44.20199,0.62055,city:3038634,city
+demo:S0010,demo,Aigle,46.3181,6.96457,stn:demo:S0010,station
+demo:S0011,demo,Aix-en-Provence TGV,43.4553,5.3173,stn:demo:S0011,station
+demo:S0012,demo,Albacete,38.99424,-1.85643,city:2522258,city
+demo:S0013,demo,Alessandria,44.90924,8.61007,city:3183299,city
+demo:S0014,demo,Alicante,38.34517,-0.48149,city:2521978,city
+demo:S0015,demo,Alingsas,57.93033,12.53345,city:2726756,city
+demo:S0016,demo,Almelo,52.35667,6.6625,city:2759887,city
+demo:S0017,demo,Almere,52.37025,5.21413,city:2759879,city
+demo:S0018,demo,Alvesta,56.89935,14.55559,stn:demo:S0018,station
+demo:S0019,demo,Amersfoort,52.155,5.3875,city:2759821,city
+demo:S0020,demo,Amiens,49.9,2.3,city:3037854,city
+demo:S0021,demo,Amsterdam Centraal,52.3791,4.9003,city:2759794,city
+demo:S0022,demo,Amsterdam Zuid,52.3389,4.873,city:2759794,city
+demo:S0023,demo,Ancona,43.60717,13.5103,city:3183089,city
+demo:S0024,demo,Angers,47.47156,-0.55202,city:3037656,city
+demo:S0025,demo,Angouleme,45.64997,0.15345,city:3037598,city
+demo:S0026,demo,Annecy,45.90878,6.12565,city:3037543,city
+demo:S0027,demo,Ansbach,49.30481,10.5931,city:2955936,city
+demo:S0028,demo,Antequera-Santa Ana,37.04,-4.598,stn:demo:S0028,station
+demo:S0029,demo,Antibes,43.58127,7.12487,city:3037456,city
+demo:S0030,demo,Antwerpen-Centraal,51.2172,4.4211,city:2803138,city
+demo:S0031,demo,Apeldoorn,52.21,5.96944,city:2759706,city
+demo:S0032,demo,Arad,46.18333,21.31667,city:686254,city
+demo:S0033,demo,Arbroath,56.56317,-2.58736,city:2657215,city
+demo:S0034,demo,Arlanda C,59.649,17.929,stn:demo:S0034,station
+demo:S0035,demo,Arles,43.67681,4.63031,city:3036938,city
+demo:S0036,demo,Arlon,49.68333,5.81667,city:2803073,city
+demo:S0037,demo,Arnhem Centraal,51.9848,5.8999,city:2759661,city
+demo:S0038,demo,Arras,50.29301,2.78186,city:3036784,city
+demo:S0039,demo,Arth-Goldau,47.0496,8.5487,stn:demo:S0039,station
+demo:S0040,demo,Arvika,59.65528,12.58518,stn:demo:S0040,station
+demo:S0041,demo,Assen,52.99667,6.5625,city:2759633,city
+demo:S0042,demo,Asti,44.90162,8.20751,city:3182714,city
+demo:S0043,demo,Athens,38.002,23.721,city:264371,city
+demo:S0044,demo,Athlone,53.42278,-7.93722,city:3313472,city
+demo:S0045,demo,Augsburg,48.37154,10.89851,city:2954172,city
+demo:S0046,demo,Aveiro,40.64575,-8.64643,city:2742611,city
+demo:S0047,demo,Avignon TGV,43.9217,4.786,city:3035681,city
+demo:S0048,demo,Bad Bentheim,52.306,7.158,city:2953552,city
+demo:S0049,demo,Bad Schandau,50.919,14.156,stn:demo:S0049,station
+demo:S0050,demo,Bangor,53.2274,-4.1293,city:2656397,city
+demo:S0051,demo,Barcelona Sants,41.3792,2.1402,city:3128760,city
+demo:S0052,demo,Bari,41.12066,16.86982,city:3182351,city
+demo:S0053,demo,Basel Bad Bf,47.5672,7.6075,city:2661604,city
+demo:S0054,demo,Basel SBB,47.5475,7.5897,city:2661604,city
+demo:S0055,demo,Basingstoke,51.26249,-1.08708,city:2656192,city
+demo:S0056,demo,Bath,51.3751,-2.36172,city:2656173,city
+demo:S0057,demo,Bayonne,43.49316,-1.473,city:3034475,city
+demo:S0058,demo,Bekescsaba,46.68333,21.1,city:722437,city
+demo:S0059,demo,Belfast,54.5925,-5.9427,city:2655984,city
+demo:S0060,demo,Belfort-Montbeliard TGV,47.586,6.899,stn:demo:S0060,station
+demo:S0061,demo,Bellegarde,46.108,5.826,stn:demo:S0061,station
+demo:S0062,demo,Bellinzona,46.19278,9.01703,city:2661567,city
+demo:S0063,demo,Benevento,41.1307,14.77816,city:3182179,city
+demo:S0064,demo,Beograd Centar,44.794,20.453,city:792680,city
+demo:S0065,demo,Bergen,60.39299,5.32415,city:3161732,city
+demo:S0066,demo,Berlin Gesundbrunnen,52.5487,13.3885,city:2950159,city
+demo:S0067,demo,Berlin Hbf,52.5251,13.3694,city:2950159,city
+demo:S0068,demo,Berlin Ostbahnhof,52.5103,13.4344,city:2950159,city
+demo:S0069,demo,Berlin Spandau,52.5345,13.1976,city:2950159,city
+demo:S0070,demo,Berlin Sudkreuz,52.4753,13.3656,city:2950159,city
+demo:S0071,demo,Bern,46.949,7.4392,city:2661552,city
+demo:S0072,demo,Besancon Franche-Comte TGV,47.3073,5.9543,stn:demo:S0072,station
+demo:S0073,demo,Beziers,43.34122,3.21402,city:3032833,city
+demo:S0074,demo,Bialystok,53.13333,23.16433,city:776069,city
+demo:S0075,demo,Biarritz,43.48055,-1.55684,city:3032797,city
+demo:S0076,demo,Biel/Bienne,47.1325,7.2426,city:2661513,city
+demo:S0077,demo,Bielefeld,52.03333,8.53333,city:2949186,city
+demo:S0078,demo,Bielsko-Biala,49.82245,19.04686,city:3103402,city
+demo:S0079,demo,Bilbao,43.26271,-2.92528,city:3128026,city
+demo:S0080,demo,Birmingham International,52.4508,-1.7256,stn:demo:S0080,station
+demo:S0081,demo,Birmingham New Street,52.4778,-1.899,city:2655603,city
+demo:S0082,demo,Bischofshofen,47.417,13.219,stn:demo:S0082,station
+demo:S0083,demo,Blois,47.59432,1.32912,city:3032213,city
+demo:S0084,demo,Bludenz,47.15476,9.82255,city:2781680,city
+demo:S0085,demo,Boblingen,48.68212,9.01171,city:2831948,city
+demo:S0086,demo,Bochum,51.48165,7.21648,city:2947416,city
+demo:S0087,demo,Boden,65.82518,21.68864,city:606531,city
+demo:S0088,demo,Bodo,67.28267,14.37513,city:3160881,city
+demo:S0089,demo,Bohumin,49.904,18.357,city:3065281,city
+demo:S0090,demo,Bologna Centrale,44.5058,11.3431,city:3181928,city
+demo:S0091,demo,Bolzano,46.49067,11.33982,city:3181913,city
+demo:S0092,demo,Bonn,50.73438,7.09549,city:2946447,city
+demo:S0093,demo,Bordeaux,44.84124,-0.58046,city:3031582,city
+demo:S0094,demo,Boulogne-sur-Mer,50.72485,1.61373,city:3031133,city
+demo:S0095,demo,Bournemouth,50.72048,-1.8795,city:2655095,city
+demo:S0096,demo,Braga,41.5514,-8.42311,city:2742032,city
+demo:S0097,demo,Brasov,45.64861,25.60613,city:683844,city
+demo:S0098,demo,Bratislava hl.st.,48.159,17.106,city:3060972,city
+demo:S0099,demo,Braunschweig,52.26594,10.52673,city:2945024,city
+demo:S0100,demo,Breclav,48.75897,16.88203,city:3078773,city
+demo:S0101,demo,Breda,51.58656,4.77596,city:2758401,city
+demo:S0102,demo,Bregenz,47.50311,9.7471,city:2781503,city
+demo:S0103,demo,Bremen Hbf,53.0834,8.8134,city:2944388,city
+demo:S0104,demo,Brennero,47.0024,11.5058,stn:demo:S0104,station
+demo:S0105,demo,Brescia,45.53558,10.21472,city:3181554,city
+demo:S0106,demo,Brest,48.388,-4.479,city:3030300,city
+demo:S0107,demo,Briancon,44.892,6.642,stn:demo:S0107,station
+demo:S0108,demo,Brig,46.319,7.988,stn:demo:S0108,station
+demo:S0109,demo,Brighton,50.82838,-0.13947,city:2654710,city
+demo:S0110,demo,Bristol Parkway,51.5138,-2.5423,city:2654675,city
+demo:S0111,demo,Bristol Temple Meads,51.4492,-2.5813,city:2654675,city
+demo:S0112,demo,Brive-la-Gaillarde,45.1589,1.53326,city:3029974,city
+demo:S0113,demo,Brno hl.n.,49.1907,16.6128,city:3078610,city
+demo:S0114,demo,Bruck an der Mur,47.414,15.279,stn:demo:S0114,station
+demo:S0115,demo,Brugge,51.20892,3.22424,city:2800931,city
+demo:S0116,demo,Bruxelles-Central,50.8454,4.3571,city:2800866,city
+demo:S0117,demo,Bruxelles-Midi,50.8357,4.3363,city:2800866,city
+demo:S0118,demo,Bruxelles-Nord,50.8603,4.3615,city:2800866,city
+demo:S0119,demo,Buchs SG,47.168,9.479,stn:demo:S0119,station
+demo:S0120,demo,Bucuresti Nord,44.4467,26.0756,city:683506,city
+demo:S0121,demo,Budapest-Deli,47.5006,19.0243,city:3054643,city
+demo:S0122,demo,Budapest-Keleti,47.5003,19.0839,city:3054643,city
+demo:S0123,demo,Budapest-Nyugati,47.5107,19.0564,city:3054643,city
+demo:S0124,demo,Burgas,42.50651,27.46886,city:732770,city
+demo:S0125,demo,Burgos,42.34106,-3.70184,city:3127461,city
+demo:S0126,demo,Bydgoszcz,53.1235,18.00762,city:3102014,city
+demo:S0127,demo,Cadiz,36.52672,-6.2891,city:2520600,city
+demo:S0128,demo,Caen,49.18585,-0.35912,city:3029241,city
+demo:S0129,demo,Cahors,44.4491,1.43663,city:3029213,city
+demo:S0130,demo,Calatayud,41.35353,-1.64318,city:3127047,city
+demo:S0131,demo,Camp de Tarragona,41.1914,1.271,stn:demo:S0131,station
+demo:S0132,demo,Cannes,43.55135,7.01275,city:3028808,city
+demo:S0133,demo,Carcassonne,43.21649,2.34863,city:3028641,city
+demo:S0134,demo,Cardiff,51.48,-3.18,city:2653822,city
+demo:S0135,demo,Carlisle,54.8951,-2.9382,city:2653775,city
+demo:S0136,demo,Caserta,41.07262,14.33231,city:3179866,city
+demo:S0137,demo,Castello de la Plana,39.98567,-0.04935,city:2519752,city
+demo:S0138,demo,Catania,37.49223,15.07041,city:2525068,city
+demo:S0139,demo,Cegled,47.17266,19.79952,city:3054543,city
+demo:S0140,demo,Celje,46.23092,15.26044,city:3202781,city
+demo:S0141,demo,Ceska Trebova,49.90436,16.44413,city:3077920,city
+demo:S0142,demo,Ceske Budejovice,48.97447,14.47434,city:3077916,city
+demo:S0143,demo,Chalon-sur-Saone,46.78112,4.85372,city:3027484,city
+demo:S0144,demo,Chambery,45.56628,5.92079,city:3027422,city
+demo:S0145,demo,Champagne-Ardenne TGV,49.2139,3.9947,stn:demo:S0145,station
+demo:S0146,demo,Charleroi,50.41136,4.44448,city:2800481,city
+demo:S0147,demo,Chateauroux,46.81248,1.69362,city:3026204,city
+demo:S0148,demo,Cherbourg,49.63984,-1.61636,city:3025466,city
+demo:S0149,demo,Chester,53.1905,-2.89189,city:2653228,city
+demo:S0150,demo,Chesterfield,53.25,-1.41667,city:2653225,city
+demo:S0151,demo,Chippenham,51.46,-2.12472,city:2653144,city
+demo:S0152,demo,Chur,46.84986,9.53287,city:2661169,city
+demo:S0153,demo,Ciudad Real,38.98626,-3.92907,city:2519402,city
+demo:S0154,demo,Civitavecchia,42.09325,11.79674,city:3178587,city
+demo:S0155,demo,Clermont-Ferrand,45.77969,3.08682,city:3024635,city
+demo:S0156,demo,Coimbra-B,40.2226,-8.445,city:2740637,city
+demo:S0157,demo,Colchester,51.88921,0.90421,city:2652618,city
+demo:S0158,demo,Colmar,48.08078,7.35584,city:3024297,city
+demo:S0159,demo,Como,45.80819,9.0832,city:3178229,city
+demo:S0160,demo,Constanta,44.18073,28.63432,city:680963,city
+demo:S0161,demo,Cordoba,37.89155,-4.77275,city:2519240,city
+demo:S0162,demo,Cork,51.89797,-8.47061,city:2965140,city
+demo:S0163,demo,Coventry,52.40656,-1.51217,city:2652221,city
+demo:S0164,demo,Crailsheim,49.13444,10.07193,city:2939797,city
+demo:S0165,demo,Craiova,44.31667,23.8,city:680332,city
+demo:S0166,demo,Crewe,53.09787,-2.44161,city:2652002,city
+demo:S0167,demo,Cuenca,40.06667,-2.13333,city:3124132,city
+demo:S0168,demo,Darlington,54.52429,-1.55039,city:2651513,city
+demo:S0169,demo,Darmstadt,49.87167,8.65027,city:2938913,city
+demo:S0170,demo,Dax,43.71032,-1.05366,city:3021670,city
+demo:S0171,demo,Debrecen,47.53167,21.62444,city:721472,city
+demo:S0172,demo,Decin,50.773,14.197,city:3077244,city
+demo:S0173,demo,Delft,52.00667,4.35556,city:2757345,city
+demo:S0174,demo,Den Haag Centraal,52.081,4.3246,city:2747373,city
+demo:S0175,demo,Den Haag HS,52.0695,4.3226,city:2747373,city
+demo:S0176,demo,Derby,52.92277,-1.47663,city:2651347,city
+demo:S0177,demo,Desenzano del Garda,45.47127,10.53559,city:3177610,city
+demo:S0178,demo,Deva,45.88333,22.9,city:679452,city
+demo:S0179,demo,Deventer,52.255,6.16389,city:2756987,city
+demo:S0180,demo,Didcot,51.60928,-1.24214,city:2651269,city
+demo:S0181,demo,Dijon,47.31344,5.01391,city:3021372,city
+demo:S0182,demo,Dombas,62.074,9.127,stn:demo:S0182,station
+demo:S0183,demo,Dombovar,46.37657,18.13696,city:3053590,city
+demo:S0184,demo,Domodossola,46.1165,8.29313,city:3177532,city
+demo:S0185,demo,Doncaster,53.52285,-1.13116,city:2651123,city
+demo:S0186,demo,Dordrecht,51.81,4.67361,city:2756669,city
+demo:S0187,demo,Dortmund,51.51494,7.466,city:2935517,city
+demo:S0188,demo,Douai,50.37069,3.07922,city:3021000,city
+demo:S0189,demo,Drammen,59.74389,10.20449,city:3159016,city
+demo:S0190,demo,Dresden Hbf,51.0404,13.732,city:2935022,city
+demo:S0191,demo,Dresden-Neustadt,51.0655,13.7408,city:2935022,city
+demo:S0192,demo,Drogheda,53.71889,-6.34778,city:2964661,city
+demo:S0193,demo,Dublin Connolly,53.3531,-6.2468,city:2964574,city
+demo:S0194,demo,Dublin Heuston,53.3464,-6.2929,city:2964574,city
+demo:S0195,demo,Duisburg,51.43247,6.76516,city:2934691,city
+demo:S0196,demo,Dundalk,54.0,-6.41667,city:2964540,city
+demo:S0197,demo,Dundee,56.46913,-2.97489,city:2650752,city
+demo:S0198,demo,Durham,54.77676,-1.57566,city:2650628,city
+demo:S0199,demo,Dusseldorf Hbf,51.22,6.7942,city:2934246,city
+demo:S0200,demo,Ebbsfleet International,51.443,0.321,city:2648182,city
+demo:S0201,demo,Edinburgh Waverley,55.9521,-3.1893,city:2650225,city
+demo:S0202,demo,Egersund,58.45133,5.9997,stn:demo:S0202,station
+demo:S0203,demo,Eindhoven,51.44083,5.47778,city:2756253,city
+demo:S0204,demo,Eisenach,50.9807,10.31522,city:2931574,city
+demo:S0205,demo,Elche,38.26218,-0.70107,city:2518559,city
+demo:S0206,demo,Emden,53.36592,7.20846,city:2930596,city
+demo:S0207,demo,Empoli,43.71795,10.94758,city:3177400,city
+demo:S0208,demo,Enschede,52.21833,6.89583,city:2756071,city
+demo:S0209,demo,Entroncamento,39.46667,-8.46667,city:2268575,city
+demo:S0210,demo,Erfurt,50.97734,11.03536,city:2929670,city
+demo:S0211,demo,Esbjerg,55.47028,8.45187,city:2622447,city
+demo:S0212,demo,Espoo,60.2052,24.6522,city:660158,city
+demo:S0213,demo,Essen,51.45657,7.01228,city:2928810,city
+demo:S0214,demo,Exeter,50.7236,-3.52751,city:2649808,city
+demo:S0215,demo,Faro,37.01869,-7.92716,city:2268339,city
+demo:S0216,demo,Feldkirch,47.23645,9.59734,city:2779674,city
+demo:S0217,demo,Ferrara,44.83804,11.62057,city:3177090,city
+demo:S0218,demo,Figueres Vilafant,42.264,2.943,city:3122453,city
+demo:S0219,demo,Finse,60.602,7.504,stn:demo:S0219,station
+demo:S0220,demo,Firenze SMN,43.7765,11.2481,city:3176959,city
+demo:S0221,demo,Flensburg,54.78805,9.43722,city:2926271,city
+demo:S0222,demo,Foggia,41.45845,15.55188,city:3176885,city
+demo:S0223,demo,Frankfurt (Oder),52.3364,14.5462,city:2925535,city
+demo:S0224,demo,Frankfurt Flughafen Fernbf,50.053,8.5703,stn:demo:S0224,station
+demo:S0225,demo,Frankfurt Hbf,50.1071,8.6636,city:2925533,city
+demo:S0226,demo,Frasne,46.857,6.161,stn:demo:S0226,station
+demo:S0227,demo,Fredericia,55.56568,9.75257,city:2621951,city
+demo:S0228,demo,Fredrikstad,59.2181,10.9298,city:3156529,city
+demo:S0229,demo,Freiburg im Breisgau,47.9959,7.85222,city:2925177,city
+demo:S0230,demo,Fribourg,46.80237,7.15128,city:2660718,city
+demo:S0231,demo,Fulda,50.55162,9.67518,city:2923822,city
+demo:S0232,demo,Furth im Wald,49.309,12.848,stn:demo:S0232,station
+demo:S0233,demo,Galway,53.27245,-9.05095,city:2964180,city
+demo:S0234,demo,Gap,44.55858,6.07868,city:3016702,city
+demo:S0235,demo,Gatwick Airport,51.1565,-0.161,stn:demo:S0235,station
+demo:S0236,demo,Gavle,60.67452,17.14174,city:2712414,city
+demo:S0237,demo,Gdansk Glowny,54.3556,18.6437,city:3099434,city
+demo:S0238,demo,Gdynia Glowna,54.5207,18.5292,city:3099424,city
+demo:S0239,demo,Geilo,60.534,8.206,stn:demo:S0239,station
+demo:S0240,demo,Geneve,46.2102,6.1424,city:2660646,city
+demo:S0241,demo,Geneve-Aeroport,46.2322,6.1103,stn:demo:S0241,station
+demo:S0242,demo,Genova Brignole,44.4067,8.9467,city:3176219,city
+demo:S0243,demo,Genova Piazza Principe,44.4175,8.921,city:3176219,city
+demo:S0244,demo,Gent,51.05,3.71667,city:2797656,city
+demo:S0245,demo,Gijon,43.53573,-5.66152,city:3121424,city
+demo:S0246,demo,Girona,41.98311,2.82493,city:3121456,city
+demo:S0247,demo,Glasgow Central,55.8589,-4.2577,city:2648579,city
+demo:S0248,demo,Glasgow Queen Street,55.8623,-4.2511,city:2648579,city
+demo:S0249,demo,Gliwice,50.29761,18.67658,city:3099230,city
+demo:S0250,demo,Gol,60.702,8.946,stn:demo:S0250,station
+demo:S0251,demo,Gorna Oryahovitsa,43.12778,25.70167,city:731233,city
+demo:S0252,demo,Goteborg C,57.7089,11.9735,city:2711537,city
+demo:S0253,demo,Gottingen,51.53443,9.93228,city:2918632,city
+demo:S0254,demo,Gouda,52.01667,4.70833,city:2755420,city
+demo:S0255,demo,Granada,37.18817,-3.60667,city:2517117,city
+demo:S0256,demo,Grantham,52.91149,-0.64184,city:2648208,city
+demo:S0257,demo,Graz,47.06733,15.44197,city:2778067,city
+demo:S0258,demo,Grenoble,45.17869,5.71479,city:3014728,city
+demo:S0259,demo,Groningen,53.21917,6.56667,city:2755251,city
+demo:S0260,demo,Grosseto,42.76296,11.10941,city:3175786,city
+demo:S0261,demo,Guadalajara-Yebes,40.593,-3.111,stn:demo:S0261,station
+demo:S0262,demo,Guingamp,48.56259,-3.15289,stn:demo:S0262,station
+demo:S0263,demo,Gyor,47.68333,17.63512,city:3052009,city
+demo:S0264,demo,Hagen,51.36081,7.47168,city:2912621,city
+demo:S0265,demo,Halden,59.12478,11.38754,city:3154209,city
+demo:S0266,demo,Halle (Saale),51.4775,11.987,city:2911522,city
+demo:S0267,demo,Hallsberg,59.06463,15.10993,stn:demo:S0267,station
+demo:S0268,demo,Halmstad,56.67446,12.85676,city:2708365,city
+demo:S0269,demo,Hamar,60.7945,11.06798,city:3154084,city
+demo:S0270,demo,Hamburg Hbf,53.553,10.0069,city:2911298,city
+demo:S0271,demo,Hamburg-Altona,53.552,9.935,city:2911298,city
+demo:S0272,demo,Hameenlinna,60.99596,24.46434,city:659180,city
+demo:S0273,demo,Hamm,51.68033,7.82089,city:2911240,city
+demo:S0274,demo,Hanau,50.13423,8.91418,city:2911007,city
+demo:S0275,demo,Hannover Hbf,52.3767,9.7412,city:2910831,city
+demo:S0276,demo,Hassleholm,56.15905,13.76638,city:2707399,city
+demo:S0277,demo,Heidelberg,49.40768,8.69079,city:2907911,city
+demo:S0278,demo,Helsingborg,56.04673,12.69437,city:2706767,city
+demo:S0279,demo,Helsinki,60.1719,24.9414,city:658225,city
+demo:S0280,demo,Hendaye,43.35809,-1.7744,city:3120304,city
+demo:S0281,demo,Hengelo,52.26583,6.79306,city:2754394,city
+demo:S0282,demo,Herrljunga,58.07739,13.02662,stn:demo:S0282,station
+demo:S0283,demo,Hildesheim,52.15077,9.95112,city:2904789,city
+demo:S0284,demo,Holyhead,53.309,-4.633,stn:demo:S0284,station
+demo:S0285,demo,Honefoss,60.16804,10.25647,stn:demo:S0285,station
+demo:S0286,demo,Horb am Neckar,48.44423,8.6913,city:2899101,city
+demo:S0287,demo,Horsens,55.86066,9.85034,city:2619771,city
+demo:S0288,demo,Huddersfield,53.64904,-1.78416,city:2646458,city
+demo:S0289,demo,Hudiksvall,61.72744,17.10558,city:2704613,city
+demo:S0290,demo,Ilawa,53.59601,19.56849,city:3097902,city
+demo:S0291,demo,Ingolstadt,48.76508,11.42372,city:2895992,city
+demo:S0292,demo,Innsbruck,47.26266,11.39454,city:2775220,city
+demo:S0293,demo,Interlaken Ost,46.6905,7.869,stn:demo:S0293,station
+demo:S0294,demo,Inverness,57.47908,-4.22398,city:2646088,city
+demo:S0295,demo,Ipswich,52.05917,1.15545,city:2646057,city
+demo:S0296,demo,Irun,43.33904,-1.78938,city:3120304,city
+demo:S0297,demo,Jerez de la Frontera,36.68645,-6.13606,city:2516326,city
+demo:S0298,demo,Jesenice,46.4324,14.06232,stn:demo:S0298,station
+demo:S0299,demo,Kaiserslautern,49.443,7.77161,city:2894003,city
+demo:S0300,demo,Karlovac,45.49167,15.55,city:3345300,city
+demo:S0301,demo,Karlsruhe Hbf,48.9936,8.402,city:2892794,city
+demo:S0302,demo,Karlstad,59.3793,13.50357,city:2701680,city
+demo:S0303,demo,Kassel,51.31667,9.5,city:2892518,city
+demo:S0304,demo,Katowice,50.2597,19.02173,city:3096472,city
+demo:S0305,demo,Katrineholm,58.99587,16.20721,city:2701223,city
+demo:S0306,demo,Kecskemet,46.90618,19.69128,city:3050434,city
+demo:S0307,demo,Kiel,54.32133,10.13489,city:2891122,city
+demo:S0308,demo,Kilkenny,52.65417,-7.25222,city:2963398,city
+demo:S0309,demo,Kirkcaldy,56.11683,-3.15999,city:2645298,city
+demo:S0310,demo,Klagenfurt,46.62472,14.30528,city:2774326,city
+demo:S0311,demo,Knin,44.04063,16.19662,stn:demo:S0311,station
+demo:S0312,demo,Kobenhavn H,55.6727,12.5647,city:2618425,city
+demo:S0313,demo,Kobenhavns Lufthavn,55.63,12.649,stn:demo:S0313,station
+demo:S0314,demo,Koblenz,50.35357,7.57883,city:2886946,city
+demo:S0315,demo,Kokkola,63.83847,23.13066,city:651943,city
+demo:S0316,demo,Kolding,55.4904,9.47216,city:2618528,city
+demo:S0317,demo,Kolin,50.02806,15.1998,city:3073371,city
+demo:S0318,demo,Koln Hbf,50.943,6.9589,city:2886242,city
+demo:S0319,demo,Koln Messe/Deutz,50.9406,6.9745,city:2886242,city
+demo:S0320,demo,Kongsberg,59.66858,9.65017,city:3149563,city
+demo:S0321,demo,Kongsvinger,60.19049,11.99772,stn:demo:S0321,station
+demo:S0322,demo,Konin,52.22338,18.25121,city:3095321,city
+demo:S0323,demo,Koprivnica,46.16364,16.8297,city:3197728,city
+demo:S0324,demo,Kosice,48.71441,21.25802,city:724443,city
+demo:S0325,demo,Kouvola,60.86667,26.7,city:650859,city
+demo:S0326,demo,Krakow Glowny,50.068,19.9477,city:3094802,city
+demo:S0327,demo,Kristiansand,58.14671,7.9956,city:3149318,city
+demo:S0328,demo,Kufstein,47.58333,12.16667,stn:demo:S0328,station
+demo:S0329,demo,Kuopio,62.89238,27.67703,city:650224,city
+demo:S0330,demo,Kutno,52.23064,19.36409,city:3094170,city
+demo:S0331,demo,La Rochelle,46.16308,-1.15222,city:3006787,city
+demo:S0332,demo,La Spezia,44.103,9.82375,city:3175081,city
+demo:S0333,demo,Lahti,60.98267,25.66151,city:649360,city
+demo:S0334,demo,Lamezia Terme,38.96255,16.30938,city:6534232,city
+demo:S0335,demo,Lancaster,54.04649,-2.79988,city:2644972,city
+demo:S0336,demo,Landeck-Zams,47.1386,10.57,stn:demo:S0336,station
+demo:S0337,demo,Landquart,46.95,9.56667,stn:demo:S0337,station
+demo:S0338,demo,Landshut,48.52961,12.16179,city:2881485,city
+demo:S0339,demo,Lappeenranta,61.05871,28.18871,city:648900,city
+demo:S0340,demo,Larissa,39.62847,22.42112,city:258576,city
+demo:S0341,demo,Lausanne,46.5167,6.6291,city:2659994,city
+demo:S0342,demo,Le Havre,49.49346,0.10785,city:3003796,city
+demo:S0343,demo,Le Mans,48.0021,0.20251,city:3003603,city
+demo:S0344,demo,Leamington Spa,52.2852,-1.52,city:2644737,city
+demo:S0345,demo,Lecce,40.35481,18.17244,city:3174953,city
+demo:S0346,demo,Leeds,53.79648,-1.54785,city:2644688,city
+demo:S0347,demo,Leer,53.23157,7.461,city:2879697,city
+demo:S0348,demo,Leeuwarden,53.20271,5.80973,city:2751792,city
+demo:S0349,demo,Leicester,52.6386,-1.13169,city:2644668,city
+demo:S0350,demo,Leiden,52.15833,4.49306,city:2751773,city
+demo:S0351,demo,Leipzig Hbf,51.3455,12.3821,city:2879139,city
+demo:S0352,demo,Lelystad,52.50833,5.475,city:2751738,city
+demo:S0353,demo,Leon,42.60003,-5.57032,city:3118532,city
+demo:S0354,demo,Les Arcs,43.457,6.479,stn:demo:S0354,station
+demo:S0355,demo,Leszno,51.84034,16.57494,city:3093524,city
+demo:S0356,demo,Leuven,50.87959,4.70093,city:2792482,city
+demo:S0357,demo,Liege-Guillemins,50.6245,5.5667,city:2792413,city
+demo:S0358,demo,Lille Europe,50.6394,3.0757,city:2998324,city
+demo:S0359,demo,Lille Flandres,50.6365,3.0708,city:2998324,city
+demo:S0360,demo,Lillehammer,61.11514,10.46628,city:3147474,city
+demo:S0361,demo,Lillestrom,59.95597,11.04918,city:3147465,city
+demo:S0362,demo,Limerick,52.66472,-8.62306,city:2962943,city
+demo:S0363,demo,Limerick Junction,52.501,-8.2,stn:demo:S0363,station
+demo:S0364,demo,Limoges,45.83362,1.24759,city:2998286,city
+demo:S0365,demo,Lindau,47.54612,9.68431,city:2877550,city
+demo:S0366,demo,Linkoping,58.41086,15.62157,city:2694762,city
+demo:S0367,demo,Linz,48.30639,14.28611,city:2772400,city
+demo:S0368,demo,Lisboa Oriente,38.7678,-9.0993,city:2267057,city
+demo:S0369,demo,Lisboa Santa Apolonia,38.7138,-9.1226,city:2267057,city
+demo:S0370,demo,Liverpool Lime Street,53.4077,-2.9774,city:2644210,city
+demo:S0371,demo,Livorno,43.54427,10.32615,city:3174659,city
+demo:S0372,demo,Ljubljana,46.058,14.51,city:3196359,city
+demo:S0373,demo,Lleida,41.61674,0.62218,city:3118514,city
+demo:S0374,demo,Lodz Fabryczna,51.771,19.4661,city:3093133,city
+demo:S0375,demo,Lodz Kaliska,51.757,19.43,city:3093133,city
+demo:S0376,demo,London Euston,51.5282,-0.1337,city:2643743,city
+demo:S0377,demo,London Kings Cross,51.532,-0.1233,city:2643743,city
+demo:S0378,demo,London Liverpool Street,51.5178,-0.0823,city:2643743,city
+demo:S0379,demo,London Paddington,51.5154,-0.1755,city:2643743,city
+demo:S0380,demo,London St Pancras,51.531,-0.1263,city:2643743,city
+demo:S0381,demo,London Victoria,51.4952,-0.1441,city:2643743,city
+demo:S0382,demo,London Waterloo,51.5031,-0.1132,city:2643743,city
+demo:S0383,demo,Lorient,47.74817,-3.37177,city:2997577,city
+demo:S0384,demo,Lorraine TGV,48.9477,6.1697,stn:demo:S0384,station
+demo:S0385,demo,Lubeck,53.86893,10.68729,city:2875601,city
+demo:S0386,demo,Lublin,51.25058,22.57009,city:765876,city
+demo:S0387,demo,Lugano,46.01008,8.96004,city:2659836,city
+demo:S0388,demo,Lulea,65.58415,22.15465,city:604490,city
+demo:S0389,demo,Lund,55.70584,13.19321,city:2693678,city
+demo:S0390,demo,Luxembourg,49.60982,6.13268,city:2960316,city
+demo:S0391,demo,Luzern,47.05048,8.30635,city:2659811,city
+demo:S0392,demo,Lyon Part-Dieu,45.7606,4.8594,city:2996944,city
+demo:S0393,demo,Maastricht,50.84833,5.68889,city:2751283,city
+demo:S0394,demo,Macclesfield,53.26023,-2.12564,city:2643266,city
+demo:S0395,demo,Macon,46.31407,4.82823,city:2996882,city
+demo:S0396,demo,Macon-Loche TGV,46.282,4.779,stn:demo:S0396,station
+demo:S0397,demo,Madrid Chamartin,40.4722,-3.6823,city:3117735,city
+demo:S0398,demo,Madrid Puerta de Atocha,40.4066,-3.6892,city:3117735,city
+demo:S0399,demo,Magdeburg,52.13129,11.63189,city:2874545,city
+demo:S0400,demo,Mainz,49.98185,8.28008,city:2874225,city
+demo:S0401,demo,Malaga Maria Zambrano,36.7117,-4.4325,city:2514256,city
+demo:S0402,demo,Malbork,54.03591,19.0266,city:3092472,city
+demo:S0403,demo,Mallow,52.13333,-8.63333,stn:demo:S0403,station
+demo:S0404,demo,Malmo C,55.6093,13.0008,city:2692969,city
+demo:S0405,demo,Manchester Airport,53.365,-2.2729,stn:demo:S0405,station
+demo:S0406,demo,Manchester Piccadilly,53.4774,-2.2309,city:2643123,city
+demo:S0407,demo,Manchester Victoria,53.4875,-2.2426,city:2643123,city
+demo:S0408,demo,Mannheim Hbf,49.4796,8.4697,city:2873891,city
+demo:S0409,demo,Maribor,46.55583,15.64593,city:3195506,city
+demo:S0410,demo,Marne-la-Vallee Chessy,48.8697,2.7828,stn:demo:S0410,station
+demo:S0411,demo,Marseille Saint-Charles,43.3027,5.3806,city:2995469,city
+demo:S0412,demo,Martigny,46.10276,7.07245,city:2659748,city
+demo:S0413,demo,Massy TGV,48.7255,2.2605,city:2995206,city
+demo:S0414,demo,Mechelen,51.02574,4.47762,city:2791537,city
+demo:S0415,demo,Memmingen,47.98372,10.18527,city:2871992,city
+demo:S0416,demo,Menton,43.77649,7.50435,city:2994497,city
+demo:S0417,demo,Messina,38.19394,15.55256,city:2524170,city
+demo:S0418,demo,Metz,49.11911,6.17269,city:2994160,city
+demo:S0419,demo,Meuse TGV,48.978,5.272,stn:demo:S0419,station
+demo:S0420,demo,Middelfart,55.50591,9.73054,city:2616933,city
+demo:S0421,demo,Mikkeli,61.68857,27.27227,city:646005,city
+demo:S0422,demo,Milano Centrale,45.4861,9.2046,city:3173435,city
+demo:S0423,demo,Milano Rogoredo,45.4336,9.2386,city:3173435,city
+demo:S0424,demo,Milton Keynes,52.04172,-0.75583,city:2642465,city
+demo:S0425,demo,Miranda de Ebro,42.6865,-2.94695,city:3116689,city
+demo:S0426,demo,Miskolc,48.10327,20.77806,city:717582,city
+demo:S0427,demo,Mo i Rana,66.31278,14.14278,city:3145614,city
+demo:S0428,demo,Modane,45.192,6.671,stn:demo:S0428,station
+demo:S0429,demo,Monaco,43.73718,7.42145,city:2993458,city
+demo:S0430,demo,Mons,50.45413,3.95229,city:2790869,city
+demo:S0431,demo,Montabaur,50.4447,7.8256,stn:demo:S0431,station
+demo:S0432,demo,Montauban,44.01759,1.3542,city:2993002,city
+demo:S0433,demo,Montpellier Saint-Roch,43.6045,3.8807,city:2992166,city
+demo:S0434,demo,Montpellier Sud de France,43.5954,3.923,city:2992166,city
+demo:S0435,demo,Montreux,46.43301,6.91143,city:2659601,city
+demo:S0436,demo,Morlaix,48.57784,-3.82792,city:2991772,city
+demo:S0437,demo,Mosjoen,65.83599,13.19076,stn:demo:S0437,station
+demo:S0438,demo,Moss,59.43403,10.65771,city:3145375,city
+demo:S0439,demo,Moulins,46.56459,3.33243,city:2991481,city
+demo:S0440,demo,Mulhouse,47.75205,7.32866,city:2991214,city
+demo:S0441,demo,Munchen Hbf,48.1402,11.56,city:2867714,city
+demo:S0442,demo,Munster,51.96236,7.62571,city:2867543,city
+demo:S0443,demo,Murcia,37.98704,-1.13004,city:2513416,city
+demo:S0444,demo,Myrdal,60.7353,7.1223,stn:demo:S0444,station
+demo:S0445,demo,Nagykanizsa,46.45347,16.99104,city:3047679,city
+demo:S0446,demo,Namur,50.4669,4.86746,city:2790471,city
+demo:S0447,demo,Nancy,48.68439,6.18496,city:2990999,city
+demo:S0448,demo,Nantes,47.21725,-1.55336,city:2990969,city
+demo:S0449,demo,Napoli Centrale,40.8527,14.2726,city:3172394,city
+demo:S0450,demo,Narbonne,43.18396,3.00141,city:2990919,city
+demo:S0451,demo,Nassjo,57.65307,14.69676,city:2690170,city
+demo:S0452,demo,Neuchatel,46.99179,6.931,city:2659496,city
+demo:S0453,demo,Neumunster,54.07399,9.98456,city:2864475,city
+demo:S0454,demo,Nevers,46.98956,3.159,city:2990474,city
+demo:S0455,demo,Newark on Trent,53.06667,-0.81667,city:2641731,city
+demo:S0456,demo,Newcastle upon Tyne,54.97328,-1.61396,city:2641673,city
+demo:S0457,demo,Newport,51.58774,-2.99835,city:2641598,city
+demo:S0458,demo,Newry,54.17841,-6.33739,city:2641581,city
+demo:S0459,demo,Newton Abbot,50.52858,-3.61186,city:2641557,city
+demo:S0460,demo,Nice,43.70313,7.26608,city:2990440,city
+demo:S0461,demo,Nijmegen,51.8425,5.85278,city:2750053,city
+demo:S0462,demo,Nimes,43.83665,4.35788,city:2990363,city
+demo:S0463,demo,Norrkoping,58.59419,16.1826,city:2688368,city
+demo:S0464,demo,Norwich,52.62783,1.29834,city:2641181,city
+demo:S0465,demo,Nottingham,52.9536,-1.15047,city:2641170,city
+demo:S0466,demo,Novi Sad,45.25167,19.83694,city:3194360,city
+demo:S0467,demo,Nurnberg Hbf,49.4457,11.0826,city:2861650,city
+demo:S0468,demo,Nyiregyhaza,47.95539,21.71671,city:716935,city
+demo:S0469,demo,Oberhausen,51.47805,6.8625,city:2934691,city
+demo:S0470,demo,Odense,55.39594,10.38831,city:2615876,city
+demo:S0471,demo,Oldenburg,53.14039,8.21479,city:2857458,city
+demo:S0472,demo,Olomouc,49.59552,17.25175,city:3069011,city
+demo:S0473,demo,Olten,47.34999,7.90329,city:2659297,city
+demo:S0474,demo,Oostende,51.21551,2.927,city:2789786,city
+demo:S0475,demo,Opole,50.67119,17.92604,city:3090048,city
+demo:S0476,demo,Oppdal,62.595,9.692,stn:demo:S0476,station
+demo:S0477,demo,Orebro,59.27412,15.2066,city:2686657,city
+demo:S0478,demo,Orihuela,38.08483,-0.94401,city:2513076,city
+demo:S0479,demo,Orleans,47.90248,1.90407,city:2989317,city
+demo:S0480,demo,Oslo Lufthavn,60.193,11.098,stn:demo:S0480,station
+demo:S0481,demo,Oslo S,59.911,10.7531,city:3143244,city
+demo:S0482,demo,Osnabruck,52.27264,8.0498,city:2856883,city
+demo:S0483,demo,Ostrava hl.n.,49.8575,18.269,city:3068799,city
+demo:S0484,demo,Otta,61.773,9.539,stn:demo:S0484,station
+demo:S0485,demo,Oulu,65.01236,25.46816,city:643492,city
+demo:S0486,demo,Ourense,42.33669,-7.86407,city:3114965,city
+demo:S0487,demo,Oviedo,43.36029,-5.84476,city:3114711,city
+demo:S0488,demo,Oxenholme,54.305,-2.722,city:2645826,city
+demo:S0489,demo,Oxford,51.75222,-1.25596,city:2640729,city
+demo:S0490,demo,Padborg,54.826,9.361,stn:demo:S0490,station
+demo:S0491,demo,Padova,45.40797,11.88586,city:3171728,city
+demo:S0492,demo,Palencia,42.00955,-4.52406,city:3114531,city
+demo:S0493,demo,Palermo,38.1166,13.3636,city:2523920,city
+demo:S0494,demo,Pamplona,42.81687,-1.64323,city:3114472,city
+demo:S0495,demo,Pardubice,50.04075,15.77659,city:3068582,city
+demo:S0496,demo,Paris Austerlitz,48.842,2.3656,city:2988507,city
+demo:S0497,demo,Paris Est,48.8768,2.3592,city:2988507,city
+demo:S0498,demo,Paris Gare de Lyon,48.8443,2.3735,city:2988507,city
+demo:S0499,demo,Paris Montparnasse,48.8412,2.3203,city:2988507,city
+demo:S0500,demo,Paris Nord,48.8809,2.3553,city:2988507,city
+demo:S0501,demo,Paris Saint-Lazare,48.8763,2.3253,city:2988507,city
+demo:S0502,demo,Pasila,60.199,24.934,city:658225,city
+demo:S0503,demo,Passau,48.5665,13.43122,city:2855328,city
+demo:S0504,demo,Pavia,45.19205,9.15917,city:3171366,city
+demo:S0505,demo,Pecs,46.07617,18.22814,city:3046526,city
+demo:S0506,demo,Penrith,54.662,-2.758,city:2640416,city
+demo:S0507,demo,Penzance,50.11861,-5.53715,city:2640377,city
+demo:S0508,demo,Perpignan,42.69764,2.89541,city:2987914,city
+demo:S0509,demo,Perth,56.39522,-3.43139,city:2640358,city
+demo:S0510,demo,Pesaro,43.90921,12.9164,city:3171173,city
+demo:S0511,demo,Pescara,42.4584,14.20283,city:3171168,city
+demo:S0512,demo,Peterborough,52.57364,-0.24777,city:2640354,city
+demo:S0513,demo,Pieksamaki,62.3,27.13333,city:641869,city
+demo:S0514,demo,Pisa,43.70853,10.4036,city:3170647,city
+demo:S0515,demo,Pleven,43.41791,24.61666,city:728203,city
+demo:S0516,demo,Ploiesti,44.95,26.01667,city:670474,city
+demo:S0517,demo,Plovdiv,42.15387,24.75001,city:728193,city
+demo:S0518,demo,Plymouth,50.37153,-4.14305,city:2640194,city
+demo:S0519,demo,Plzen,49.74747,13.37759,city:3068160,city
+demo:S0520,demo,Poitiers,46.58261,0.34348,city:2986495,city
+demo:S0521,demo,Pontevedra,42.431,-8.64435,city:3113209,city
+demo:S0522,demo,Poprad,49.06144,20.29798,city:723846,city
+demo:S0523,demo,Portadown,54.42302,-6.44434,city:2640085,city
+demo:S0524,demo,Portlaoise,53.03441,-7.29979,city:2962026,city
+demo:S0525,demo,Porto Campanha,41.1488,-8.5855,city:2735943,city
+demo:S0526,demo,Poznan Glowny,52.402,16.9115,city:3088171,city
+demo:S0527,demo,Praha hl.n.,50.0831,14.4353,city:3067696,city
+demo:S0528,demo,Preston,53.76282,-2.70452,city:2639912,city
+demo:S0529,demo,Przemysl,49.78498,22.76728,city:761168,city
+demo:S0530,demo,Puertollano,38.68712,-4.10734,city:2512177,city
+demo:S0531,demo,Pulawy,51.41655,21.96939,city:760924,city
+demo:S0532,demo,Quimper,47.99597,-4.09795,city:2984701,city
+demo:S0533,demo,Randers,56.4607,10.03639,city:2615006,city
+demo:S0534,demo,Reading,51.45625,-0.97113,city:2639577,city
+demo:S0535,demo,Regensburg,49.01513,12.10161,city:2849483,city
+demo:S0536,demo,Reggio Calabria,38.11047,15.66129,city:2523630,city
+demo:S0537,demo,Reggio Emilia AV Mediopadana,44.727,10.649,city:3169522,city
+demo:S0538,demo,Reims,49.26526,4.02853,city:2984114,city
+demo:S0539,demo,Rendsburg,54.30182,9.67175,city:2848245,city
+demo:S0540,demo,Rennes,48.11109,-1.67431,city:2983990,city
+demo:S0541,demo,Requena-Utiel,39.517,-1.135,stn:demo:S0541,station
+demo:S0542,demo,Rheine,52.28509,7.44055,city:2847645,city
+demo:S0543,demo,Riesa,51.30777,13.29168,city:2846939,city
+demo:S0544,demo,Rimini,44.05755,12.56528,city:3169361,city
+demo:S0545,demo,Roermond,51.19417,5.9875,city:2748000,city
+demo:S0546,demo,Roma Termini,41.901,12.5016,city:3169070,city
+demo:S0547,demo,Roma Tiburtina,41.9104,12.5306,city:3169070,city
+demo:S0548,demo,Rosenheim,47.85637,12.12247,city:2844988,city
+demo:S0549,demo,Roskilde,55.64152,12.08035,city:2614481,city
+demo:S0550,demo,Rostock,54.0887,12.14049,city:2844588,city
+demo:S0551,demo,Rotterdam Centraal,51.9249,4.469,city:2747891,city
+demo:S0552,demo,Rottweil,48.16783,8.62719,city:2843636,city
+demo:S0553,demo,Rouen,49.44313,1.09932,city:2982652,city
+demo:S0554,demo,Rovereto,45.8904,11.04053,city:3168854,city
+demo:S0555,demo,Runcorn,53.34174,-2.73124,city:2633954,city
+demo:S0556,demo,Rzeszow,50.04132,21.99901,city:759734,city
+demo:S0557,demo,Saarbrucken,49.23262,7.00982,city:2842647,city
+demo:S0558,demo,Saint-Brieuc,48.51513,-2.76838,city:2981280,city
+demo:S0559,demo,Saint-Etienne,45.43389,4.39,city:2980291,city
+demo:S0560,demo,Saint-Raphael,43.42332,6.7735,city:3017253,city
+demo:S0561,demo,Salerno,40.67545,14.79328,city:3168673,city
+demo:S0562,demo,Salo,60.38333,23.13333,city:637948,city
+demo:S0563,demo,Salzburg,47.79941,13.04399,city:2766824,city
+demo:S0564,demo,San Sebastian,43.31283,-1.97499,city:3110044,city
+demo:S0565,demo,Sanabria AV,42.046,-6.662,stn:demo:S0565,station
+demo:S0566,demo,Sanremo,43.81725,7.7772,city:3167777,city
+demo:S0567,demo,Santarem,39.23379,-8.68617,city:2263480,city
+demo:S0568,demo,Santiago de Compostela,42.88052,-8.54569,city:3109642,city
+demo:S0569,demo,Sarbogard,46.88692,18.62041,stn:demo:S0569,station
+demo:S0570,demo,Sargans,47.045,9.446,stn:demo:S0570,station
+demo:S0571,demo,Sarpsborg,59.28391,11.10962,city:3140084,city
+demo:S0572,demo,Savona,44.30905,8.47715,city:3167022,city
+demo:S0573,demo,Schaffhausen,47.69732,8.63493,city:2658761,city
+demo:S0574,demo,Schiphol Airport,52.3094,4.7621,stn:demo:S0574,station
+demo:S0575,demo,Schwandorf,49.32534,12.1098,city:2835297,city
+demo:S0576,demo,Schwarzach-St. Veit,47.322,13.152,stn:demo:S0576,station
+demo:S0577,demo,Segovia,40.94808,-4.11839,city:3109256,city
+demo:S0578,demo,Seinajoki,62.79446,22.82822,city:637219,city
+demo:S0579,demo,Sete,43.4028,3.69278,city:2974733,city
+demo:S0580,demo,Sevilla Santa Justa,37.3918,-5.9753,city:2510911,city
+demo:S0581,demo,Sheffield,53.38297,-1.4659,city:2638077,city
+demo:S0582,demo,Siegburg/Bonn,50.7934,7.2032,city:2841648,city
+demo:S0583,demo,Sierre,46.29192,7.53559,city:2658606,city
+demo:S0584,demo,Singen,47.75935,8.8403,city:2831924,city
+demo:S0585,demo,Siofok,46.90413,18.058,city:3045332,city
+demo:S0586,demo,Sion,46.22739,7.35559,city:2658576,city
+demo:S0587,demo,Siracusa,37.07542,15.28664,city:2523083,city
+demo:S0588,demo,Sittard,50.99833,5.86944,city:2747203,city
+demo:S0589,demo,Skanderborg,56.03434,9.93177,stn:demo:S0589,station
+demo:S0590,demo,Skovde,58.39118,13.84506,city:2677234,city
+demo:S0591,demo,Sodertalje,59.19554,17.62525,city:2676176,city
+demo:S0592,demo,Sofia,42.712,23.321,city:727011,city
+demo:S0593,demo,Solothurn,47.20791,7.53714,city:2658564,city
+demo:S0594,demo,Sopot,54.4418,18.56003,city:3085151,city
+demo:S0595,demo,Southampton,50.90395,-1.40428,city:2637487,city
+demo:S0596,demo,Spiez,46.686,7.68,stn:demo:S0596,station
+demo:S0597,demo,Spisska Nova Ves,48.94464,20.56153,city:723526,city
+demo:S0598,demo,Split,43.50891,16.43915,city:3190261,city
+demo:S0599,demo,St. Gallen,47.4233,9.3695,city:2658822,city
+demo:S0600,demo,St. Polten Hbf,48.208,15.624,city:2766429,city
+demo:S0601,demo,Stafford,52.80521,-2.11636,city:2637142,city
+demo:S0602,demo,Stara Zagora,42.43205,25.64262,city:726848,city
+demo:S0603,demo,Stargard,53.33672,15.0499,city:3084840,city
+demo:S0604,demo,Stavanger,58.97005,5.73332,city:3137115,city
+demo:S0605,demo,Steinkjer,64.01487,11.49537,stn:demo:S0605,station
+demo:S0606,demo,Stevenage,51.90224,-0.20256,city:2636940,city
+demo:S0607,demo,Stirling,56.11903,-3.93682,city:2636910,city
+demo:S0608,demo,Stockholm C,59.33,18.0578,city:2673730,city
+demo:S0609,demo,Stockport,53.40979,-2.15761,city:2636882,city
+demo:S0610,demo,Stoke-on-Trent,53.00415,-2.18538,city:2636841,city
+demo:S0611,demo,Storen,63.035,10.283,stn:demo:S0611,station
+demo:S0612,demo,Strasbourg,48.58392,7.74553,city:2973783,city
+demo:S0613,demo,Sturovo,47.8,18.72,city:3053163,city
+demo:S0614,demo,Stuttgart Hbf,48.784,9.1817,city:2825297,city
+demo:S0615,demo,Sundsvall,62.39129,17.3063,city:2670781,city
+demo:S0616,demo,Swansea,51.62079,-3.94323,city:2636432,city
+demo:S0617,demo,Swindon,51.55797,-1.78116,city:2636389,city
+demo:S0618,demo,Szczecin,53.42894,14.55302,city:3083829,city
+demo:S0619,demo,Szeged,46.253,20.14824,city:715429,city
+demo:S0620,demo,Szekesfehervar,47.18995,18.41034,city:3044774,city
+demo:S0621,demo,Szolnok,47.18066,20.19835,city:715126,city
+demo:S0622,demo,Tabor,49.41441,14.6578,city:3064379,city
+demo:S0623,demo,Tampere,61.49911,23.78712,city:634963,city
+demo:S0624,demo,Tarnow,50.01381,20.98698,city:757026,city
+demo:S0625,demo,Tarragona,41.11905,1.24544,city:3108288,city
+demo:S0626,demo,Tatabanya,47.59247,18.38099,city:3044082,city
+demo:S0627,demo,Taunton,51.01494,-3.10293,city:2636177,city
+demo:S0628,demo,Thessaloniki,40.64072,22.93493,city:734077,city
+demo:S0629,demo,Thionville,49.35994,6.16044,city:2972811,city
+demo:S0630,demo,Thun,46.75118,7.62166,city:2658377,city
+demo:S0631,demo,Thurles,52.68194,-7.80222,stn:demo:S0631,station
+demo:S0632,demo,Tikkurila,60.2923,25.0441,city:632453,city
+demo:S0633,demo,Tilburg,51.55551,5.0913,city:2746301,city
+demo:S0634,demo,Toledo,39.8581,-4.02263,city:2510409,city
+demo:S0635,demo,Torino Porta Nuova,45.0619,7.6786,city:3165524,city
+demo:S0636,demo,Torino Porta Susa,45.0717,7.6653,city:3165524,city
+demo:S0637,demo,Toulon,43.12442,5.92836,city:2972328,city
+demo:S0638,demo,Toulouse,43.60426,1.44367,city:2972315,city
+demo:S0639,demo,Tours,47.39484,0.70398,city:2972191,city
+demo:S0640,demo,Trencin,48.89452,18.04436,city:3057140,city
+demo:S0641,demo,Trento,46.06787,11.12108,city:3165243,city
+demo:S0642,demo,Treviso,45.66673,12.2416,city:3165201,city
+demo:S0643,demo,Trieste,45.64953,13.77678,city:3165185,city
+demo:S0644,demo,Trnava,48.37773,17.58603,city:3057124,city
+demo:S0645,demo,Trollhattan,58.28365,12.28864,city:2667303,city
+demo:S0646,demo,Trondheim,63.43049,10.39506,city:3133880,city
+demo:S0647,demo,Tudela,42.06166,-1.60452,city:3107418,city
+demo:S0648,demo,Turku,60.45148,22.26869,city:633679,city
+demo:S0649,demo,Tuttlingen,47.98464,8.8177,city:2820693,city
+demo:S0650,demo,Udine,46.0693,13.23715,city:3165072,city
+demo:S0651,demo,Ulm,48.39841,9.99155,city:2820256,city
+demo:S0652,demo,Umea,63.82842,20.25972,city:602150,city
+demo:S0653,demo,Uppsala,59.85882,17.63889,city:2666199,city
+demo:S0654,demo,Usti nad Labem,50.6607,14.03227,city:3063548,city
+demo:S0655,demo,Utrecht Centraal,52.0894,5.11,city:2745912,city
+demo:S0656,demo,Valence TGV,44.9912,4.9786,stn:demo:S0656,station
+demo:S0657,demo,Valencia Joaquin Sorolla,39.4598,-0.3829,city:2509954,city
+demo:S0658,demo,Valenciennes,50.35909,3.52506,city:2971041,city
+demo:S0659,demo,Valladolid,41.65541,-4.72353,city:3106672,city
+demo:S0660,demo,Vallorbe,46.712,6.379,stn:demo:S0660,station
+demo:S0661,demo,Vannes,47.65688,-2.76205,city:2970777,city
+demo:S0662,demo,Varberg,57.10557,12.25078,city:2664996,city
+demo:S0663,demo,Varna,43.21912,27.91024,city:726050,city
+demo:S0664,demo,Vasteras,59.61617,16.55276,city:2664454,city
+demo:S0665,demo,Vejle,55.70927,9.5357,city:2610613,city
+demo:S0666,demo,Venezia Mestre,45.4822,12.2319,city:3173529,city
+demo:S0667,demo,Venezia Santa Lucia,45.441,12.321,city:3164603,city
+demo:S0668,demo,Ventimiglia,43.78956,7.60872,city:3164582,city
+demo:S0669,demo,Verona Porta Nuova,45.429,10.982,city:3164527,city
+demo:S0670,demo,Vevey,46.46299,6.84345,city:2658145,city
+demo:S0671,demo,Viana do Castelo,41.69323,-8.83287,city:2732773,city
+demo:S0672,demo,Vicenza,45.54672,11.5475,city:3164419,city
+demo:S0673,demo,Vichy,46.12709,3.42577,city:2969392,city
+demo:S0674,demo,Vierzon,47.22186,2.0684,city:2969257,city
+demo:S0675,demo,Vigo,42.23282,-8.72264,city:3105976,city
+demo:S0676,demo,Villa San Giovanni,38.219,15.637,stn:demo:S0676,station
+demo:S0677,demo,Villach,46.61028,13.85583,city:2762372,city
+demo:S0678,demo,Villena,38.6373,-0.86568,city:2509463,city
+demo:S0679,demo,Visp,46.294,7.882,stn:demo:S0679,station
+demo:S0680,demo,Vitoria-Gasteiz,42.84998,-2.67268,city:3104499,city
+demo:S0681,demo,Voghera,44.99151,9.01175,city:3163995,city
+demo:S0682,demo,Voss,60.62869,6.41474,stn:demo:S0682,station
+demo:S0683,demo,Wakefield,53.68331,-1.49768,city:2634910,city
+demo:S0684,demo,Warrington,53.39254,-2.58024,city:2634739,city
+demo:S0685,demo,Warszawa Centralna,52.2289,21.0033,city:756135,city
+demo:S0686,demo,Warszawa Wschodnia,52.2518,21.0525,city:756135,city
+demo:S0687,demo,Waterford,52.25833,-7.11194,city:2960992,city
+demo:S0688,demo,Weert,51.25167,5.70694,city:2744911,city
+demo:S0689,demo,Wien Hbf,48.185,16.376,city:2761369,city
+demo:S0690,demo,Wien Meidling,48.1747,16.3336,city:2761369,city
+demo:S0691,demo,Wien Westbahnhof,48.1966,16.3378,city:2761369,city
+demo:S0692,demo,Wiener Neustadt,47.80485,16.23196,city:2761353,city
+demo:S0693,demo,Wiesbaden,50.08601,8.24435,city:2809346,city
+demo:S0694,demo,Wigan,53.54296,-2.63706,city:2633948,city
+demo:S0695,demo,Wilmslow,53.32803,-2.23148,city:2633883,city
+demo:S0696,demo,Winchester,51.06513,-1.3187,city:2633858,city
+demo:S0697,demo,Winterthur,47.50564,8.72413,city:2657970,city
+demo:S0698,demo,Woking,51.31903,-0.55893,city:2633709,city
+demo:S0699,demo,Wolfsburg,52.42452,10.7815,city:2806654,city
+demo:S0700,demo,Wolverhampton,52.58547,-2.12296,city:2633691,city
+demo:S0701,demo,Worgl,47.48906,12.06174,stn:demo:S0701,station
+demo:S0702,demo,Wroclaw Glowny,51.098,17.0364,city:3081368,city
+demo:S0703,demo,Wuppertal,51.25627,7.14816,city:2805753,city
+demo:S0704,demo,Wurzburg,49.79391,9.95121,city:2805615,city
+demo:S0705,demo,York,53.95763,-1.08271,city:2633352,city
+demo:S0706,demo,Yverdon-les-Bains,46.77852,6.64115,city:2657941,city
+demo:S0707,demo,Zagreb Glavni kolodvor,45.8045,15.9785,city:3186886,city
+demo:S0708,demo,Zamora,41.50633,-5.74456,city:3104342,city
+demo:S0709,demo,Zaragoza Delicias,41.6583,-0.9116,city:3104324,city
+demo:S0710,demo,Zilina,49.22315,18.73941,city:3056508,city
+demo:S0711,demo,Zug,47.17242,8.51745,city:2657908,city
+demo:S0712,demo,Zurich Flughafen,47.4504,8.5625,stn:demo:S0712,station
+demo:S0713,demo,Zurich HB,47.3779,8.5403,city:2657896,city
+demo:S0714,demo,Zwolle,52.5125,6.09444,city:2743477,city

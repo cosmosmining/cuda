@@ -1,0 +1,7 @@
+model,roc_auc,avg_precision
+gradient_boosting (full),0.9972,0.9531
+logistic_regression (full),0.9964,0.9462
+adamic_adar_baseline,0.9809,0.8741
+gradient_boosting (fundamentals),0.9676,0.7032
+logistic_regression (fundamentals),0.9633,0.6892
+gravity_baseline,0.9321,0.4680

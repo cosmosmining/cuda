@@ -1,0 +1,13 @@
+model,term,coef,std_err,p_value,ci_low,ci_high
+ppml_direct_trains,Intercept,-9.6403,0.6714,9.414e-47,-10.956,-8.3244
+ppml_direct_trains,log_pop_prod,0.69059,0.023061,4.827e-197,0.64539,0.73579
+ppml_direct_trains,log_dist,-1.3118,0.046971,1.2336e-171,-1.4039,-1.2197
+ppml_direct_trains,same_country,2.8615,0.11544,1.185e-135,2.6353,3.0878
+logit_direct_link,Intercept,-21.55,0.83906,1.7848e-145,-23.195,-19.905
+logit_direct_link,log_pop_prod,1.0839,0.032586,1.3451e-242,1.02,1.1478
+logit_direct_link,log_dist,-1.7334,0.062683,2.5189e-168,-1.8563,-1.6106
+logit_direct_link,same_country,2.4167,0.10886,3.3926e-109,2.2033,2.63
+ols_log_journey_time,Intercept,2.9335,0.042702,0,2.8498,3.0171
+ols_log_journey_time,log_dist,0.70991,0.0033903,0,0.70327,0.71656
+ols_log_journey_time,log_pop_prod,-0.039858,0.0014781,3.7672e-160,-0.042755,-0.036961
+ols_log_journey_time,same_country,-0.2838,0.0059751,0,-0.29551,-0.27209

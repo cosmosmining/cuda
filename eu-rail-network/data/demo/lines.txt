@@ -1,0 +1,336 @@
+# DEMO European intercity network - APPROXIMATE, HAND-COMPILED.
+#
+# This is NOT an official timetable. It encodes the main 2024-26 intercity,
+# high-speed and night-train services from general knowledge of published
+# timetables, with run times rounded to a few minutes and frequencies given as
+# typical Monday-Friday trains per direction. It exists so the full pipeline
+# can be exercised and demonstrated offline; replace it with official GTFS
+# (config/feeds.toml) for final results.
+#
+# Format:  id ; operator ; category ; trains_per_weekday_per_direction ; days ; stops
+#   category: HSR (high speed), IC (intercity/long distance), NIGHT (sleeper)
+#   days    : blank = Mon-Fri at the given frequency and weekends at 85%
+#             (NIGHT: every day); otherwise a comma list such as mon,wed,fri
+#   stops   : "Stop name <minutes after departure from the first stop>" joined by "|"
+#
+# ---------------------------------------------------------------- France
+FR01;SNCF;HSR;12;;Paris Gare de Lyon 0 | Lyon Part-Dieu 116
+FR02;SNCF;HSR;6;;Paris Gare de Lyon 0 | Lyon Part-Dieu 116 | Valence TGV 158 | Avignon TGV 190 | Aix-en-Provence TGV 212 | Marseille Saint-Charles 226
+FR03;SNCF;HSR;8;;Paris Gare de Lyon 0 | Avignon TGV 158 | Marseille Saint-Charles 188
+FR04;SNCF;HSR;6;;Paris Gare de Lyon 0 | Marseille Saint-Charles 200 | Toulon 245 | Les Arcs 290 | Saint-Raphael 305 | Cannes 330 | Antibes 342 | Nice 358
+FR05;SNCF;HSR;9;;Paris Gare de Lyon 0 | Valence TGV 132 | Nimes 175 | Montpellier Saint-Roch 202
+FR06;SNCF;HSR;4;;Paris Gare de Lyon 0 | Nimes 180 | Montpellier Saint-Roch 207 | Sete 225 | Beziers 245 | Narbonne 262 | Perpignan 295
+FR07;SNCF;HSR;6;;Paris Gare de Lyon 0 | Dijon 97 | Besancon Franche-Comte TGV 125 | Belfort-Montbeliard TGV 148 | Mulhouse 172
+FR08;SNCF;HSR;6;;Paris Gare de Lyon 0 | Mulhouse 172 | Basel SBB 196 | Zurich HB 246
+FR09;SNCF;HSR;4;;Paris Gare de Lyon 0 | Dijon 98 | Frasne 172 | Vallorbe 188 | Lausanne 222
+FR10;SNCF;HSR;8;;Paris Gare de Lyon 0 | Macon-Loche TGV 100 | Bellegarde 168 | Geneve 192
+FR11;SNCF;HSR;3;;Paris Gare de Lyon 0 | Lyon Part-Dieu 116 | Chambery 198 | Modane 262 | Torino Porta Susa 352 | Milano Centrale 425
+FR12;SNCF;HSR;7;;Paris Gare de Lyon 0 | Grenoble 180
+FR13;SNCF;HSR;5;;Paris Gare de Lyon 0 | Chambery 170 | Annecy 225
+FR14;SNCF;HSR;5;;Lille Europe 0 | Aeroport CDG 2 TGV 52 | Marne-la-Vallee Chessy 72 | Lyon Part-Dieu 186 | Avignon TGV 256 | Aix-en-Provence TGV 278 | Marseille Saint-Charles 292
+FR15;SNCF;HSR;4;;Lille Europe 0 | Aeroport CDG 2 TGV 52 | Marne-la-Vallee Chessy 72 | Massy TGV 102 | Tours 160 | Poitiers 190 | Bordeaux 255
+FR16;SNCF;HSR;4;;Lille Europe 0 | Aeroport CDG 2 TGV 52 | Marne-la-Vallee Chessy 72 | Massy TGV 102 | Le Mans 150 | Rennes 190
+FR17;SNCF;HSR;3;;Lille Europe 0 | Aeroport CDG 2 TGV 52 | Marne-la-Vallee Chessy 72 | Massy TGV 102 | Le Mans 150 | Angers 190 | Nantes 225
+FR18;SNCF;HSR;18;;Paris Nord 0 | Lille Flandres 62
+FR19;SNCF;HSR;6;;Paris Nord 0 | Arras 50 | Douai 66 | Valenciennes 95
+FR20;SNCF;IC;5;;Paris Nord 0 | Amiens 75 | Abbeville 110 | Boulogne-sur-Mer 165
+FR21;SNCF;HSR;10;;Paris Est 0 | Strasbourg 106
+FR22;SNCF;HSR;3;;Paris Est 0 | Champagne-Ardenne TGV 45 | Meuse TGV 65 | Lorraine TGV 85 | Strasbourg 120
+FR23;SNCF;HSR;6;;Paris Est 0 | Metz 83 | Thionville 102 | Luxembourg 127
+FR24;SNCF;HSR;9;;Paris Est 0 | Nancy 92
+FR25;SNCF;HSR;10;;Paris Est 0 | Reims 46
+FR26;SNCF;HSR;4;;Paris Est 0 | Strasbourg 106 | Colmar 135
+FR27;SNCF;HSR;12;;Paris Montparnasse 0 | Bordeaux 124
+FR28;SNCF;HSR;8;;Paris Montparnasse 0 | Tours 58 | Poitiers 83 | Angouleme 126 | Bordeaux 165
+FR29;SNCF;HSR;7;;Paris Montparnasse 0 | Bordeaux 130 | Agen 195 | Montauban 225 | Toulouse 250
+FR30;SNCF;HSR;4;;Paris Montparnasse 0 | Bordeaux 130 | Dax 200 | Bayonne 230 | Biarritz 240 | Hendaye 262
+FR31;SNCF;HSR;5;;Paris Montparnasse 0 | Poitiers 90 | La Rochelle 165
+FR32;SNCF;HSR;14;;Paris Montparnasse 0 | Rennes 85
+FR33;SNCF;HSR;7;;Paris Montparnasse 0 | Rennes 88 | Saint-Brieuc 130 | Guingamp 148 | Morlaix 178 | Brest 205
+FR34;SNCF;HSR;6;;Paris Montparnasse 0 | Rennes 88 | Vannes 150 | Lorient 180 | Quimper 215
+FR35;SNCF;HSR;14;;Paris Montparnasse 0 | Le Mans 55 | Angers 95 | Nantes 128
+FR36;SNCF;IC;7;;Paris Austerlitz 0 | Orleans 62 | Blois 95 | Tours 125
+FR37;SNCF;IC;4;;Paris Austerlitz 0 | Orleans 62 | Vierzon 110 | Chateauroux 140 | Limoges 200 | Brive-la-Gaillarde 265 | Cahors 330 | Montauban 375 | Toulouse 405
+FR38;SNCF;IC;8;;Paris Gare de Lyon 0 | Nevers 118 | Moulins 150 | Vichy 180 | Clermont-Ferrand 210
+FR39;SNCF;IC;14;;Paris Saint-Lazare 0 | Rouen 70 | Le Havre 130
+FR40;SNCF;IC;8;;Paris Saint-Lazare 0 | Caen 115 | Cherbourg 185
+FR41;SNCF;IC;5;;Bordeaux 0 | Agen 65 | Montauban 100 | Toulouse 125 | Carcassonne 175 | Narbonne 205 | Beziers 222 | Montpellier Saint-Roch 255 | Nimes 285 | Arles 305 | Marseille Saint-Charles 355
+FR42;SNCF;IC;12;;Lyon Part-Dieu 0 | Geneve 110
+FR43;SNCF;IC;16;;Lyon Part-Dieu 0 | Grenoble 80
+FR44;SNCF;IC;20;;Lyon Part-Dieu 0 | Saint-Etienne 47
+FR45;SNCF;IC;8;;Marseille Saint-Charles 0 | Toulon 50 | Cannes 125 | Antibes 137 | Nice 155
+FR46;SNCF;IC;10;;Lyon Part-Dieu 0 | Macon 45 | Chalon-sur-Saone 75 | Dijon 110
+FR47;SNCF;IC;16;;Strasbourg 0 | Colmar 30 | Mulhouse 55 | Basel SBB 80
+FR48;SNCF;IC;10;;Strasbourg 0 | Nancy 88
+FR49;SNCF;IC;24;;Metz 0 | Thionville 20 | Luxembourg 50
+FR50;SNCF;HSR;3;;Nantes 0 | Angers 38 | Le Mans 80 | Massy TGV 140 | Marne-la-Vallee Chessy 170 | Lyon Part-Dieu 285
+FR51;SNCF;HSR;2;;Rennes 0 | Le Mans 60 | Massy TGV 115 | Lyon Part-Dieu 240 | Avignon TGV 310 | Marseille Saint-Charles 345
+FR52;SNCF;HSR;3;;Strasbourg 0 | Mulhouse 60 | Belfort-Montbeliard TGV 85 | Besancon Franche-Comte TGV 110 | Lyon Part-Dieu 225 | Avignon TGV 300 | Marseille Saint-Charles 335
+FR53;SNCF;HSR;3;;Bruxelles-Midi 0 | Lille Europe 35 | Aeroport CDG 2 TGV 90 | Marne-la-Vallee Chessy 110 | Lyon Part-Dieu 225 | Avignon TGV 298 | Marseille Saint-Charles 330
+FR54;SNCF;IC;3;;Bordeaux 0 | La Rochelle 140 | Nantes 250
+FR55;SNCF;NIGHT;1;;Paris Austerlitz 0 | Brive-la-Gaillarde 360 | Cahors 420 | Montauban 480 | Toulouse 510
+FR56;SNCF;NIGHT;1;;Paris Austerlitz 0 | Marseille Saint-Charles 540 | Toulon 600 | Cannes 690 | Nice 740
+FR57;SNCF;NIGHT;1;;Paris Austerlitz 0 | Gap 600 | Briancon 700
+# ---------------------------------------------------------------- Eurostar & Benelux
+EU01;Eurostar;HSR;10;;London St Pancras 0 | Paris Nord 137
+EU02;Eurostar;HSR;3;;London St Pancras 0 | Ebbsfleet International 18 | Lille Europe 83 | Paris Nord 145
+EU03;Eurostar;HSR;6;;London St Pancras 0 | Lille Europe 82 | Bruxelles-Midi 121
+EU04;Eurostar;HSR;4;;London St Pancras 0 | Bruxelles-Midi 116 | Rotterdam Centraal 187 | Amsterdam Centraal 232
+EU05;Eurostar;HSR;10;;Paris Nord 0 | Bruxelles-Midi 82
+EU06;Eurostar;HSR;6;;Paris Nord 0 | Bruxelles-Midi 82 | Antwerpen-Centraal 118 | Rotterdam Centraal 155 | Schiphol Airport 183 | Amsterdam Centraal 200
+EU07;Eurostar;HSR;5;;Paris Nord 0 | Bruxelles-Midi 82 | Liege-Guillemins 125 | Aachen 150 | Koln Hbf 195
+BE01;SNCB;IC;32;;Bruxelles-Midi 0 | Bruxelles-Central 4 | Bruxelles-Nord 8 | Mechelen 22 | Antwerpen-Centraal 44
+BE02;SNCB;IC;16;;Bruxelles-Midi 0 | Gent 32 | Brugge 55 | Oostende 70
+BE03;SNCB;IC;16;;Bruxelles-Midi 0 | Gent 32 | Brugge 55
+BE04;SNCB;IC;16;;Bruxelles-Midi 0 | Bruxelles-Central 4 | Bruxelles-Nord 8 | Leuven 30 | Liege-Guillemins 65
+BE05;SNCB;IC;16;;Bruxelles-Midi 0 | Charleroi 50
+BE06;SNCB;IC;8;;Bruxelles-Midi 0 | Bruxelles-Central 4 | Namur 60 | Arlon 150 | Luxembourg 185
+BE07;SNCB;IC;16;;Antwerpen-Centraal 0 | Gent 50
+BE08;SNCB;IC;16;;Bruxelles-Midi 0 | Mons 50
+BE09;NS/SNCB;IC;16;;Bruxelles-Midi 0 | Bruxelles-Central 4 | Bruxelles-Nord 8 | Antwerpen-Centraal 45 | Breda 80 | Rotterdam Centraal 105 | Schiphol Airport 140 | Amsterdam Centraal 170
+NL01;NS;IC;32;;Amsterdam Centraal 0 | Schiphol Airport 15 | Rotterdam Centraal 41
+NL02;NS;IC;32;;Amsterdam Centraal 0 | Schiphol Airport 15 | Leiden 32 | Den Haag HS 45 | Delft 53 | Rotterdam Centraal 65 | Dordrecht 80
+NL03;NS;IC;32;;Amsterdam Centraal 0 | Leiden 35 | Den Haag Centraal 50
+NL04;NS;IC;32;;Amsterdam Centraal 0 | Utrecht Centraal 27 | 's-Hertogenbosch 55 | Eindhoven 80
+NL05;NS;IC;32;;Schiphol Airport 0 | Amsterdam Zuid 8 | Utrecht Centraal 30 | 's-Hertogenbosch 60 | Eindhoven 82 | Weert 102 | Roermond 115 | Sittard 130 | Maastricht 145
+NL06;NS;IC;32;;Amsterdam Centraal 0 | Utrecht Centraal 27 | Arnhem Centraal 63 | Nijmegen 80
+NL07;NS;IC;32;;Amsterdam Centraal 0 | Amersfoort 35 | Apeldoorn 63 | Deventer 75 | Almelo 100 | Hengelo 110 | Enschede 120
+NL08;NS;IC;16;;Amsterdam Centraal 0 | Almere 20 | Lelystad 35 | Zwolle 60 | Assen 100 | Groningen 118
+NL09;NS;IC;16;;Utrecht Centraal 0 | Amersfoort 15 | Zwolle 52 | Leeuwarden 110
+NL10;NS;IC;16;;Utrecht Centraal 0 | Amersfoort 15 | Zwolle 52 | Assen 92 | Groningen 110
+NL11;NS;IC;32;;Utrecht Centraal 0 | Gouda 18 | Rotterdam Centraal 38
+NL12;NS;IC;16;;Den Haag Centraal 0 | Rotterdam Centraal 23 | Breda 50 | Tilburg 65 | Eindhoven 85
+NL13;NS;IC;16;;Den Haag Centraal 0 | Gouda 20 | Utrecht Centraal 38
+# ---------------------------------------------------------------- Germany
+DE01;DB;HSR;8;;Hamburg Hbf 0 | Berlin Spandau 92 | Berlin Hbf 106 | Berlin Sudkreuz 115 | Leipzig Hbf 185 | Erfurt 230 | Nurnberg Hbf 300 | Munchen Hbf 365
+DE02;DB;IC;6;;Hamburg-Altona 0 | Hamburg Hbf 10 | Berlin Hbf 116 | Berlin Sudkreuz 126 | Dresden-Neustadt 230 | Dresden Hbf 238 | Bad Schandau 265 | Decin 280 | Usti nad Labem 297 | Praha hl.n. 370
+DE03;DB;HSR;4;;Hamburg Hbf 0 | Berlin Hbf 104
+DE04;DB;HSR;8;;Berlin Gesundbrunnen 0 | Berlin Hbf 6 | Berlin Sudkreuz 14 | Halle (Saale) 80 | Erfurt 120 | Nurnberg Hbf 190 | Munchen Hbf 250
+DE05;DB;HSR;8;;Berlin Hbf 0 | Berlin Sudkreuz 8 | Leipzig Hbf 72 | Erfurt 115 | Eisenach 145 | Fulda 190 | Hanau 222 | Frankfurt Hbf 240
+DE06;DB;HSR;8;;Dresden Hbf 0 | Riesa 35 | Leipzig Hbf 70 | Erfurt 115 | Eisenach 145 | Fulda 188 | Frankfurt Hbf 240 | Frankfurt Flughafen Fernbf 255 | Wiesbaden 275
+DE07;DB;HSR;8;;Berlin Ostbahnhof 0 | Berlin Hbf 8 | Berlin Spandau 20 | Wolfsburg 70 | Braunschweig 90 | Hildesheim 115 | Gottingen 145 | Kassel 165 | Fulda 198 | Frankfurt Hbf 250 | Mannheim Hbf 290 | Karlsruhe Hbf 320 | Freiburg im Breisgau 380 | Basel Bad Bf 420 | Basel SBB 428
+DE08;DB;HSR;8;;Berlin Ostbahnhof 0 | Berlin Hbf 8 | Berlin Spandau 20 | Wolfsburg 68 | Hannover Hbf 100 | Bielefeld 150 | Hamm 185 | Hagen 208 | Wuppertal 225 | Koln Hbf 258
+DE09;DB;HSR;8;;Berlin Hbf 0 | Berlin Spandau 13 | Hannover Hbf 98 | Bielefeld 148 | Hamm 180 | Dortmund 195 | Bochum 208 | Essen 219 | Duisburg 230 | Dusseldorf Hbf 245 | Koln Hbf 272
+DE10;DB/NS;IC;7;;Berlin Ostbahnhof 0 | Berlin Hbf 8 | Berlin Spandau 22 | Wolfsburg 75 | Hannover Hbf 115 | Osnabruck 185 | Rheine 210 | Bad Bentheim 225 | Hengelo 250 | Almelo 262 | Deventer 285 | Apeldoorn 297 | Amersfoort 325 | Amsterdam Centraal 360
+DE11;DB;HSR;16;;Hamburg-Altona 0 | Hamburg Hbf 10 | Bremen Hbf 65 | Osnabruck 115 | Munster 140 | Dortmund 170 | Bochum 182 | Essen 194 | Duisburg 205 | Dusseldorf Hbf 220 | Koln Hbf 245
+DE12;DB;HSR;8;;Hamburg Hbf 0 | Hannover Hbf 80 | Gottingen 115 | Kassel 135 | Fulda 170 | Frankfurt Hbf 222 | Mannheim Hbf 262 | Karlsruhe Hbf 292 | Freiburg im Breisgau 350 | Basel SBB 390
+DE13;DB;HSR;8;;Hamburg-Altona 0 | Hamburg Hbf 10 | Hannover Hbf 90 | Gottingen 125 | Kassel 145 | Fulda 180 | Frankfurt Hbf 232 | Mannheim Hbf 272 | Stuttgart Hbf 310
+DE14;DB;HSR;8;;Hamburg-Altona 0 | Hamburg Hbf 10 | Hannover Hbf 90 | Gottingen 125 | Kassel 145 | Fulda 180 | Wurzburg 215 | Nurnberg Hbf 272 | Ingolstadt 310 | Munchen Hbf 345
+DE15;DB;HSR;8;;Dortmund 0 | Essen 22 | Duisburg 34 | Dusseldorf Hbf 48 | Koln Hbf 72 | Frankfurt Flughafen Fernbf 128 | Mannheim Hbf 165 | Stuttgart Hbf 205 | Ulm 250 | Augsburg 290 | Munchen Hbf 322
+DE16;DB;HSR;8;;Essen 0 | Duisburg 12 | Dusseldorf Hbf 26 | Koln Messe/Deutz 50 | Frankfurt Flughafen Fernbf 102 | Frankfurt Hbf 115 | Wurzburg 185 | Nurnberg Hbf 240 | Munchen Hbf 305
+DE17;DB;HSR;16;;Koln Hbf 0 | Siegburg/Bonn 20 | Montabaur 38 | Frankfurt Flughafen Fernbf 55 | Frankfurt Hbf 68
+DE18;DB/NS;HSR;7;;Amsterdam Centraal 0 | Utrecht Centraal 27 | Arnhem Centraal 63 | Oberhausen 115 | Duisburg 125 | Dusseldorf Hbf 140 | Koln Hbf 165 | Frankfurt Flughafen Fernbf 220 | Frankfurt Hbf 235
+DE19;DB/SNCB;HSR;5;;Bruxelles-Midi 0 | Bruxelles-Nord 7 | Liege-Guillemins 62 | Aachen 90 | Koln Hbf 130 | Frankfurt Flughafen Fernbf 185 | Frankfurt Hbf 198
+DE20;DB;HSR;8;;Frankfurt Hbf 0 | Mannheim Hbf 38 | Stuttgart Hbf 78 | Ulm 122 | Augsburg 162 | Munchen Hbf 193
+DE21;DB;IC;8;;Karlsruhe Hbf 0 | Stuttgart Hbf 40 | Ulm 85 | Augsburg 125 | Munchen Hbf 158
+DE22;DB/OBB;HSR;7;;Frankfurt Hbf 0 | Wurzburg 70 | Nurnberg Hbf 125 | Regensburg 180 | Passau 245 | Linz 310 | St. Polten Hbf 355 | Wien Hbf 385
+DE23;DB;IC;8;;Stuttgart Hbf 0 | Aalen 70 | Crailsheim 95 | Ansbach 115 | Nurnberg Hbf 130
+DE24;DB/SBB;IC;8;;Stuttgart Hbf 0 | Boblingen 20 | Horb am Neckar 50 | Rottweil 80 | Tuttlingen 95 | Singen 120 | Schaffhausen 135 | Zurich HB 175
+DE25;DB/SBB;IC;6;;Munchen Hbf 0 | Memmingen 75 | Lindau 125 | Bregenz 140 | St. Gallen 170 | Winterthur 205 | Zurich HB 220
+DE26;DB;IC;8;;Leipzig Hbf 0 | Halle (Saale) 25 | Magdeburg 75 | Braunschweig 120 | Hannover Hbf 155 | Bielefeld 205 | Hamm 237 | Dortmund 252 | Essen 275 | Duisburg 287 | Dusseldorf Hbf 302 | Koln Hbf 327
+DE27;DB;IC;7;;Rostock 0 | Berlin Hbf 145 | Berlin Sudkreuz 155 | Dresden Hbf 270
+DE28;DB;IC;8;;Hamburg Hbf 0 | Neumunster 45 | Kiel 72
+DE29;DB;IC;8;;Hannover Hbf 0 | Bremen Hbf 60 | Oldenburg 90 | Leer 125 | Emden 145
+DE30;DB;IC;8;;Stuttgart Hbf 0 | Heidelberg 40 | Mannheim Hbf 55 | Mainz 100 | Koblenz 150 | Bonn 185 | Koln Hbf 210 | Dusseldorf Hbf 235 | Duisburg 248 | Essen 260 | Dortmund 283
+DE31;DB;IC;8;;Frankfurt Hbf 0 | Darmstadt 17 | Heidelberg 50 | Karlsruhe Hbf 80
+DE32;DB/SNCF;HSR;5;;Paris Est 0 | Saarbrucken 110 | Kaiserslautern 145 | Mannheim Hbf 185 | Frankfurt Hbf 225
+DE33;SNCF/DB;HSR;3;;Paris Est 0 | Strasbourg 106 | Karlsruhe Hbf 145 | Stuttgart Hbf 190
+DE34;SNCF/DB;HSR;2;;Paris Est 0 | Strasbourg 106 | Karlsruhe Hbf 145 | Stuttgart Hbf 190 | Ulm 242 | Augsburg 284 | Munchen Hbf 318
+DE35;SNCF/DB;HSR;1;;Marseille Saint-Charles 0 | Aix-en-Provence TGV 15 | Avignon TGV 37 | Lyon Part-Dieu 110 | Besancon Franche-Comte TGV 205 | Belfort-Montbeliard TGV 225 | Mulhouse 255 | Strasbourg 310 | Karlsruhe Hbf 350 | Mannheim Hbf 378 | Frankfurt Hbf 415
+DE36;DB/PKP;IC;4;;Berlin Hbf 0 | Berlin Ostbahnhof 8 | Frankfurt (Oder) 65 | Poznan Glowny 170 | Kutno 280 | Warszawa Centralna 330
+DE37;DB/CD;IC;6;;Munchen Hbf 0 | Landshut 50 | Regensburg 90 | Schwandorf 125 | Furth im Wald 170 | Plzen 245 | Praha hl.n. 335
+DE38;DB/DSB;IC;5;;Hamburg Hbf 0 | Neumunster 42 | Rendsburg 70 | Flensburg 105 | Padborg 120 | Kolding 170 | Fredericia 182 | Odense 215 | Roskilde 265 | Kobenhavn H 290
+DE39;DB;HSR;6;;Munchen Hbf 0 | Nurnberg Hbf 62
+DE40;DB;IC;8;;Hamburg Hbf 0 | Lubeck 45
+# ---------------------------------------------------------------- Austria & Switzerland
+AT01;OBB;HSR;4;;Munchen Hbf 0 | Rosenheim 36 | Salzburg 88 | Linz 160 | St. Polten Hbf 205 | Wien Meidling 225 | Wien Hbf 232 | Gyor 300 | Budapest-Keleti 392
+AT02;OBB;HSR;4;;Munchen Hbf 0 | Rosenheim 36 | Salzburg 88 | Linz 160 | St. Polten Hbf 205 | Wien Meidling 225 | Wien Hbf 232
+AT03;OBB/MAV;HSR;8;;Wien Hbf 0 | Gyor 65 | Tatabanya 110 | Budapest-Keleti 160
+AT04;OBB;HSR;16;;Salzburg 0 | Linz 68 | St. Polten Hbf 112 | Wien Hbf 142
+AT05;WESTbahn;IC;12;;Salzburg 0 | Linz 70 | St. Polten Hbf 115 | Wien Westbahnhof 150
+AT06;OBB;HSR;5;;Zurich HB 0 | Sargans 58 | Buchs SG 75 | Feldkirch 88 | Bludenz 102 | Landeck-Zams 160 | Innsbruck 210 | Worgl 245 | Salzburg 330 | Linz 400 | St. Polten Hbf 445 | Wien Hbf 475
+AT07;OBB;HSR;8;;Wien Hbf 0 | St. Polten Hbf 25 | Linz 75 | Salzburg 145 | Innsbruck 255
+AT08;OBB/DB;IC;3;;Munchen Hbf 0 | Rosenheim 35 | Kufstein 55 | Innsbruck 108 | Brennero 150 | Bolzano 210 | Trento 245 | Rovereto 262 | Verona Porta Nuova 320 | Bologna Centrale 400
+AT09;OBB;IC;16;;Wien Hbf 0 | Wiener Neustadt 33 | Bruck an der Mur 110 | Graz 155
+AT10;OBB;IC;8;;Wien Hbf 0 | Wiener Neustadt 33 | Bruck an der Mur 110 | Klagenfurt 235 | Villach 262
+AT11;OBB/CD;HSR;8;;Wien Hbf 0 | Breclav 58 | Brno hl.n. 92 | Pardubice 190 | Praha hl.n. 245
+AT12;OBB;IC;16;;Wien Hbf 0 | Bratislava hl.st. 62
+AT13;OBB/SZ;IC;2;;Wien Hbf 0 | Graz 155 | Maribor 215 | Celje 270 | Ljubljana 330
+AT14;OBB/SZ/HZ;IC;2;;Munchen Hbf 0 | Salzburg 90 | Bischofshofen 135 | Schwarzach-St. Veit 150 | Villach 260 | Jesenice 295 | Ljubljana 355 | Zagreb Glavni kolodvor 505
+CH01;SBB;IC;32;;Geneve-Aeroport 0 | Geneve 7 | Lausanne 45 | Fribourg 90 | Bern 110 | Zurich HB 168 | Zurich Flughafen 180 | Winterthur 195 | St. Gallen 230
+CH02;SBB;IC;16;;Geneve 0 | Lausanne 40 | Yverdon-les-Bains 62 | Neuchatel 78 | Biel/Bienne 95 | Solothurn 110 | Olten 135 | Zurich HB 175
+CH03;SBB;IC;32;;Basel SBB 0 | Zurich HB 53
+CH04;SBB;IC;16;;Basel SBB 0 | Zurich HB 55 | Sargans 120 | Landquart 133 | Chur 145
+CH05;SBB;IC;16;;Basel SBB 0 | Olten 25 | Bern 55 | Thun 75 | Spiez 85 | Interlaken Ost 108
+CH06;SBB;IC;16;;Basel SBB 0 | Olten 25 | Bern 55 | Spiez 80 | Visp 110 | Brig 118
+CH07;SBB/FS;HSR;9;;Zurich HB 0 | Zug 22 | Arth-Goldau 38 | Bellinzona 103 | Lugano 120 | Como 150 | Milano Centrale 198
+CH08;SBB;IC;16;;Basel SBB 0 | Olten 25 | Luzern 60 | Arth-Goldau 85 | Bellinzona 150 | Lugano 167
+CH09;SBB;IC;16;;Zurich HB 0 | Zug 22 | Arth-Goldau 38 | Bellinzona 103 | Lugano 120
+CH10;SBB;IC;32;;Zurich HB 0 | Luzern 41
+CH11;SBB;IC;16;;Bern 0 | Luzern 60
+CH12;SBB;IC;16;;Geneve 0 | Lausanne 36 | Vevey 50 | Montreux 57 | Aigle 68 | Martigny 85 | Sion 100 | Sierre 110 | Visp 125 | Brig 133
+CH13;SBB/FS;IC;3;;Geneve 0 | Lausanne 40 | Montreux 60 | Sion 100 | Visp 125 | Brig 135 | Domodossola 165 | Milano Centrale 245
+CH14;SBB/FS;IC;4;;Basel SBB 0 | Bern 55 | Spiez 80 | Brig 120 | Domodossola 150 | Milano Centrale 240
+CH15;SBB;IC;16;;Bern 0 | Zurich HB 56 | Zurich Flughafen 68 | Winterthur 82
+# ---------------------------------------------------------------- Italy
+IT01;Trenitalia;HSR;14;;Torino Porta Nuova 0 | Torino Porta Susa 7 | Milano Centrale 60 | Reggio Emilia AV Mediopadana 110 | Bologna Centrale 125 | Firenze SMN 163 | Roma Termini 257 | Napoli Centrale 330 | Salerno 370
+IT02;Trenitalia/Italo;HSR;12;;Milano Centrale 0 | Roma Termini 179
+IT03;Trenitalia/Italo;HSR;20;;Milano Centrale 0 | Milano Rogoredo 10 | Reggio Emilia AV Mediopadana 45 | Bologna Centrale 62 | Firenze SMN 100 | Roma Tiburtina 188 | Roma Termini 195 | Napoli Centrale 270
+IT04;Trenitalia/Italo;HSR;14;;Venezia Santa Lucia 0 | Venezia Mestre 12 | Padova 28 | Ferrara 60 | Bologna Centrale 85 | Firenze SMN 125 | Roma Termini 220 | Napoli Centrale 292
+IT05;Trenitalia;HSR;6;;Torino Porta Nuova 0 | Torino Porta Susa 7 | Milano Centrale 62 | Brescia 100 | Verona Porta Nuova 135 | Vicenza 160 | Padova 175 | Venezia Mestre 190 | Venezia Santa Lucia 202
+IT06;Trenitalia/Italo;HSR;14;;Milano Centrale 0 | Brescia 36 | Desenzano del Garda 55 | Verona Porta Nuova 73 | Vicenza 97 | Padova 113 | Venezia Mestre 128 | Venezia Santa Lucia 140
+IT07;Trenitalia;IC;10;;Milano Centrale 0 | Pavia 25 | Voghera 45 | Genova Piazza Principe 95 | Genova Brignole 103
+IT08;Trenitalia;IC;8;;Torino Porta Nuova 0 | Asti 35 | Alessandria 60 | Genova Piazza Principe 110
+IT09;Trenitalia;IC;5;;Genova Piazza Principe 0 | Genova Brignole 8 | La Spezia 85 | Pisa 140 | Livorno 157 | Grosseto 235 | Civitavecchia 300 | Roma Termini 370
+IT10;Trenitalia;IC;16;;Firenze SMN 0 | Empoli 25 | Pisa 60
+IT11;Trenitalia;HSR;8;;Milano Centrale 0 | Bologna Centrale 65 | Rimini 120 | Pesaro 138 | Ancona 165 | Pescara 245 | Foggia 330 | Bari 395 | Lecce 485
+IT12;Trenitalia;HSR;6;;Roma Termini 0 | Caserta 65 | Benevento 105 | Foggia 180 | Bari 245
+IT13;Trenitalia;HSR;6;;Roma Termini 0 | Napoli Centrale 70 | Salerno 110 | Lamezia Terme 240 | Villa San Giovanni 320 | Reggio Calabria 340
+IT14;Trenitalia;HSR;5;;Roma Termini 0 | Firenze SMN 95 | Bologna Centrale 135 | Verona Porta Nuova 190 | Trento 245 | Bolzano 275
+IT15;Trenitalia;IC;2;;Roma Termini 0 | Napoli Centrale 130 | Salerno 170 | Villa San Giovanni 420 | Messina 480 | Catania 570 | Siracusa 640
+IT16;Trenitalia;IC;10;;Venezia Mestre 0 | Trieste 120
+IT17;Trenitalia;IC;8;;Venezia Mestre 0 | Treviso 20 | Udine 90
+IT18;Trenitalia;IC;6;;Messina 0 | Palermo 190
+IT19;Trenitalia;NIGHT;1;;Milano Centrale 0 | Bologna Centrale 120 | Firenze SMN 220 | Roma Termini 400 | Napoli Centrale 540 | Villa San Giovanni 900 | Messina 990 | Palermo 1230
+# ---------------------------------------------------------------- Spain & Portugal
+ES01;Renfe/Ouigo/Iryo;HSR;14;;Madrid Puerta de Atocha 0 | Barcelona Sants 150
+ES02;Renfe;HSR;12;;Madrid Puerta de Atocha 0 | Guadalajara-Yebes 25 | Calatayud 55 | Zaragoza Delicias 80 | Lleida 125 | Camp de Tarragona 150 | Barcelona Sants 180
+ES03;Renfe/Ouigo/Iryo;HSR;18;;Madrid Puerta de Atocha 0 | Ciudad Real 50 | Puertollano 65 | Cordoba 105 | Sevilla Santa Justa 150
+ES04;Renfe/Iryo;HSR;12;;Madrid Puerta de Atocha 0 | Cordoba 105 | Antequera-Santa Ana 135 | Malaga Maria Zambrano 162
+ES05;Renfe/Ouigo/Iryo;HSR;18;;Madrid Puerta de Atocha 0 | Cuenca 55 | Requena-Utiel 85 | Valencia Joaquin Sorolla 110
+ES06;Renfe/Ouigo;HSR;10;;Madrid Puerta de Atocha 0 | Cuenca 55 | Albacete 90 | Villena 115 | Alicante 140
+ES07;Renfe;HSR;4;;Madrid Puerta de Atocha 0 | Cuenca 55 | Albacete 90 | Villena 115 | Elche 135 | Orihuela 150 | Murcia 165
+ES08;Renfe;HSR;16;;Madrid Chamartin 0 | Segovia 28 | Valladolid 58
+ES09;Renfe;HSR;5;;Madrid Chamartin 0 | Segovia 28 | Valladolid 60 | Palencia 80 | Leon 125 | Oviedo 205 | Gijon 235
+ES10;Renfe;HSR;7;;Madrid Chamartin 0 | Zamora 85 | Sanabria AV 115 | Ourense 140 | Santiago de Compostela 180 | A Coruna 210
+ES11;Renfe;HSR;3;;Madrid Chamartin 0 | Ourense 145 | Santiago de Compostela 180 | Pontevedra 230 | Vigo 255
+ES12;Renfe;IC;3;;Madrid Chamartin 0 | Valladolid 60 | Burgos 110 | Miranda de Ebro 140 | Vitoria-Gasteiz 165 | San Sebastian 260 | Irun 280
+ES13;Renfe;IC;2;;Madrid Chamartin 0 | Valladolid 60 | Burgos 110 | Miranda de Ebro 140 | Bilbao 245
+ES14;Renfe;IC;12;;Barcelona Sants 0 | Tarragona 55 | Castello de la Plana 140 | Valencia Joaquin Sorolla 170
+ES15;Renfe;HSR;12;;Barcelona Sants 0 | Girona 38 | Figueres Vilafant 55
+ES16;SNCF/Renfe;HSR;2;;Barcelona Sants 0 | Girona 38 | Figueres Vilafant 55 | Perpignan 80 | Narbonne 115 | Beziers 130 | Montpellier Sud de France 160 | Nimes 190 | Valence TGV 250 | Paris Gare de Lyon 390
+ES17;Renfe;HSR;2;;Barcelona Sants 0 | Girona 38 | Figueres Vilafant 55 | Perpignan 80 | Narbonne 115 | Montpellier Sud de France 155 | Nimes 180 | Lyon Part-Dieu 290
+ES18;Renfe;HSR;14;;Madrid Puerta de Atocha 0 | Toledo 33
+ES19;Renfe;HSR;5;;Madrid Puerta de Atocha 0 | Cordoba 105 | Antequera-Santa Ana 135 | Granada 195
+ES20;Renfe;IC;10;;Sevilla Santa Justa 0 | Jerez de la Frontera 60 | Cadiz 95
+ES21;Renfe;HSR;3;;Madrid Puerta de Atocha 0 | Guadalajara-Yebes 25 | Calatayud 55 | Zaragoza Delicias 85 | Tudela 125 | Pamplona 175
+PT01;CP;IC;16;;Lisboa Santa Apolonia 0 | Lisboa Oriente 8 | Santarem 50 | Entroncamento 65 | Coimbra-B 110 | Aveiro 138 | Porto Campanha 175
+PT02;CP;IC;5;;Lisboa Oriente 0 | Faro 190
+PT03;CP;IC;8;;Porto Campanha 0 | Braga 55
+PT04;CP/Renfe;IC;2;;Porto Campanha 0 | Viana do Castelo 75 | Vigo 140
+# ---------------------------------------------------------------- Britain & Ireland
+GB01;Avanti;IC;32;;London Euston 0 | Milton Keynes 32 | Coventry 60 | Birmingham International 70 | Birmingham New Street 82
+GB02;Avanti;IC;24;;London Euston 0 | Stoke-on-Trent 85 | Macclesfield 102 | Stockport 118 | Manchester Piccadilly 128
+GB03;Avanti;IC;12;;London Euston 0 | Milton Keynes 32 | Crewe 95 | Wilmslow 115 | Manchester Piccadilly 135
+GB04;Avanti;IC;16;;London Euston 0 | Milton Keynes 32 | Stafford 80 | Crewe 95 | Runcorn 115 | Liverpool Lime Street 135
+GB05;Avanti;IC;14;;London Euston 0 | Warrington 110 | Wigan 122 | Preston 135 | Lancaster 150 | Oxenholme 165 | Penrith 190 | Carlisle 205 | Glasgow Central 270
+GB06;Avanti;IC;6;;London Euston 0 | Crewe 95 | Chester 118 | Bangor 190 | Holyhead 225
+GB07;LNER/Lumo;IC;32;;London Kings Cross 0 | Peterborough 45 | Newark on Trent 75 | York 113 | Darlington 138 | Durham 155 | Newcastle upon Tyne 170 | Edinburgh Waverley 262
+GB08;LNER;IC;32;;London Kings Cross 0 | Stevenage 22 | Peterborough 47 | Grantham 68 | Doncaster 100 | Wakefield 120 | Leeds 135
+GB09;EMR;IC;16;;London St Pancras 0 | Leicester 65 | Nottingham 100
+GB10;EMR;IC;16;;London St Pancras 0 | Leicester 65 | Derby 90 | Chesterfield 110 | Sheffield 122
+GB11;GWR;IC;32;;London Paddington 0 | Reading 25 | Didcot 40 | Swindon 55 | Chippenham 70 | Bath 85 | Bristol Temple Meads 100
+GB12;GWR;IC;16;;London Paddington 0 | Reading 25 | Swindon 55 | Bristol Parkway 80 | Newport 100 | Cardiff 115
+GB13;GWR;IC;16;;London Paddington 0 | Reading 25 | Swindon 55 | Bristol Parkway 80 | Newport 100 | Cardiff 115 | Swansea 170
+GB14;GWR;IC;16;;London Paddington 0 | Reading 25 | Taunton 105 | Exeter 127 | Newton Abbot 150 | Plymouth 195 | Penzance 320
+GB15;GWR;IC;32;;London Paddington 0 | Reading 25 | Oxford 55
+GB16;SWR;IC;32;;London Waterloo 0 | Woking 25 | Basingstoke 45 | Winchester 60 | Southampton 75 | Bournemouth 105
+GB17;Greater Anglia;IC;32;;London Liverpool Street 0 | Colchester 50 | Ipswich 65 | Norwich 115
+GB18;Southern;IC;32;;London Victoria 0 | Gatwick Airport 30 | Brighton 60
+GB19;ScotRail;IC;64;;Edinburgh Waverley 0 | Glasgow Queen Street 50
+GB20;CrossCountry;IC;14;;Edinburgh Waverley 0 | Newcastle upon Tyne 90 | Durham 105 | Darlington 122 | York 150 | Leeds 175 | Sheffield 215 | Birmingham New Street 280 | Bristol Temple Meads 370 | Exeter 430 | Plymouth 520
+GB21;CrossCountry;IC;14;;Manchester Piccadilly 0 | Stockport 8 | Stoke-on-Trent 38 | Wolverhampton 70 | Birmingham New Street 88 | Leamington Spa 115 | Oxford 150 | Reading 175 | Southampton 220 | Bournemouth 260
+GB22;TransPennine;IC;16;;Liverpool Lime Street 0 | Manchester Victoria 38 | Huddersfield 65 | Leeds 88 | York 115 | Darlington 145 | Durham 162 | Newcastle upon Tyne 180
+GB23;TransPennine;IC;16;;Manchester Airport 0 | Manchester Piccadilly 17 | Huddersfield 45 | Leeds 70 | York 95
+GB24;TransPennine;IC;32;;Manchester Piccadilly 0 | Stockport 8 | Sheffield 50
+GB25;ScotRail;IC;16;;Glasgow Queen Street 0 | Stirling 30 | Perth 60 | Dundee 80 | Aberdeen 150
+GB26;ScotRail;IC;16;;Edinburgh Waverley 0 | Kirkcaldy 35 | Dundee 80 | Arbroath 100 | Aberdeen 145
+GB27;ScotRail;IC;8;;Glasgow Queen Street 0 | Stirling 30 | Perth 60 | Inverness 205
+GB28;Caledonian Sleeper;NIGHT;1;sun,mon,tue,wed,thu,fri;London Euston 0 | Edinburgh Waverley 440
+GB29;Caledonian Sleeper;NIGHT;1;sun,mon,tue,wed,thu,fri;London Euston 0 | Glasgow Central 455
+GB30;Caledonian Sleeper;NIGHT;1;sun,mon,tue,wed,thu,fri;London Euston 0 | Perth 560 | Inverness 690
+GB31;GWR;NIGHT;1;sun,mon,tue,wed,thu,fri;London Paddington 0 | Reading 30 | Exeter 250 | Plymouth 330 | Penzance 470
+IE01;Irish Rail;IC;18;;Dublin Heuston 0 | Portlaoise 50 | Thurles 90 | Limerick Junction 110 | Mallow 130 | Cork 155
+IE02;Irish Rail/NIR;IC;12;;Dublin Connolly 0 | Drogheda 30 | Dundalk 55 | Newry 70 | Portadown 90 | Belfast 120
+IE03;Irish Rail;IC;10;;Dublin Heuston 0 | Athlone 85 | Galway 140
+IE04;Irish Rail;IC;8;;Dublin Heuston 0 | Limerick Junction 110 | Limerick 135
+IE05;Irish Rail;IC;7;;Dublin Heuston 0 | Kilkenny 95 | Waterford 145
+# ---------------------------------------------------------------- Nordics
+SE01;SJ;HSR;6;;Kobenhavn H 0 | Kobenhavns Lufthavn 13 | Malmo C 35 | Lund 48 | Hassleholm 75 | Alvesta 120 | Nassjo 160 | Linkoping 210 | Norrkoping 235 | Sodertalje 285 | Stockholm C 315
+SE02;SJ;HSR;12;;Malmo C 0 | Lund 12 | Hassleholm 40 | Alvesta 85 | Nassjo 125 | Linkoping 175 | Norrkoping 200 | Sodertalje 245 | Stockholm C 270
+SE03;SJ/MTRX;HSR;16;;Stockholm C 0 | Sodertalje 22 | Katrineholm 60 | Hallsberg 95 | Skovde 125 | Herrljunga 155 | Alingsas 170 | Goteborg C 185
+SE04;Oresundstag;IC;16;;Kobenhavn H 0 | Kobenhavns Lufthavn 13 | Malmo C 35 | Lund 48 | Helsingborg 80 | Halmstad 125 | Varberg 150 | Goteborg C 210
+SE05;Oresundstag;IC;48;;Kobenhavn H 0 | Kobenhavns Lufthavn 13 | Malmo C 35 | Lund 47
+SE06;Vy;IC;4;;Goteborg C 0 | Trollhattan 40 | Halden 150 | Sarpsborg 170 | Fredrikstad 180 | Moss 205 | Oslo S 235
+SE07;SJ;IC;3;;Stockholm C 0 | Vasteras 55 | Orebro 105 | Karlstad 175 | Arvika 220 | Kongsvinger 270 | Lillestrom 310 | Oslo S 325
+SE08;SJ;IC;32;;Stockholm C 0 | Arlanda C 18 | Uppsala 38
+SE09;SJ;IC;8;;Stockholm C 0 | Uppsala 38 | Gavle 80 | Hudiksvall 150 | Sundsvall 205
+SE10;SJ;IC;12;;Stockholm C 0 | Vasteras 55 | Orebro 110
+SE11;SJ;NIGHT;1;;Stockholm C 0 | Uppsala 40 | Sundsvall 230 | Umea 400 | Boden 800 | Lulea 840
+SE12;SJ;NIGHT;1;mon,wed,fri,sun;Stockholm C 0 | Norrkoping 110 | Malmo C 330 | Kobenhavn H 390 | Hamburg Hbf 780
+NO01;Vy;IC;5;;Oslo S 0 | Drammen 35 | Honefoss 95 | Gol 180 | Geilo 215 | Finse 260 | Myrdal 290 | Voss 345 | Bergen 420
+NO02;SJ Norge;IC;5;;Oslo S 0 | Oslo Lufthavn 23 | Hamar 75 | Lillehammer 120 | Otta 190 | Dombas 225 | Oppdal 290 | Storen 350 | Trondheim 400
+NO03;Go-Ahead;IC;4;;Oslo S 0 | Drammen 35 | Kongsberg 80 | Kristiansand 275 | Egersund 390 | Stavanger 470
+NO04;SJ Norge;IC;2;;Trondheim 0 | Steinkjer 120 | Mosjoen 330 | Mo i Rana 420 | Bodo 600
+DK01;DSB;IC;32;;Kobenhavn H 0 | Roskilde 22 | Odense 75 | Middelfart 95 | Fredericia 105 | Vejle 118 | Horsens 135 | Skanderborg 148 | Aarhus 165
+DK02;DSB;IC;16;;Kobenhavn H 0 | Odense 75 | Fredericia 105 | Vejle 118 | Aarhus 162 | Randers 190 | Aalborg 245
+DK03;DSB;IC;16;;Kobenhavn H 0 | Roskilde 22 | Odense 75 | Middelfart 95 | Kolding 110 | Esbjerg 165
+FI01;VR;IC;24;;Helsinki 0 | Pasila 5 | Tikkurila 13 | Hameenlinna 60 | Tampere 95
+FI02;VR;IC;10;;Helsinki 0 | Pasila 5 | Tikkurila 13 | Tampere 100 | Seinajoki 170 | Kokkola 255 | Oulu 340
+FI03;VR;IC;16;;Helsinki 0 | Pasila 5 | Espoo 20 | Salo 80 | Turku 120
+FI04;VR;IC;8;;Helsinki 0 | Tikkurila 13 | Lahti 50 | Kouvola 80 | Lappeenranta 125
+FI05;VR;IC;8;;Helsinki 0 | Tikkurila 13 | Lahti 50 | Kouvola 80 | Mikkeli 140 | Pieksamaki 170 | Kuopio 250
+FI06;VR;IC;8;;Tampere 0 | Turku 105
+# ---------------------------------------------------------------- Central & Eastern Europe
+PL01;PKP IC;HSR;8;;Gdynia Glowna 0 | Sopot 10 | Gdansk Glowny 22 | Malbork 55 | Ilawa 105 | Warszawa Centralna 190 | Krakow Glowny 330
+PL02;PKP IC;HSR;10;;Warszawa Centralna 0 | Krakow Glowny 140
+PL03;PKP IC;HSR;6;;Gdynia Glowna 0 | Gdansk Glowny 22 | Warszawa Centralna 190 | Katowice 350
+PL04;PKP IC;IC;6;;Warszawa Centralna 0 | Katowice 160 | Bielsko-Biala 220
+PL05;PKP IC;IC;16;;Warszawa Centralna 0 | Lodz Fabryczna 75
+PL06;PKP IC;IC;12;;Warszawa Centralna 0 | Kutno 75 | Konin 110 | Poznan Glowny 160
+PL07;PKP IC;IC;8;;Poznan Glowny 0 | Stargard 120 | Szczecin 140
+PL08;PKP IC;IC;6;;Warszawa Centralna 0 | Lodz Kaliska 90 | Wroclaw Glowny 250
+PL09;PKP IC;IC;12;;Krakow Glowny 0 | Katowice 70 | Gliwice 100 | Opole 145 | Wroclaw Glowny 205
+PL10;PKP IC;IC;6;;Wroclaw Glowny 0 | Leszno 70 | Poznan Glowny 110 | Bydgoszcz 190 | Gdansk Glowny 300
+PL11;PKP IC;IC;4;;Wroclaw Glowny 0 | Leszno 70 | Poznan Glowny 110 | Stargard 230 | Szczecin 250
+PL12;PKP IC;IC;10;;Warszawa Centralna 0 | Pulawy 90 | Lublin 125
+PL13;PKP IC;IC;8;;Warszawa Centralna 0 | Warszawa Wschodnia 8 | Bialystok 140
+PL14;PKP IC;IC;8;;Krakow Glowny 0 | Tarnow 60 | Rzeszow 120 | Przemysl 185
+PL15;PKP IC/CD/OBB;IC;2;;Warszawa Centralna 0 | Katowice 160 | Bohumin 235 | Ostrava hl.n. 245 | Breclav 350 | Wien Hbf 420
+PL16;PKP IC/CD;IC;3;;Katowice 0 | Bohumin 65 | Ostrava hl.n. 75 | Olomouc 135 | Pardubice 205 | Praha hl.n. 265
+CZ01;CD/RegioJet/Leo;IC;24;;Praha hl.n. 0 | Pardubice 60 | Olomouc 135 | Ostrava hl.n. 190
+CZ02;CD;IC;8;;Praha hl.n. 0 | Kolin 40 | Pardubice 60 | Ceska Trebova 95 | Brno hl.n. 155
+CZ03;CD;IC;16;;Praha hl.n. 0 | Plzen 90
+CZ04;CD/ZSSK/MAV;IC;6;;Praha hl.n. 0 | Pardubice 60 | Brno hl.n. 150 | Breclav 185 | Bratislava hl.st. 235 | Sturovo 305 | Budapest-Keleti 370
+CZ05;CD;IC;8;;Praha hl.n. 0 | Tabor 85 | Ceske Budejovice 145
+SK01;ZSSK;IC;10;;Bratislava hl.st. 0 | Trnava 30 | Trencin 75 | Zilina 125 | Poprad 210 | Spisska Nova Ves 230 | Kosice 275
+SK02;ZSSK/MAV;IC;3;;Kosice 0 | Miskolc 75 | Budapest-Keleti 200
+HU01;MAV;IC;16;;Budapest-Keleti 0 | Miskolc 125
+HU02;MAV;IC;16;;Budapest-Nyugati 0 | Szolnok 70 | Debrecen 150 | Nyiregyhaza 185
+HU03;MAV;IC;16;;Budapest-Nyugati 0 | Cegled 45 | Kecskemet 70 | Szeged 140
+HU04;MAV;IC;8;;Budapest-Deli 0 | Sarbogard 70 | Dombovar 125 | Pecs 180
+HU05;MAV/HZ;IC;1;;Budapest-Deli 0 | Szekesfehervar 55 | Siofok 90 | Nagykanizsa 200 | Koprivnica 250 | Zagreb Glavni kolodvor 360
+HU06;MAV/CFR;NIGHT;1;;Budapest-Keleti 0 | Szolnok 80 | Bekescsaba 170 | Arad 230 | Deva 350 | Brasov 650 | Bucuresti Nord 810
+RS01;Srbija Voz;HSR;32;;Beograd Centar 0 | Novi Sad 36
+RO01;CFR;IC;10;;Bucuresti Nord 0 | Ploiesti 40 | Brasov 160
+RO02;CFR;IC;10;;Bucuresti Nord 0 | Constanta 140
+RO03;CFR;IC;6;;Bucuresti Nord 0 | Craiova 170
+BG01;BDZ;IC;6;;Sofia 0 | Plovdiv 150
+BG02;BDZ;IC;3;;Sofia 0 | Plovdiv 150 | Stara Zagora 230 | Burgas 400
+BG03;BDZ;IC;3;;Sofia 0 | Pleven 180 | Gorna Oryahovitsa 260 | Varna 470
+GR01;Hellenic Train;IC;6;;Athens 0 | Larissa 180 | Thessaloniki 255
+HR01;HZ;IC;2;;Zagreb Glavni kolodvor 0 | Karlovac 50 | Knin 290 | Split 380
+HR02;HZ/SZ;IC;4;;Zagreb Glavni kolodvor 0 | Ljubljana 140
+SI01;SZ;IC;12;;Ljubljana 0 | Celje 65 | Maribor 115
+# ---------------------------------------------------------------- Night trains (Nightjet, European Sleeper)
+NJ01;OBB Nightjet;NIGHT;1;;Wien Hbf 0 | Linz 100 | Passau 170 | Nurnberg Hbf 330 | Wurzburg 420 | Frankfurt Hbf 540 | Koln Hbf 680 | Dusseldorf Hbf 710 | Duisburg 725 | Oberhausen 735 | Arnhem Centraal 800 | Utrecht Centraal 840 | Amsterdam Centraal 870
+NJ02;OBB Nightjet;NIGHT;1;;Wien Hbf 0 | Linz 100 | Passau 170 | Nurnberg Hbf 330 | Wurzburg 420 | Hannover Hbf 690 | Hamburg Hbf 810
+NJ03;OBB Nightjet;NIGHT;1;;Zurich HB 0 | Basel SBB 60 | Freiburg im Breisgau 110 | Karlsruhe Hbf 180 | Gottingen 540 | Hannover Hbf 600 | Hamburg Hbf 720 | Hamburg-Altona 735
+NJ04;OBB Nightjet;NIGHT;1;;Zurich HB 0 | Basel SBB 60 | Koln Hbf 480 | Dusseldorf Hbf 510 | Arnhem Centraal 600 | Utrecht Centraal 640 | Amsterdam Centraal 670
+NJ05;OBB Nightjet;NIGHT;1;;Wien Hbf 0 | Villach 300 | Udine 400 | Bologna Centrale 640 | Firenze SMN 720 | Roma Termini 840
+NJ06;OBB Nightjet;NIGHT;1;;Munchen Hbf 0 | Innsbruck 120 | Verona Porta Nuova 360 | Bologna Centrale 480 | Firenze SMN 570 | Roma Termini 780
+NJ07;OBB Nightjet;NIGHT;1;;Wien Hbf 0 | Linz 100 | Salzburg 180 | Innsbruck 330 | Feldkirch 470 | Buchs SG 490 | Sargans 510 | Zurich HB 570
+NJ08;European Sleeper;NIGHT;1;mon,wed,fri;Bruxelles-Midi 0 | Antwerpen-Centraal 40 | Rotterdam Centraal 90 | Amsterdam Centraal 170 | Amersfoort 205 | Deventer 240 | Berlin Hbf 720 | Dresden Hbf 880 | Praha hl.n. 1000
+# ---------------------------------------------------------------- additions
+IT20;Trenitalia;IC;4;;Milano Centrale 0 | Genova Piazza Principe 95 | Savona 135 | Sanremo 200 | Ventimiglia 220
+FR58;SNCF/Trenitalia;IC;16;;Nice 0 | Monaco 20 | Menton 32 | Ventimiglia 50

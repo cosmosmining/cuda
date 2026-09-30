@@ -1,0 +1,18 @@
+{
+  "feeds": [
+    {
+      "name": "demo",
+      "path": "data/demo/eu_intercity_demo_gtfs.zip",
+      "reference_week": "2026-01-05",
+      "trips": 12416,
+      "stations": 715
+    }
+  ],
+  "nodes": 671,
+  "city_nodes": 592,
+  "service_edges": 3187,
+  "segment_edges": 879,
+  "trips": 12416,
+  "stations": 715,
+  "min_city_population": 15000
+}

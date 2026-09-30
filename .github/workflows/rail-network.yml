@@ -1,0 +1,25 @@
+name: rail-network
+
+on:
+  push:
+    branches: ["**"]
+    paths: ["eu-rail-network/**", ".github/workflows/rail-network.yml"]
+  pull_request:
+    paths: ["eu-rail-network/**", ".github/workflows/rail-network.yml"]
+
+jobs:
+  tests:
+    # Unit tests + an end-to-end build of the committed demo GTFS feed.
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: eu-rail-network
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run tests
+        run: python -m pytest -q

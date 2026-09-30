@@ -1,0 +1,89 @@
+# Official / community GTFS feeds for European intercity rail.
+#
+# `python -m eurail download` fetches every enabled feed that has a `url` into
+# data/raw/<name>.zip; feeds you downloaded by hand just need `path`.
+# `python -m eurail build --feeds config/feeds.toml` then combines them.
+#
+# URLs change; `verified = true` marks ones confirmed at the time of writing.
+# For anything else, find the current link on the portal listed in `portal`
+# (Mobility Database: https://mobilitydatabase.org/ lists 90+ countries).
+#
+# Filters keep only intercity trains:
+#   route_types - GTFS route_type values to keep (2 = rail, 101 = high speed,
+#                 102 = long distance, 103 = inter-regional, 105 = sleeper)
+#   name_regex  - optional regex on route_short_name + route_long_name
+
+[[feed]]
+name = "de_fv"
+description = "Germany - DB long-distance (ICE/IC/EC) incl. cross-border trains"
+url = "https://download.gtfs.de/germany/fv_free/latest.zip"
+portal = "https://www.gtfs.de/en/main/"
+verified = true
+enabled = true
+route_types = [2, 100, 101, 102, 103, 105, 114]
+
+[[feed]]
+name = "fr_sncf"
+description = "France - SNCF TGV INOUI / OUIGO / Intercites"
+url = "https://eu.ftp.opendatasoft.com/sncf/gtfs/export_gtfs_voyages.zip"
+portal = "https://data.sncf.com/explore/dataset/horaires-sncf/"
+verified = false
+enabled = true
+route_types = [2, 100, 101, 102, 103, 105]
+
+[[feed]]
+name = "es_renfe"
+description = "Spain - Renfe high speed, long and medium distance"
+url = "https://ssl.renfe.com/gtfs/google_transit.zip"
+portal = "https://data.renfe.com/"
+verified = false
+enabled = true
+route_types = [2, 100, 101, 102, 103]
+
+[[feed]]
+name = "nl_all"
+description = "Netherlands - whole-country feed (OVapi); keep NS/NS International intercity"
+url = "https://gtfs.ovapi.nl/nl/gtfs-nl.zip"
+portal = "https://gtfs.ovapi.nl/"
+verified = false
+enabled = false  # large (all buses/trams); enable when needed
+route_types = [2, 100, 101, 102, 103]
+name_regex = "^(Intercity|ICE|Eurostar|IC|ICD)"
+
+[[feed]]
+name = "ch_all"
+description = "Switzerland - SBB/opentransportdata whole-country feed; keep IC/IR/EC"
+portal = "https://opentransportdata.swiss/en/cookbook/timetable-cookbook/gtfs/"
+verified = false
+enabled = false
+path = "data/raw/ch_all.zip"
+route_types = [2, 100, 101, 102, 103]
+name_regex = "^(IC|ICN|IR|EC|RJX|TGV|ICE)"
+
+[[feed]]
+name = "at_oebb"
+description = "Austria - OeBB (Railjet/IC/Nightjet)"
+portal = "https://data.oebb.at/"
+verified = false
+enabled = false
+path = "data/raw/at_oebb.zip"
+route_types = [2, 100, 101, 102, 103, 105]
+
+[[feed]]
+name = "it_trenitalia"
+description = "Italy - Trenitalia (community GTFS converted from the official NeTEx)"
+portal = "https://github.com/deryclem/trenitalia-gtfs"
+verified = false
+enabled = false
+path = "data/raw/it_trenitalia.zip"
+route_types = [2, 100, 101, 102, 103]
+name_regex = "(FR|FA|FB|IC|ICN|EC)"
+
+[[feed]]
+name = "pl_pkpic"
+description = "Poland - PKP Intercity (community GTFS from the Polish NAP)"
+portal = "https://github.com/MKuranowski/PKPIntercityGTFS"
+verified = false
+enabled = false
+path = "data/raw/pl_pkpic.zip"
+route_types = [2, 100, 101, 102, 103]
