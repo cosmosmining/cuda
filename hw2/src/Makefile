@@ -2,7 +2,9 @@
 #   make            build ./reorder
 #   make test       build and run the correctness suite
 #   make bench      full measurement (see run_all.sh)
-CC      ?= gcc
+ifeq ($(origin CC),default)
+CC      = gcc
+endif
 CFLAGS  ?= -O3 -march=native -std=c11 -Wall -Wextra -Wno-unknown-pragmas
 OMPFLAG ?= -fopenmp
 

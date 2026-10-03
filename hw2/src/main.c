@@ -55,7 +55,9 @@ static char *alloc_bytes(size_t N)
         fprintf(stderr, "out of memory allocating %zu bytes\n", N);
         exit(2);
     }
-    madvise(p, sz, MADV_HUGEPAGE); /* best effort; fewer TLB misses */
+#ifdef MADV_HUGEPAGE
+    madvise(p, sz, MADV_HUGEPAGE); /* best effort (Linux); fewer TLB misses */
+#endif
     return p;
 }
 
@@ -454,6 +456,8 @@ static int run_bench(int argc, char **argv)
     first_touch(out, Nmax);
     if (tmp)
         first_touch(tmp, Nmax);
+    size_t whole = Nmax; /* untimed warm-up: a rank-1 reorder is a plain copy */
+    reorder_f2c(ALG_ITERATIVE, in, out, 1, &whole, NULL);
 
     for (int li = 0; li < nlogs; li++) {
         int lg = logs[li];

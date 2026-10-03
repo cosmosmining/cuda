@@ -343,12 +343,17 @@ static void stages(const plan_t *p, const char *in, char *out, char *tmp)
  *   2  as 1, full tiles transposed with SSE2 16x16 in-register transposes.
  *   3  as 2, plus non-temporal (streaming) stores for the output lines, which
  *      skip the read-for-ownership of the destination (3N -> 2N bytes).
+ *   4  as 3, with the input-fast group widened to >= 4*TILE bytes when
+ *      possible: consecutive tiles then continue along the same input rows
+ *      (several lines per page instead of one), which the hardware prefetcher
+ *      can follow.  (Explicit __builtin_prefetch of the next tile's 64 lines
+ *      was tried as well and made it slower.)
  */
 #ifndef TILE
 #define TILE 64 /* one cache line; must be a multiple of 16 */
 #endif
 #ifndef BLOCK_KERNEL
-#define BLOCK_KERNEL 3
+#define BLOCK_KERNEL 4
 #endif
 #if BLOCK_KERNEL >= 2 && defined(__SSE2__)
 #include <emmintrin.h>
@@ -460,6 +465,10 @@ static void blocked(const plan_t *p, const char *in, char *out)
         run_ranges(iterative_range, p, in, out);
         return;
     }
+#if BLOCK_KERNEL >= 4
+    while (pa < qa && U < 4 * TILE) /* take middle axes into the input-fast group */
+        U *= p->d[pa++];
+#endif
     const size_t nu = (U + TILE - 1) / TILE, nv = (V + TILE - 1) / TILE;
     const size_t tiles = p->N / U / V * nv * nu;
     /* output rows start at out + (multiple of V) + (multiple of TILE) */
