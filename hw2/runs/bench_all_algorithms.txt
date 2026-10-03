@@ -1,0 +1,49 @@
+== bench: up to N = 2^32 = 4294967296 one-byte elements (4.00 GiB per buffer), 4 cores available, 1 repetitions ==
+index        N=2^32 rank= 1 extent=4294967296 threads=  4  time[s] min   1.9651 med   1.9651 max   1.9651  BW(2N/t_min)   4.371 GB/s  check OK
+CSV,index,32,1,4294967296,4,0,1.965063,4.3713
+recursive    N=2^32 rank= 1 extent=4294967296 threads=  4  time[s] min   0.1263 med   0.1263 max   0.1263  BW(2N/t_min)  68.006 GB/s  check OK
+CSV,recursive,32,1,4294967296,4,0,0.126311,68.0063
+recursive_nd N=2^32 rank= 1 extent=4294967296 threads=  4  time[s] min   0.1158 med   0.1158 max   0.1158  BW(2N/t_min)  74.164 GB/s  check OK
+CSV,recursive_nd,32,1,4294967296,4,0,0.115824,74.1637
+stages       N=2^32 rank= 1 extent=4294967296 threads=  4  time[s] min   0.1215 med   0.1215 max   0.1215  BW(2N/t_min)  70.705 GB/s  check OK
+CSV,stages,32,1,4294967296,4,0,0.121490,70.7049
+index        N=2^32 rank= 2 extent=65536  threads=  4  time[s] min  19.7669 med  19.7669 max  19.7669  BW(2N/t_min)   0.435 GB/s  check OK
+CSV,index,32,2,65536,4,0,19.766903,0.4346
+recursive    N=2^32 rank= 2 extent=65536  threads=  4  time[s] min  15.9477 med  15.9477 max  15.9477  BW(2N/t_min)   0.539 GB/s  check OK
+CSV,recursive,32,2,65536,4,0,15.947712,0.5386
+recursive_nd N=2^32 rank= 2 extent=65536  threads=  4  time[s] min  16.3891 med  16.3891 max  16.3891  BW(2N/t_min)   0.524 GB/s  check OK
+CSV,recursive_nd,32,2,65536,4,0,16.389086,0.5241
+stages       N=2^32 rank= 2 extent=65536  threads=  4  time[s] min  15.8848 med  15.8848 max  15.8848  BW(2N/t_min)   0.541 GB/s  check OK
+CSV,stages,32,2,65536,4,0,15.884785,0.5408
+index        N=2^32 rank= 4 extent=256    threads=  4  time[s] min  37.8479 med  37.8479 max  37.8479  BW(2N/t_min)   0.227 GB/s  check OK
+CSV,index,32,4,256,4,0,37.847862,0.2270
+recursive    N=2^32 rank= 4 extent=256    threads=  4  time[s] min  26.6317 med  26.6317 max  26.6317  BW(2N/t_min)   0.323 GB/s  check OK
+CSV,recursive,32,4,256,4,0,26.631727,0.3225
+recursive_nd N=2^32 rank= 4 extent=256    threads=  4  time[s] min  26.7248 med  26.7248 max  26.7248  BW(2N/t_min)   0.321 GB/s  check OK
+CSV,recursive_nd,32,4,256,4,0,26.724754,0.3214
+stages       N=2^32 rank= 4 extent=256    threads=  4  time[s] min  31.0186 med  31.0186 max  31.0186  BW(2N/t_min)   0.277 GB/s  check OK
+CSV,stages,32,4,256,4,0,31.018612,0.2769
+index        N=2^32 rank= 8 extent=16     threads=  4  time[s] min  35.7882 med  35.7882 max  35.7882  BW(2N/t_min)   0.240 GB/s  check OK
+CSV,index,32,8,16,4,0,35.788173,0.2400
+recursive    N=2^32 rank= 8 extent=16     threads=  4  time[s] min  27.7161 med  27.7161 max  27.7161  BW(2N/t_min)   0.310 GB/s  check OK
+CSV,recursive,32,8,16,4,0,27.716076,0.3099
+recursive_nd N=2^32 rank= 8 extent=16     threads=  4  time[s] min  27.5963 med  27.5963 max  27.5963  BW(2N/t_min)   0.311 GB/s  check OK
+CSV,recursive_nd,32,8,16,4,0,27.596323,0.3113
+stages       N=2^32 rank= 8 extent=16     threads=  4  time[s] min   6.4773 med   6.4773 max   6.4773  BW(2N/t_min)   1.326 GB/s  check OK
+CSV,stages,32,8,16,4,0,6.477260,1.3262
+index        N=2^32 rank=16 extent=4      threads=  4  time[s] min  53.8908 med  53.8908 max  53.8908  BW(2N/t_min)   0.159 GB/s  check OK
+CSV,index,32,16,4,4,0,53.890801,0.1594
+recursive    N=2^32 rank=16 extent=4      threads=  4  time[s] min  28.3422 med  28.3422 max  28.3422  BW(2N/t_min)   0.303 GB/s  check OK
+CSV,recursive,32,16,4,4,0,28.342207,0.3031
+recursive_nd N=2^32 rank=16 extent=4      threads=  4  time[s] min  27.5053 med  27.5053 max  27.5053  BW(2N/t_min)   0.312 GB/s  check OK
+CSV,recursive_nd,32,16,4,4,0,27.505314,0.3123
+stages       N=2^32 rank=16 extent=4      threads=  4  time[s] min   8.9501 med   8.9501 max   8.9501  BW(2N/t_min)   0.960 GB/s  check OK
+CSV,stages,32,16,4,4,0,8.950114,0.9598
+index        N=2^32 rank=32 extent=2      threads=  4  time[s] min  81.9361 med  81.9361 max  81.9361  BW(2N/t_min)   0.105 GB/s  check OK
+CSV,index,32,32,2,4,0,81.936087,0.1048
+recursive    N=2^32 rank=32 extent=2      threads=  4  time[s] min  34.0627 med  34.0627 max  34.0627  BW(2N/t_min)   0.252 GB/s  check OK
+CSV,recursive,32,32,2,4,0,34.062744,0.2522
+recursive_nd N=2^32 rank=32 extent=2      threads=  4  time[s] min  32.2267 med  32.2267 max  32.2267  BW(2N/t_min)   0.267 GB/s  check OK
+CSV,recursive_nd,32,32,2,4,0,32.226727,0.2665
+stages       N=2^32 rank=32 extent=2      threads=  4  time[s] min  22.0616 med  22.0616 max  22.0616  BW(2N/t_min)   0.389 GB/s  check OK
+CSV,stages,32,32,2,4,0,22.061553,0.3894

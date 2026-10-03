@@ -18,6 +18,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.backends.backend_pdf import PdfPages  # noqa: E402
+from matplotlib.ticker import FuncFormatter, LogLocator, NullFormatter  # noqa: E402
 from openpyxl import Workbook  # noqa: E402
 from openpyxl.chart import Reference, ScatterChart, Series  # noqa: E402
 from openpyxl.styles import Font  # noqa: E402
@@ -114,6 +115,8 @@ def scaling_sheet(wb, title, rows, note):
         s.marker.graphicalProperties.line.solidFill = COLORS[j % 8][1:]
         s.smooth = False
         ch.series.append(s)
+    ch.y_axis.scaling.logBase = 10   # rank 1 (a plain copy) is ~100x the others
+    ch.y_axis.title = "bandwidth [GB/s] (log scale)"
     ch.x_axis.delete = False
     ch.y_axis.delete = False
     ws.add_chart(ch, f"A{7 + len(threads)}")
@@ -121,23 +124,35 @@ def scaling_sheet(wb, title, rows, note):
 
 
 def scaling_figure(pdf, title, agg, ranks, threads):
-    fig, ax = plt.subplots(figsize=(8.5, 5.2))
-    for j, rk in enumerate(ranks):
-        xs = [t for t in threads if (rk, t) in agg]
-        ys = [agg[(rk, t)][1] for t in xs]
-        ax.plot(xs, ys, color=COLORS[j % 8], marker=MARKERS[j % 8], lw=2, ms=7,
-                label=f"rank {rk}")
-        ax.annotate(f"rank {rk}", (xs[-1], ys[-1]), xytext=(6, 0),
-                    textcoords="offset points", va="center", fontsize=8, color="#52514e")
-    ax.set_xlabel("cores (OpenMP threads, one per core)")
-    ax.set_ylabel("bandwidth 2N/t  [GB/s]")
-    ax.set_title(title, fontsize=11)
-    ax.set_xticks(threads if len(threads) <= 16 else threads[:: max(1, len(threads) // 16)])
-    ax.set_ylim(bottom=0)
-    ax.grid(True, color="#e6e5e0", lw=0.8)
-    ax.spines[["top", "right"]].set_visible(False)
-    ax.legend(frameon=False, fontsize=8, loc="upper left")
-    fig.tight_layout()
+    """Left: every rank, log y (rank 1 is a plain copy, orders of magnitude
+    faster).  Right: the actual reorders (rank >= 2), linear y."""
+    fig, axs = plt.subplots(1, 2, figsize=(11.5, 5.0))
+    for ax, subset, logy in ((axs[0], ranks, True), (axs[1], [r for r in ranks if r > 1], False)):
+        for j, rk in enumerate(ranks):
+            if rk not in subset:
+                continue
+            xs = [t for t in threads if (rk, t) in agg]
+            ys = [agg[(rk, t)][1] for t in xs]
+            ax.plot(xs, ys, color=COLORS[j % 8], marker=MARKERS[j % 8], lw=2, ms=6,
+                    label=f"rank {rk}")
+        ax.set_xlabel("cores (OpenMP threads, one per core)")
+        ax.set_ylabel("bandwidth 2N/t  [GB/s]" + ("  (log scale)" if logy else ""))
+        if logy:
+            ax.set_yscale("log")
+        else:
+            ax.set_ylim(bottom=0)
+        ax.set_xticks(threads if len(threads) <= 16 else threads[:: max(1, len(threads) // 16)])
+        ax.grid(True, which="both", color="#e6e5e0", lw=0.8)
+        ax.spines[["top", "right"]].set_visible(False)
+        if logy:
+            ax.yaxis.set_major_locator(LogLocator(base=10, subs=(1, 2, 5)))
+            ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:g}"))
+            ax.yaxis.set_minor_formatter(NullFormatter())
+        ax.set_title("all ranks" if logy else "ranks >= 2 (linear scale)", fontsize=10)
+    handles, labels = axs[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="lower center", ncol=len(labels), frameon=False, fontsize=9)
+    fig.suptitle(title, fontsize=11)
+    fig.tight_layout(rect=(0, 0.06, 1, 1))
     pdf.savefig(fig)
     plt.close(fig)
 
@@ -218,6 +233,10 @@ def main():
     # runtime as a function of problem size
     rows = read_log("size_sweep.txt")
     if rows:
+        # add the full-size points from the scaling runs at the same core count
+        pcount = rows[0]["threads"]
+        rows += [r for f in ("bench_iterative.txt", "bench_blocked.txt") for r in read_log(f)
+                 if r["threads"] == pcount]
         agg = best(rows, "alg", "log2N", "rank")
         ws = wb.create_sheet("size sweep")
         ws["A1"] = "Runtime t_min [s] vs problem size N (every square rank of each N)"
@@ -272,17 +291,20 @@ def main():
             for j, rk in enumerate(ranks):
                 if (k, rk, tmax) in agg:
                     ws.cell(row=4 + i, column=2 + j, value=round(agg[(k, rk, tmax)][1], 3))
+        roof = max((v[1] for kk, v in agg.items() if kk[1] == 1 and kk[2] == tmax), default=None)
         fig, ax = plt.subplots(figsize=(8.5, 5.2))
         for j, k in enumerate(kernels):
-            xs = [rk for rk in ranks if (k, rk, tmax) in agg]
+            xs = [rk for rk in ranks if (k, rk, tmax) in agg and rk > 1]
             ax.plot(xs, [agg[(k, rk, tmax)][1] for rk in xs], color=COLORS[j],
                     marker=MARKERS[j], lw=2, ms=7, label=names.get(k, str(k)))
         ax.set_xscale("log", base=2)
-        ax.set_xticks(ranks, [str(r) for r in ranks])
+        ax.set_xticks([r for r in ranks if r > 1], [str(r) for r in ranks if r > 1])
         ax.set_ylim(bottom=0)
         ax.set_xlabel("tensor rank n")
         ax.set_ylabel("bandwidth 2N/t  [GB/s]")
-        ax.set_title(f"Part 3: blocking step by step ({tmax} cores)", fontsize=11)
+        ax.set_title(f"Part 3: blocking step by step ({tmax} cores)"
+                     + (f"\nroof: rank-1 plain copy = {roof:.0f} GB/s;"
+                        " unblocked iterative = 0.25-0.5 GB/s" if roof else ""), fontsize=11)
         ax.grid(True, color="#e6e5e0", lw=0.8)
         ax.spines[["top", "right"]].set_visible(False)
         ax.legend(frameon=False, fontsize=8)

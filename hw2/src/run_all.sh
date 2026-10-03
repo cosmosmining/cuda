@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 18-647 HW2: build, test, measure and plot.  Writes ../runs/*.txt,
 # ../plots.xlsx and ../plots.pdf.  Run it inside tmux/screen on the target
-# machine; the full run takes roughly 1-2 hours on 16 cores.
+# machine; the full run takes roughly 2-2.5 hours on 16 cores (REPS=2: ~1.5-2 h).
 #
 # Environment knobs (all optional):
 #   CORES=16        number of physical cores to scale to (default: all physical cores)

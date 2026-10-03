@@ -34,8 +34,11 @@ there; it overwrites `runs/`, `plots.xlsx` and `plots.pdf`.
 
 Notes:
 
-* 16 cores gives a 1..16 core sweep (~1-2 h). If you want more cores, use
-  `c7i.16xlarge` (32 cores, 128 GiB), but the run takes longer.
+* 16 cores gives a 1..16 core sweep. Expect about 2.5 h with the default
+  3 repetitions, or about 1.5-2 h with `REPS=2` (about $3-4 in total). The
+  unblocked reorders are slow on purpose: ~2 min per run on 1 core. If you
+  want more cores, use `c7i.16xlarge` (32 cores, 128 GiB), but the run takes
+  longer.
 * If launch fails with `VcpuLimitExceeded`, either use `c7i.4xlarge`
   (8 cores, 32 GiB) or request more under *Service Quotas -> EC2 ->
   Running On-Demand Standard instances*.
@@ -65,7 +68,7 @@ unzip hw2.zip && cd hw2/src
 make && ./reorder test                     # ~1 min, must print ALL TESTS PASSED
 
 tmux new -s hw2                            # survives SSH disconnects
-./run_all.sh 2>&1 | tee ../runs/run_all.log
+REPS=2 ./run_all.sh 2>&1 | tee ../runs/run_all.log
 #   detach: Ctrl-b then d      re-attach later: tmux attach -t hw2
 ```
 

@@ -43,5 +43,18 @@
 8. **Write scripts.** `run_all.sh` does build -> test -> bench (1..p cores)
    -> size sweep -> Part 3 ladder -> plots. `plots.py` writes Excel charts
    with openpyxl and a PDF with matplotlib. `package.sh` builds the zip.
-9. **Run everything on the development VM**; wrote the README and the text
-   answers.
+9. **Part 3 kernel ladder.** Measured kernels 0-3, then tried kernel 4:
+   * software prefetch of the next tile: *slower* (11 vs 17 GB/s at rank 2),
+     so it was dropped;
+   * widening the input-fast group to >= 256 B: helped ranks 16/32 by
+     25-40%, so it became the default.
+10. **Run the full pipeline on the development VM** with REPS=2 (~1 h).
+    Every configuration passed its sampled verification.
+11. **Fix the plots after looking at them:**
+    * log y-axis (rank 1 is ~100x the others);
+    * a second linear panel;
+    * shared legend;
+    * 2^32 points added to the size sweep;
+    * rank 1 removed from the kernel plot.
+12. **Fact-check** every number in README / canvas_text against the logs;
+    three overstated values were corrected.

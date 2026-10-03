@@ -1,0 +1,52 @@
+Estimate of hours worked: __ hours   <-- FILL IN
+
+Part 3 problem chosen: blocking / locality. How to block rank-N tensor sorting (digit-reversal permutation) to get close to the memory-bandwidth limit. (Not the Haskell one-liner; that option forbids AI for the implementation.)
+
+PART 1 PLAN. Notation: logical shape (d_0..d_{n-1}), Fortran offset F(i) = i_0 + d_0(i_1 + ...), C offset C(i) = i_{n-1} + d_{n-1}(i_{n-2} + ...). Fortran->C means out[C(i)] = in[F(i)]. C->Fortran is the same operation on the reversed shape. With all extents 2 this is FFT bit reversal.
+- Recursive: a rank-n reorder is d_0 independent rank-(n-1) reorders. R(d_0,...) = (I_{d_0} (x) R(d_1,...)) L^N_{d_0}, with the stride permutation folded into the address arithmetic. Recurse on the rank; the base case is a rank-1 strided copy. Implemented twice: on a flat char buffer with strides, and on an n-d strided tensor-view type (C has no arbitrary-rank arrays).
+- Iterative: the n nested loops for a run-time rank n, kept as an odometer (counter array plus incrementally updated source offset, no div/mod). Extra: the FFT-style iterative formula as n-1 stride-permutation passes.
+- Index recalculation: for each output index, decode its mixed-radix digits and re-encode them with the Fortran strides. Embarrassingly parallel, O(n) integer ops per element.
+- Parallelize with OpenMP: split the output into per-thread ranges, or flatten the outer recursion levels. Measure the 2^32-byte cube as square rank-1, 2, 4, 8, 16 and 32 tensors on 1..p cores. Bandwidth = 2N/t.
+
+MEMORY TRAFFIC as a function of rank n (N = 2^32 bytes, extent k = 2^(32/n), 64 B cache lines):
+- Compulsory traffic is N loaded + N stored = 2N = 8.6 GB for every rank. This is what the plotted bandwidth 2N/t counts. With write-allocate, every output line is read first (RFO), so 3N.
+- Unblocked single pass (index, iterative, both recursive): stores are sequential. A 64 B input line holds the fastest Fortran digits, which are the slowest C digits. Its next use is >= N/k outputs later, so reuse needs min(64N/k, N) bytes of cache: 4 MiB at rank 2, 1 GiB at rank 4, all 4 GiB at rank >= 8. Otherwise every byte costs a whole line: traffic ~ 64N + 2N = 66N (~283 GB) for n >= 4. Rank 2 is in between, and rank 1 is a copy at 3N. In practice these runs are latency bound (a cache/TLB miss per byte).
+- index adds O(n) integer ops per byte (32 shift/mask/add groups at rank 32). iterative/recursive amortize this to O(1).
+- stages (n-1 passes): 2N(n-1) compulsory, x1.5 with RFO, i.e. 31 passes = 266 GB at rank 32. Linear in the rank.
+- blocked: every line is read once and written once, 3N, or 2N with streaming stores, for every rank >= 2.
+
+RESULTS (dev VM: 4-core Xeon, Sapphire Rapids, 15 GiB; REPLACE with your machine's numbers):
+Bandwidth 2N/t [GB/s] for N = 2^32, iterative implementation, 1/2/3/4 cores:
+  rank 1 (copy, the roof): 22.5 / 39.5 / 59.5 / 74.6
+  rank 2: 0.13 / 0.29 / 0.42 / 0.54
+  rank 4: 0.079 / 0.16 / 0.25 / 0.33
+  rank 8 and 16: about 0.076 / 0.155 / 0.235 / 0.31
+  rank 32: 0.065 / 0.13 / 0.20 / 0.25
+Speed-up from 1 to 4 cores is 3.9-4.2x, linear. The reorders do no arithmetic, so the roofline is pure bandwidth: the rank-1 copy roof is 75 GB/s at 4 cores. Unblocked reorders reach 0.3-0.7% of it. They are latency bound: about 66N bytes of line traffic, but only ~11 GB/s of real DRAM traffic, limited by cache/TLB misses in flight per core. That is why the speed-up stays linear.
+All algorithms at 4 cores: iterative, recursive and recursive_nd are within a few percent (same access pattern). index is up to 2.4x slower at rank 32 (O(n) index arithmetic per byte). stages moves (n-1)x more data, yet is 3-4x faster at ranks 8 and 16 because its small-radix passes are almost sequential; locality beats volume.
+Runtime vs size: at 2^20 (fits in L2) the unblocked code runs at ~8 GB/s; from 2^28 to 2^32, 16x the data costs 19-25x the time.
+
+PART 3 ANSWER. Choose the shortest prefix of axes with product >= 64; it is contiguous in the input (index u). Choose the shortest suffix with product >= 64; it is contiguous in the output (index v). All axes in between are plain outer loops. Then out[ob + g(u) + v] = in[ib + u + h(v)]. A 64x64 tile reads 64 whole input lines and writes 64 whole output lines; g and h are 6-bit digit reversals, tabulated per tile. For rank 2 this is the classic blocked transpose; for rank 32 the tile spans 6+6 axes of extent 2.
+Lessons measured, step by step (see runs/part3_kernel_ladder.txt and the "Part 3 kernels" plot):
+(0) Direct tiling is barely faster than unblocked. The 64 tile rows are 2^m bytes apart, so they map to the same L1/L2 set and the tile thrashes.
+(1) Copying each input line into a contiguous 4 KiB buffer and writing each output line in one go fixes the conflicts, ~3-4x.
+(2) Then the scalar byte transpose is the bottleneck. A 16x16 SSE2 in-register transpose uses 4 rounds of unpack(row i, row i+8); each round rotates the 8-bit address by one, which is the FFT-style stride-permutation algorithm again, inside registers.
+(3) Streaming (non-temporal) stores avoid the read-for-ownership (3N -> 2N), up to 2x.
+(4) Widening the input-fast group to >= 256 B lets consecutive tiles continue along the same input rows, which the hardware prefetcher can follow. It helps the high ranks. Explicit software prefetch of the next tile was tried and made things slower.
+Measured at 4 cores, GB/s for ranks 2/4/8/16/32:
+  kernel 0: 1.9 / 1.6 / 1.8 / 1.3 / 1.4
+  kernel 1: 6.0 / 5.8 / 5.6 / 4.8 / 4.5
+  kernel 2: 6.9 / 8.4 / 7.8 / 6.0 / 5.6
+  kernel 3: 13.8 / 11.7 / 10.7 / 8.0 / 7.7
+  kernel 4: 14.1 / 11.4 / 10.0 / 10.3 / 10.9
+Final: 25-40x faster than unblocked and nearly independent of rank, but still 5-7.5x below the copy roof at 4 cores. It scales linearly with cores (2.5 -> 10.2 GB/s at rank 32), so it is per-core bound, not DRAM bound. Next steps would be AVX-512 64-byte line transposes and page-aware tile order.
+Other knobs: huge pages (madvise) keep a tile's 128 pages in the TLB, and thread chunks are 64-B aligned. A cache-oblivious alternative is to recursively halve the larger of the u/v ranges.
+
+HOW TO RUN (Linux/WSL with gcc + OpenMP; see src/README.md and README.md):
+  cd src
+  make                 # gcc -O3 -march=native -fopenmp; only dependency is gcc/libgomp
+  ./reorder test       # correctness suite, must print ALL TESTS PASSED
+  ./run_all.sh         # all measurements -> ../runs/*.txt, ../plots.xlsx, ../plots.pdf
+Plot dependencies: pip install -r src/requirements.txt (openpyxl, matplotlib), or on Ubuntu: apt install python3-openpyxl python3-matplotlib.
+Knobs: CORES=16 THREADS=1-16 REPS=3 LOG2N=32 ./run_all.sh. Needs ~9 GiB RAM for 2^32; use LOG2N=30 on small machines.
+Single runs: ./reorder bench -a iterative -t 1-16 -r 3   or   ./reorder bench -a all -t 16 -k 2,32

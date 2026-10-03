@@ -11,7 +11,7 @@ make                 # builds ./reorder  (gcc -O3 -march=native -fopenmp)
 ./run_all.sh         # full measurement -> ../runs/*.txt, ../plots.xlsx, ../plots.pdf
 ```
 
-`run_all.sh` needs about 9 GiB of RAM for the 2³²-byte cube: 4 GiB of input plus 4 GiB of output. The optional `stages` variant needs a third 4 GiB buffer and is skipped automatically if memory is short. On 16 cores the full run takes about 1–2 hours, so start it inside `tmux`. You can tune the run with these environment variables:
+`run_all.sh` needs about 9 GiB of RAM for the 2³²-byte cube: 4 GiB of input plus 4 GiB of output. The optional `stages` variant needs a third 4 GiB buffer and is skipped automatically if memory is short. On 16 cores the full run takes about 2–2.5 hours with the default 3 repetitions (`REPS=2` saves about a third), so start it inside `tmux`. The unblocked reorders need ~2 minutes per run on a single core. You can tune the run with these environment variables:
 
 | variable | default | meaning |
 |---|---|---|
@@ -98,11 +98,47 @@ Correctness is the same for every rank; what blocking has to fix is locality. A 
 1. **Group axes.** Let P be the shortest prefix of axes (0, 1, …) whose product U ≥ 64; these axes are contiguous in the input. Let Q be the shortest suffix (…, n−1) whose product V ≥ 64; these are contiguous in the output. All axes in between are "middle" axes and become plain outer loops. For rank 32 (k = 2), P is 6 axes and Q is 6 axes. For rank 2, P and Q are single axes of 65536 that get split into 64-element blocks, which is the classic blocked transpose. With u the linear index over P and v the linear index over Q:
    `out[ob + g(u) + v] = in[ib + u + h(v)]`.
    A 64×64 tile reads 64 full input lines and writes 64 full output lines. The g and h values are digit reversals over only 6 bits each, tabulated per tile.
-2. **Beware power-of-two strides.** The 64 rows of a tile are 2^m bytes apart, so they all map to the *same* L1/L2 cache set and the tile thrashes. Measured: about 1 GB/s at 4 cores. Copying each input line into a contiguous 4 KiB buffer, transposing there, and writing each output line in one go fixes this: about 7 GB/s.
+2. **Beware power-of-two strides.** The 64 rows of a tile are 2^m bytes apart, so they all map to the *same* L1/L2 cache set and the tile thrashes. The fix is to copy each input line into a contiguous 4 KiB buffer, transpose there, and write each output line in one go.
 3. **Transpose in registers.** A scalar byte transpose then becomes the bottleneck. A 16×16 byte block is transposed with 4 rounds of `unpacklo/hi_epi8` that pair row i with row i+8. Each round rotates the 8-bit (row, column) address left by one bit, so 4 rounds swap rows and columns. This is the FFT-style stride-permutation algorithm (`stages`) again, but running inside registers, where a pass is nearly free.
-4. **Avoid write-allocate.** Full 64-byte output lines are written with streaming stores (`_mm_stream_si128`), which cuts DRAM traffic from 3N to 2N.
+4. **Avoid write-allocate, and help the prefetcher.** Full 64-byte output lines are written with streaming stores (`_mm_stream_si128`), which cuts DRAM traffic from 3N to 2N. The input-fast group is also widened to ≥ 256 B, so consecutive tiles walk along the same input rows. Explicit `__builtin_prefetch` of the next tile was tried as well; it was *slower* (11 vs 17 GB/s at rank 2), because the extra prefetches compete for the same few line-fill buffers.
 5. **Other details:** huge pages (`madvise(MADV_HUGEPAGE)`) keep the 128 pages a tile touches in the TLB. Thread chunks are 64-byte aligned. Shapes too thin to form 64×64 tiles fall back to the iterative code.
 
 A cache-oblivious alternative recursively halves the larger of the u and v index ranges until a block fits in cache. It gets the same 2N–3N traffic without tuning the tile size, but it still needs steps 2–4 to reach bandwidth.
 
-The ladder can be rebuilt with `-DBLOCK_KERNEL=0..3`. `run_all.sh` measures all four kernels and logs them to `../runs/part3_kernel_ladder.txt`.
+Measured on the development VM (bandwidth 2N/t in GB/s, 4 cores, N = 2³²; `../runs/part3_kernel_ladder.txt`). The rank-1 plain copy, the roof, reaches 72–75 GB/s, and the unblocked `iterative` reaches 0.25–0.54 GB/s.
+
+| `-DBLOCK_KERNEL` | rank 2 | rank 4 | rank 8 | rank 16 | rank 32 |
+|---|---|---|---|---|---|
+| 0 scalar, direct | 1.9 | 1.6 | 1.8 | 1.3 | 1.4 |
+| 1 + L1 tile buffer | 6.0 | 5.8 | 5.6 | 4.8 | 4.5 |
+| 2 + SSE2 16×16 transposes | 6.9 | 8.4 | 7.8 | 6.0 | 5.6 |
+| 3 + streaming stores | 13.8 | 11.7 | 10.7 | 8.0 | 7.7 |
+| **4 + wider input rows (default)** | **14.1** | **11.4** | **10.0** | **10.3** | **10.9** |
+
+Overall, blocking is 25–40× faster than the unblocked single pass, and its bandwidth is nearly independent of the rank. Like everything else here it still scales linearly with cores (2.5 → 10.2 GB/s at rank 32, 1 → 4 cores). That means it is bounded by per-core latency and line-fill buffers, not by DRAM, so on a 16-core machine it should get much closer to the copy roof. The remaining gap at 4 cores is about 5–7.5×. The next steps would be AVX-512 64-byte transposes, so that a whole output line comes from one register, and tiles ordered so that both sides stream within pages.
+
+All five kernels can be rebuilt with `-DBLOCK_KERNEL=0..4`; `run_all.sh` measures them all.
+
+## Results on the development VM (4-core Xeon @ 2.1 GHz, Sapphire Rapids; *not* a course machine)
+
+Bandwidth 2N/t [GB/s], N = 2³², best of 2 runs (`../runs/bench_iterative.txt`, `bench_blocked.txt`):
+
+| cores | rank 1 (copy) | rank 2 | rank 4 | rank 8 | rank 16 | rank 32 | blocked, rank 32 |
+|---|---|---|---|---|---|---|---|
+| 1 | 22.5 | 0.13 | 0.079 | 0.075 | 0.077 | 0.065 | 2.5 |
+| 2 | 39.5 | 0.29 | 0.16 | 0.15 | 0.16 | 0.13 | 5.1 |
+| 3 | 59.5 | 0.42 | 0.25 | 0.23 | 0.24 | 0.20 | 7.3 |
+| 4 | 74.6 | 0.54 | 0.33 | 0.31 | 0.31 | 0.25 | 10.2 |
+
+The first seven columns are `iterative`.
+
+* **Speed-up** from 1 to 4 cores is 3.3× for the copy and 3.9–4.2× for the reorders, i.e. linear. The unblocked reorders move about 66N bytes but achieve only about 11 GB/s of real DRAM traffic. They are latency bound: one cache and TLB miss per byte, with limited misses in flight per core. That is why adding cores helps in proportion.
+* **Roofline.** The kernel does no arithmetic (operational intensity 0), so the only roof is memory bandwidth. Measured by the rank-1 copy, that roof is 75 GB/s at 4 cores (about 112 GB/s of actual DRAM traffic including RFO). Unblocked reorders reach 0.3–0.7 % of it; blocked reaches 14–18 %.
+* **Algorithms at 4 cores** (`bench_all_algorithms.txt`):
+  * `iterative`, `recursive` and `recursive_nd` are within a few percent of each other, because they have the same access pattern.
+  * `index` is up to 2.4× slower at rank 32, because of its O(n) index arithmetic per byte.
+  * `stages` moves (n−1)× more data, yet beats the single pass at ranks 8 and 16 (6.5 s vs 27.7 s). Its small-radix passes are almost sequential. Locality matters more than volume, which is the case for blocking.
+* **Problem size** (`size_sweep.txt`, 4 cores):
+  * At 2²⁰ (1 MiB, fits in L2) the unblocked code reaches about 8 GB/s, 15–25× its 2³² rate.
+  * At 2²⁴ (16 MiB, in L3) it is only 1.5–4× faster than at 2³².
+  * From 2²⁸ to 2³², 16× the data costs 19–25× the time: slightly super-linear, as TLB and cache reach shrink.

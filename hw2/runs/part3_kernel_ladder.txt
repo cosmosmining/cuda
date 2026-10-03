@@ -1,0 +1,190 @@
+### BLOCK_KERNEL=0
+== bench: up to N = 2^32 = 4294967296 one-byte elements (4.00 GiB per buffer), 4 cores available, 2 repetitions ==
+blocked      N=2^32 rank= 1 extent=4294967296 threads=  1  time[s] min   0.4073 med   0.4349 max   0.4349  BW(2N/t_min)  21.089 GB/s  check OK
+CSV,blocked,32,1,4294967296,1,0,0.434947,19.7494
+CSV,blocked,32,1,4294967296,1,1,0.407310,21.0894
+blocked      N=2^32 rank= 1 extent=4294967296 threads=  4  time[s] min   0.1148 med   0.1706 max   0.1706  BW(2N/t_min)  74.819 GB/s  check OK
+CSV,blocked,32,1,4294967296,4,0,0.170559,50.3634
+CSV,blocked,32,1,4294967296,4,1,0.114809,74.8193
+blocked      N=2^32 rank= 2 extent=65536  threads=  1  time[s] min  18.0384 med  18.9814 max  18.9814  BW(2N/t_min)   0.476 GB/s  check OK
+CSV,blocked,32,2,65536,1,0,18.981409,0.4525
+CSV,blocked,32,2,65536,1,1,18.038355,0.4762
+blocked      N=2^32 rank= 2 extent=65536  threads=  4  time[s] min   4.5668 med   4.7301 max   4.7301  BW(2N/t_min)   1.881 GB/s  check OK
+CSV,blocked,32,2,65536,4,0,4.566807,1.8809
+CSV,blocked,32,2,65536,4,1,4.730109,1.8160
+blocked      N=2^32 rank= 4 extent=256    threads=  1  time[s] min  19.4447 med  20.1959 max  20.1959  BW(2N/t_min)   0.442 GB/s  check OK
+CSV,blocked,32,4,256,1,0,19.444721,0.4418
+CSV,blocked,32,4,256,1,1,20.195879,0.4253
+blocked      N=2^32 rank= 4 extent=256    threads=  4  time[s] min   5.3633 med   5.4827 max   5.4827  BW(2N/t_min)   1.602 GB/s  check OK
+CSV,blocked,32,4,256,4,0,5.482690,1.5667
+CSV,blocked,32,4,256,4,1,5.363270,1.6016
+blocked      N=2^32 rank= 8 extent=16     threads=  1  time[s] min  19.8113 med  19.9935 max  19.9935  BW(2N/t_min)   0.434 GB/s  check OK
+CSV,blocked,32,8,16,1,0,19.993505,0.4296
+CSV,blocked,32,8,16,1,1,19.811287,0.4336
+blocked      N=2^32 rank= 8 extent=16     threads=  4  time[s] min   4.7642 med   4.8270 max   4.8270  BW(2N/t_min)   1.803 GB/s  check OK
+CSV,blocked,32,8,16,4,0,4.764154,1.8030
+CSV,blocked,32,8,16,4,1,4.827026,1.7796
+blocked      N=2^32 rank=16 extent=4      threads=  1  time[s] min  29.6252 med  30.6031 max  30.6031  BW(2N/t_min)   0.290 GB/s  check OK
+CSV,blocked,32,16,4,1,0,29.625183,0.2900
+CSV,blocked,32,16,4,1,1,30.603056,0.2807
+blocked      N=2^32 rank=16 extent=4      threads=  4  time[s] min   6.4691 med   6.8296 max   6.8296  BW(2N/t_min)   1.328 GB/s  check OK
+CSV,blocked,32,16,4,4,0,6.829606,1.2577
+CSV,blocked,32,16,4,4,1,6.469126,1.3278
+blocked      N=2^32 rank=32 extent=2      threads=  1  time[s] min  29.7343 med  30.8235 max  30.8235  BW(2N/t_min)   0.289 GB/s  check OK
+CSV,blocked,32,32,2,1,0,30.823498,0.2787
+CSV,blocked,32,32,2,1,1,29.734254,0.2889
+blocked      N=2^32 rank=32 extent=2      threads=  4  time[s] min   6.2710 med   6.2772 max   6.2772  BW(2N/t_min)   1.370 GB/s  check OK
+CSV,blocked,32,32,2,4,0,6.277164,1.3684
+CSV,blocked,32,32,2,4,1,6.271047,1.3698
+### BLOCK_KERNEL=1
+== bench: up to N = 2^32 = 4294967296 one-byte elements (4.00 GiB per buffer), 4 cores available, 2 repetitions ==
+blocked      N=2^32 rank= 1 extent=4294967296 threads=  1  time[s] min   0.3869 med   0.4092 max   0.4092  BW(2N/t_min)  22.205 GB/s  check OK
+CSV,blocked,32,1,4294967296,1,0,0.409190,20.9925
+CSV,blocked,32,1,4294967296,1,1,0.386854,22.2046
+blocked      N=2^32 rank= 1 extent=4294967296 threads=  4  time[s] min   0.1179 med   0.1239 max   0.1239  BW(2N/t_min)  72.840 GB/s  check OK
+CSV,blocked,32,1,4294967296,4,0,0.123887,69.3368
+CSV,blocked,32,1,4294967296,4,1,0.117928,72.8405
+blocked      N=2^32 rank= 2 extent=65536  threads=  1  time[s] min   5.5230 med   5.9839 max   5.9839  BW(2N/t_min)   1.555 GB/s  check OK
+CSV,blocked,32,2,65536,1,0,5.523046,1.5553
+CSV,blocked,32,2,65536,1,1,5.983870,1.4355
+blocked      N=2^32 rank= 2 extent=65536  threads=  4  time[s] min   1.4326 med   1.5186 max   1.5186  BW(2N/t_min)   5.996 GB/s  check OK
+CSV,blocked,32,2,65536,4,0,1.432638,5.9959
+CSV,blocked,32,2,65536,4,1,1.518620,5.6564
+blocked      N=2^32 rank= 4 extent=256    threads=  1  time[s] min   6.0008 med   6.4775 max   6.4775  BW(2N/t_min)   1.431 GB/s  check OK
+CSV,blocked,32,4,256,1,0,6.477490,1.3261
+CSV,blocked,32,4,256,1,1,6.000812,1.4315
+blocked      N=2^32 rank= 4 extent=256    threads=  4  time[s] min   1.4752 med   1.5026 max   1.5026  BW(2N/t_min)   5.823 GB/s  check OK
+CSV,blocked,32,4,256,4,0,1.502565,5.7168
+CSV,blocked,32,4,256,4,1,1.475232,5.8228
+blocked      N=2^32 rank= 8 extent=16     threads=  1  time[s] min   6.1558 med   6.4031 max   6.4031  BW(2N/t_min)   1.395 GB/s  check OK
+CSV,blocked,32,8,16,1,0,6.403103,1.3415
+CSV,blocked,32,8,16,1,1,6.155816,1.3954
+blocked      N=2^32 rank= 8 extent=16     threads=  4  time[s] min   1.5367 med   1.6087 max   1.6087  BW(2N/t_min)   5.590 GB/s  check OK
+CSV,blocked,32,8,16,4,0,1.536729,5.5898
+CSV,blocked,32,8,16,4,1,1.608661,5.3398
+blocked      N=2^32 rank=16 extent=4      threads=  1  time[s] min   7.7006 med   7.9547 max   7.9547  BW(2N/t_min)   1.115 GB/s  check OK
+CSV,blocked,32,16,4,1,0,7.700599,1.1155
+CSV,blocked,32,16,4,1,1,7.954687,1.0799
+blocked      N=2^32 rank=16 extent=4      threads=  4  time[s] min   1.7832 med   1.8576 max   1.8576  BW(2N/t_min)   4.817 GB/s  check OK
+CSV,blocked,32,16,4,4,0,1.783241,4.8170
+CSV,blocked,32,16,4,4,1,1.857584,4.6243
+blocked      N=2^32 rank=32 extent=2      threads=  1  time[s] min   7.7331 med   7.9540 max   7.9540  BW(2N/t_min)   1.111 GB/s  check OK
+CSV,blocked,32,32,2,1,0,7.954028,1.0799
+CSV,blocked,32,32,2,1,1,7.733059,1.1108
+blocked      N=2^32 rank=32 extent=2      threads=  4  time[s] min   1.9213 med   1.9262 max   1.9262  BW(2N/t_min)   4.471 GB/s  check OK
+CSV,blocked,32,32,2,4,0,1.921310,4.4709
+CSV,blocked,32,32,2,4,1,1.926178,4.4596
+### BLOCK_KERNEL=2
+== bench: up to N = 2^32 = 4294967296 one-byte elements (4.00 GiB per buffer), 4 cores available, 2 repetitions ==
+blocked      N=2^32 rank= 1 extent=4294967296 threads=  1  time[s] min   0.4287 med   0.4480 max   0.4480  BW(2N/t_min)  20.036 GB/s  check OK
+CSV,blocked,32,1,4294967296,1,0,0.428715,20.0365
+CSV,blocked,32,1,4294967296,1,1,0.447956,19.1759
+blocked      N=2^32 rank= 1 extent=4294967296 threads=  4  time[s] min   0.1143 med   0.1173 max   0.1173  BW(2N/t_min)  75.132 GB/s  check OK
+CSV,blocked,32,1,4294967296,4,0,0.117282,73.2418
+CSV,blocked,32,1,4294967296,4,1,0.114331,75.1322
+blocked      N=2^32 rank= 2 extent=65536  threads=  1  time[s] min   4.8980 med   5.1338 max   5.1338  BW(2N/t_min)   1.754 GB/s  check OK
+CSV,blocked,32,2,65536,1,0,4.898027,1.7538
+CSV,blocked,32,2,65536,1,1,5.133757,1.6732
+blocked      N=2^32 rank= 2 extent=65536  threads=  4  time[s] min   1.2364 med   1.2871 max   1.2871  BW(2N/t_min)   6.947 GB/s  check OK
+CSV,blocked,32,2,65536,4,0,1.287137,6.6737
+CSV,blocked,32,2,65536,4,1,1.236408,6.9475
+blocked      N=2^32 rank= 4 extent=256    threads=  1  time[s] min   4.0338 med   4.2252 max   4.2252  BW(2N/t_min)   2.130 GB/s  check OK
+CSV,blocked,32,4,256,1,0,4.033780,2.1295
+CSV,blocked,32,4,256,1,1,4.225198,2.0330
+blocked      N=2^32 rank= 4 extent=256    threads=  4  time[s] min   1.0195 med   1.0316 max   1.0316  BW(2N/t_min)   8.426 GB/s  check OK
+CSV,blocked,32,4,256,4,0,1.019467,8.4259
+CSV,blocked,32,4,256,4,1,1.031573,8.3270
+blocked      N=2^32 rank= 8 extent=16     threads=  1  time[s] min   4.3314 med   4.5544 max   4.5544  BW(2N/t_min)   1.983 GB/s  check OK
+CSV,blocked,32,8,16,1,0,4.331440,1.9832
+CSV,blocked,32,8,16,1,1,4.554440,1.8861
+blocked      N=2^32 rank= 8 extent=16     threads=  4  time[s] min   1.0962 med   1.1321 max   1.1321  BW(2N/t_min)   7.836 GB/s  check OK
+CSV,blocked,32,8,16,4,0,1.132075,7.5878
+CSV,blocked,32,8,16,4,1,1.096217,7.8360
+blocked      N=2^32 rank=16 extent=4      threads=  1  time[s] min   6.2444 med   6.6450 max   6.6450  BW(2N/t_min)   1.376 GB/s  check OK
+CSV,blocked,32,16,4,1,0,6.645038,1.2927
+CSV,blocked,32,16,4,1,1,6.244435,1.3756
+blocked      N=2^32 rank=16 extent=4      threads=  4  time[s] min   1.4232 med   1.5034 max   1.5034  BW(2N/t_min)   6.035 GB/s  check OK
+CSV,blocked,32,16,4,4,0,1.503366,5.7138
+CSV,blocked,32,16,4,4,1,1.423235,6.0355
+blocked      N=2^32 rank=32 extent=2      threads=  1  time[s] min   6.4762 med   6.4942 max   6.4942  BW(2N/t_min)   1.326 GB/s  check OK
+CSV,blocked,32,32,2,1,0,6.494159,1.3227
+CSV,blocked,32,32,2,1,1,6.476228,1.3264
+blocked      N=2^32 rank=32 extent=2      threads=  4  time[s] min   1.5383 med   1.5964 max   1.5964  BW(2N/t_min)   5.584 GB/s  check OK
+CSV,blocked,32,32,2,4,0,1.538305,5.5840
+CSV,blocked,32,32,2,4,1,1.596418,5.3808
+### BLOCK_KERNEL=3
+== bench: up to N = 2^32 = 4294967296 one-byte elements (4.00 GiB per buffer), 4 cores available, 2 repetitions ==
+blocked      N=2^32 rank= 1 extent=4294967296 threads=  1  time[s] min   0.4596 med   0.4630 max   0.4630  BW(2N/t_min)  18.690 GB/s  check OK
+CSV,blocked,32,1,4294967296,1,0,0.459594,18.6903
+CSV,blocked,32,1,4294967296,1,1,0.463044,18.5510
+blocked      N=2^32 rank= 1 extent=4294967296 threads=  4  time[s] min   0.1160 med   0.1192 max   0.1192  BW(2N/t_min)  74.077 GB/s  check OK
+CSV,blocked,32,1,4294967296,4,0,0.115960,74.0766
+CSV,blocked,32,1,4294967296,4,1,0.119225,72.0481
+blocked      N=2^32 rank= 2 extent=65536  threads=  1  time[s] min   2.2096 med   2.2329 max   2.2329  BW(2N/t_min)   3.887 GB/s  check OK
+CSV,blocked,32,2,65536,1,0,2.209631,3.8875
+CSV,blocked,32,2,65536,1,1,2.232941,3.8469
+blocked      N=2^32 rank= 2 extent=65536  threads=  4  time[s] min   0.6238 med   0.6426 max   0.6426  BW(2N/t_min)  13.770 GB/s  check OK
+CSV,blocked,32,2,65536,4,0,0.642599,13.3675
+CSV,blocked,32,2,65536,4,1,0.623810,13.7701
+blocked      N=2^32 rank= 4 extent=256    threads=  1  time[s] min   2.9059 med   3.0708 max   3.0708  BW(2N/t_min)   2.956 GB/s  check OK
+CSV,blocked,32,4,256,1,0,3.070771,2.7973
+CSV,blocked,32,4,256,1,1,2.905947,2.9560
+blocked      N=2^32 rank= 4 extent=256    threads=  4  time[s] min   0.7374 med   0.7377 max   0.7377  BW(2N/t_min)  11.650 GB/s  check OK
+CSV,blocked,32,4,256,4,0,0.737746,11.6435
+CSV,blocked,32,4,256,4,1,0.737353,11.6497
+blocked      N=2^32 rank= 8 extent=16     threads=  1  time[s] min   3.2623 med   3.4222 max   3.4222  BW(2N/t_min)   2.633 GB/s  check OK
+CSV,blocked,32,8,16,1,0,3.262315,2.6331
+CSV,blocked,32,8,16,1,1,3.422162,2.5101
+blocked      N=2^32 rank= 8 extent=16     threads=  4  time[s] min   0.8004 med   0.8278 max   0.8278  BW(2N/t_min)  10.733 GB/s  check OK
+CSV,blocked,32,8,16,4,0,0.827797,10.3769
+CSV,blocked,32,8,16,4,1,0.800359,10.7326
+blocked      N=2^32 rank=16 extent=4      threads=  1  time[s] min   4.8762 med   4.9617 max   4.9617  BW(2N/t_min)   1.762 GB/s  check OK
+CSV,blocked,32,16,4,1,0,4.961652,1.7313
+CSV,blocked,32,16,4,1,1,4.876229,1.7616
+blocked      N=2^32 rank=16 extent=4      threads=  4  time[s] min   1.0722 med   1.0807 max   1.0807  BW(2N/t_min)   8.011 GB/s  check OK
+CSV,blocked,32,16,4,4,0,1.080729,7.9483
+CSV,blocked,32,16,4,4,1,1.072239,8.0112
+blocked      N=2^32 rank=32 extent=2      threads=  1  time[s] min   4.6038 med   4.6657 max   4.6657  BW(2N/t_min)   1.866 GB/s  check OK
+CSV,blocked,32,32,2,1,0,4.665664,1.8411
+CSV,blocked,32,32,2,1,1,4.603763,1.8659
+blocked      N=2^32 rank=32 extent=2      threads=  4  time[s] min   1.1224 med   1.2716 max   1.2716  BW(2N/t_min)   7.653 GB/s  check OK
+CSV,blocked,32,32,2,4,0,1.122412,7.6531
+CSV,blocked,32,32,2,4,1,1.271589,6.7553
+### BLOCK_KERNEL=4
+== bench: up to N = 2^32 = 4294967296 one-byte elements (4.00 GiB per buffer), 4 cores available, 2 repetitions ==
+blocked      N=2^32 rank= 1 extent=4294967296 threads=  1  time[s] min   0.4082 med   0.4336 max   0.4336  BW(2N/t_min)  21.042 GB/s  check OK
+CSV,blocked,32,1,4294967296,1,0,0.433586,19.8114
+CSV,blocked,32,1,4294967296,1,1,0.408228,21.0420
+blocked      N=2^32 rank= 1 extent=4294967296 threads=  4  time[s] min   0.1192 med   0.1229 max   0.1229  BW(2N/t_min)  72.057 GB/s  check OK
+CSV,blocked,32,1,4294967296,4,0,0.122867,69.9124
+CSV,blocked,32,1,4294967296,4,1,0.119211,72.0566
+blocked      N=2^32 rank= 2 extent=65536  threads=  1  time[s] min   2.3101 med   2.6017 max   2.6017  BW(2N/t_min)   3.718 GB/s  check OK
+CSV,blocked,32,2,65536,1,0,2.310067,3.7185
+CSV,blocked,32,2,65536,1,1,2.601688,3.3017
+blocked      N=2^32 rank= 2 extent=65536  threads=  4  time[s] min   0.6072 med   0.6999 max   0.6999  BW(2N/t_min)  14.147 GB/s  check OK
+CSV,blocked,32,2,65536,4,0,0.699930,12.2726
+CSV,blocked,32,2,65536,4,1,0.607194,14.1469
+blocked      N=2^32 rank= 4 extent=256    threads=  1  time[s] min   3.0757 med   3.1588 max   3.1588  BW(2N/t_min)   2.793 GB/s  check OK
+CSV,blocked,32,4,256,1,0,3.158781,2.7194
+CSV,blocked,32,4,256,1,1,3.075652,2.7929
+blocked      N=2^32 rank= 4 extent=256    threads=  4  time[s] min   0.7532 med   0.7615 max   0.7615  BW(2N/t_min)  11.404 GB/s  check OK
+CSV,blocked,32,4,256,4,0,0.761481,11.2806
+CSV,blocked,32,4,256,4,1,0.753240,11.4040
+blocked      N=2^32 rank= 8 extent=16     threads=  1  time[s] min   3.2567 med   3.4650 max   3.4650  BW(2N/t_min)   2.638 GB/s  check OK
+CSV,blocked,32,8,16,1,0,3.256707,2.6376
+CSV,blocked,32,8,16,1,1,3.465016,2.4790
+blocked      N=2^32 rank= 8 extent=16     threads=  4  time[s] min   0.8580 med   0.9716 max   0.9716  BW(2N/t_min)  10.012 GB/s  check OK
+CSV,blocked,32,8,16,4,0,0.971623,8.8408
+CSV,blocked,32,8,16,4,1,0.857969,10.0119
+blocked      N=2^32 rank=16 extent=4      threads=  1  time[s] min   3.2263 med   3.4148 max   3.4148  BW(2N/t_min)   2.662 GB/s  check OK
+CSV,blocked,32,16,4,1,0,3.226271,2.6625
+CSV,blocked,32,16,4,1,1,3.414792,2.5155
+blocked      N=2^32 rank=16 extent=4      threads=  4  time[s] min   0.8312 med   0.8728 max   0.8728  BW(2N/t_min)  10.334 GB/s  check OK
+CSV,blocked,32,16,4,4,0,0.831193,10.3345
+CSV,blocked,32,16,4,4,1,0.872818,9.8416
+blocked      N=2^32 rank=32 extent=2      threads=  1  time[s] min   3.4075 med   3.6465 max   3.6465  BW(2N/t_min)   2.521 GB/s  check OK
+CSV,blocked,32,32,2,1,0,3.407547,2.5209
+CSV,blocked,32,32,2,1,1,3.646489,2.3557
+blocked      N=2^32 rank=32 extent=2      threads=  4  time[s] min   0.7848 med   0.8360 max   0.8360  BW(2N/t_min)  10.945 GB/s  check OK
+CSV,blocked,32,32,2,4,0,0.836000,10.2750
+CSV,blocked,32,32,2,4,1,0.784793,10.9455
